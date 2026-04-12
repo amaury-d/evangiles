@@ -1,0 +1,8 @@
+---
+import { micromark } from "micromark";
+
+const { note } = Astro.props;
+const html = micromark(note, { allowDangerousHtml: false });
+---
+
+<li class="markdown-note" set:html={html} />

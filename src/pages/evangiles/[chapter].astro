@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import SiteShell from "../../components/SiteShell.astro";
 import SectionBlock from "../../components/SectionBlock.astro";
+import MarkdownNote from "../../components/MarkdownNote.astro";
 import data from "../../data/harmony.generated.json";
 
 export function getStaticPaths() {
@@ -50,7 +51,7 @@ const images = chapter.images ? Object.entries(chapter.images) : [];
         <aside class="notes">
           <h2>Notes du chapitre</h2>
           <ul>
-            {chapter.notes.map((note) => <li set:html={note} />)}
+            {chapter.notes.map((note) => <MarkdownNote note={note} />)}
           </ul>
         </aside>
       )}
