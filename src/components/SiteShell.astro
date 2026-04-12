@@ -1,25 +1,29 @@
 ---
 import data from "../data/harmony.generated.json";
 import annexes from "../data/annexes.generated.json";
+import TranslationPicker from "./TranslationPicker.astro";
 
 const { currentSlug = "" } = Astro.props;
 const base = import.meta.env.BASE_URL;
+const siteRoot = base.endsWith("/") ? base : `${base}/`;
 ---
 
-<div class="site-shell">
+<div class="site-shell" data-default-translation={data.defaultTranslation}>
   <aside class="sidebar" aria-label="Navigation principale">
-    <a class="brand" href={base}>
+    <a class="brand" href={siteRoot}>
       <span>Mon harmonie</span>
       <strong>des Évangiles</strong>
     </a>
 
+    <TranslationPicker translations={data.translations} defaultTranslation={data.defaultTranslation} />
+
     <nav>
-      <a class:list={["nav-link", { active: currentSlug === "" }]} href={base}>Accueil</a>
+      <a class:list={["nav-link", { active: currentSlug === "" }]} href={siteRoot}>Accueil</a>
       <p class="nav-heading">Chapitres</p>
       <ol class="chapter-nav">
         {data.chapters.map((chapter) => (
           <li>
-            <a class:list={["nav-link", { active: currentSlug === chapter.slug }]} href={`${base}/evangiles/${chapter.slug}/`}>
+            <a class:list={["nav-link", { active: currentSlug === chapter.slug }]} href={`${siteRoot}evangiles/${chapter.slug}/`}>
               <span>{chapter.number}.</span>
               {chapter.title}
             </a>
@@ -30,7 +34,7 @@ const base = import.meta.env.BASE_URL;
       <ul class="chapter-nav">
         {annexes.map((a) => (
           <li>
-            <a class:list={["nav-link", { active: currentSlug === "annexes" }]} href={`${base}/annexes/${a.slug}/`}>
+            <a class:list={["nav-link", { active: currentSlug === "annexes" }]} href={`${siteRoot}annexes/${a.slug}/`}>
               {a.title}
             </a>
           </li>

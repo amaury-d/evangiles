@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "terms": [
+    {
+      "id": "metanoia",
+      "lemma": "μετάνοια / μετανοέω",
+      "transliteration": "metanoia / metanoeō",
+      "strong": "G3341 / G3340",
+      "labels": ["repentance", "repentez-vous", "se repentir", "convertissez-vous", "conversion", "repent", "repentance"],
+      "short_definition": "Changement profond de pensée et d'orientation devant Dieu.",
+      "long_definition": "Dans le Nouveau Testament, le terme dépasse le simple regret : il désigne un retournement intérieur qui transforme la conduite.",
+      "notes": "Le français alterne souvent entre repentance, conversion et appel à se repentir.",
+      "examples": ["Marc 1:15", "Matthieu 3:2"]
+    },
+    {
+      "id": "pistis",
+      "lemma": "πίστις",
+      "transliteration": "pistis",
+      "strong": "G4102",
+      "labels": ["foi", "croire", "croit", "crut", "fidèle", "fideles", "faith", "believe", "believed", "faithful"],
+      "short_definition": "Confiance, fidélité et adhésion à Dieu ou au Christ.",
+      "long_definition": "Pistis peut insister sur la confiance personnelle, la fidélité durable ou la fiabilité de celui en qui l'on croit.",
+      "notes": "Le contexte décide souvent entre foi et fidélité.",
+      "examples": ["Jean 3:16", "Marc 5:34"]
+    },
+    {
+      "id": "agape",
+      "lemma": "ἀγάπη / ἀγαπάω",
+      "transliteration": "agapē / agapaō",
+      "strong": "G26 / G25",
+      "labels": ["amour", "aimer", "aimez", "aimé", "aime", "love", "loved"],
+      "short_definition": "Amour donné, voulu et orienté vers le bien de l'autre.",
+      "long_definition": "Agapē désigne fréquemment l'amour de Dieu et l'amour auquel les disciples sont appelés.",
+      "notes": "Le mot ne signifie pas seulement affection : il implique souvent une fidélité active.",
+      "examples": ["Jean 13:34", "Jean 21:15"]
+    },
+    {
+      "id": "logos",
+      "lemma": "λόγος",
+      "transliteration": "logos",
+      "strong": "G3056",
+      "labels": ["parole", "verbe", "word", "logos"],
+      "short_definition": "Parole, message, raison ou expression intelligible.",
+      "long_definition": "Chez Jean, Logos prend une densité théologique unique : le Verbe préexistant par qui Dieu se révèle.",
+      "notes": "Selon le contexte, logos peut désigner une parole, un enseignement ou le Verbe.",
+      "examples": ["Jean 1:1", "Luc 5:1"]
+    },
+    {
+      "id": "sarx",
+      "lemma": "σάρξ",
+      "transliteration": "sarx",
+      "strong": "G4561",
+      "labels": ["chair", "flesh"],
+      "short_definition": "Chair, condition humaine concrète, parfois humanité fragile.",
+      "long_definition": "Sarx peut parler du corps humain, de la parenté, ou de l'humanité dans sa faiblesse devant Dieu.",
+      "notes": "Le sens n'est pas automatiquement négatif ; Jean dit que le Verbe s'est fait chair.",
+      "examples": ["Jean 1:14"]
+    },
+    {
+      "id": "kosmos",
+      "lemma": "κόσμος",
+      "transliteration": "kosmos",
+      "strong": "G2889",
+      "labels": ["monde", "world"],
+      "short_definition": "Monde organisé : création, humanité ou ordre opposé à Dieu selon le contexte.",
+      "long_definition": "Kosmos peut désigner l'univers habité, les humains aimés par Dieu, ou le système qui résiste à Dieu.",
+      "notes": "Le contexte johannique alterne fortement entre monde aimé et monde en opposition.",
+      "examples": ["Jean 3:16", "Jean 15:18"]
+    },
+    {
+      "id": "zoe",
+      "lemma": "ζωή",
+      "transliteration": "zōē",
+      "strong": "G2222",
+      "labels": ["vie", "vie éternelle", "life", "eternal life"],
+      "short_definition": "Vie, souvent la vie reçue de Dieu.",
+      "long_definition": "Dans Jean, zōē désigne fréquemment la vie véritable et durable donnée par le Christ.",
+      "notes": "À distinguer de la simple existence biologique selon le contexte.",
+      "examples": ["Jean 1:4", "Jean 10:10"]
+    },
+    {
+      "id": "aletheia",
+      "lemma": "ἀλήθεια",
+      "transliteration": "alētheia",
+      "strong": "G225",
+      "labels": ["vérité", "verite", "truth"],
+      "short_definition": "Vérité, réalité dévoilée et fiabilité de Dieu.",
+      "long_definition": "Alētheia ne désigne pas seulement une exactitude abstraite, mais ce qui est fiable et révélé par Dieu.",
+      "notes": "Jean associe fortement vérité, révélation et personne du Christ.",
+      "examples": ["Jean 14:6", "Jean 18:37"]
+    },
+    {
+      "id": "dikaiosyne",
+      "lemma": "δικαιοσύνη",
+      "transliteration": "dikaiosynē",
+      "strong": "G1343",
+      "labels": ["justice", "juste", "righteousness", "righteous"],
+      "short_definition": "Justice, rectitude et relation ajustée à la volonté de Dieu.",
+      "long_definition": "Le terme peut parler de conduite juste, de fidélité à Dieu ou de justice reçue de Dieu selon les textes.",
+      "notes": "Le champ sémantique couvre à la fois justice morale et relationnelle.",
+      "examples": ["Matthieu 5:6", "Matthieu 6:33"]
+    },
+    {
+      "id": "hamartia",
+      "lemma": "ἁμαρτία",
+      "transliteration": "hamartia",
+      "strong": "G266",
+      "labels": ["péché", "peche", "péchés", "peches", "sin", "sins"],
+      "short_definition": "Péché : rupture avec Dieu, manquement à sa volonté.",
+      "long_definition": "Hamartia évoque l'acte, l'état et la puissance du péché qui détourne de Dieu.",
+      "notes": "Le terme ne se réduit pas à une faute isolée.",
+      "examples": ["Jean 1:29", "Matthieu 1:21"]
+    },
+    {
+      "id": "basileia",
+      "lemma": "βασιλεία τοῦ θεοῦ",
+      "transliteration": "basileia tou theou",
+      "strong": "G932 / G2316",
+      "labels": ["royaume de Dieu", "royaume des cieux", "kingdom of God", "kingdom of heaven"],
+      "short_definition": "Règne de Dieu : son autorité souveraine qui vient et transforme.",
+      "long_definition": "L'expression ne désigne pas seulement un lieu, mais l'action royale de Dieu qui s'approche, juge, sauve et renouvelle.",
+      "notes": "Matthieu emploie souvent royaume des cieux là où d'autres traditions disent royaume de Dieu.",
+      "examples": ["Matthieu 4:17", "Marc 1:15"]
+    }
+  ]
+}

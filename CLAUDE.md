@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project overview
 
-Static site presenting a personal chronological harmony of the Gospels (Matthew, Mark, Luke, John, Acts). Built with Astro, fed from a SQLite database of Bible verses and a hand-curated harmony configuration.
+Static site presenting a personal chronological harmony of the Gospels (Matthew, Mark, Luke, John, Acts). Built with Astro, fed from a multi-translation SQLite database of Bible verses and a hand-curated harmony configuration.
 
 The site is in French. Published at https://evangiles.decre.me/.
 
@@ -12,10 +12,12 @@ The site is in French. Published at https://evangiles.decre.me/.
 
 The data flows in one direction:
 
-1. `bible.db` (SQLite, committed) contains Bible verses, populated by `extractor/fetch_bible.py`
-2. `data/harmony.json` is the **single source of truth** for the harmony: chapter order, sections, biblical references, dates, places, images, and notes
-3. `scripts/build_site_data.py` reads both, validates images and verses, writes `src/data/harmony.generated.json` and copies `assets/` to `public/assets/`
-4. Astro reads the generated JSON and produces the static site in `dist/`
+1. `data/translations.json` declares enabled GetBible translations and the default translation
+2. `bible.db` (SQLite, committed) contains Bible verses with a `translation` column, populated by `extractor/fetch_bible.py`
+3. `data/harmony.json` is the **single source of truth** for the harmony: chapter order, sections, biblical references, dates, places, images, and notes
+4. `data/greek_terms.json` stores theological/Greek term definitions and detection labels
+5. `scripts/build_site_data.py` reads these inputs, validates images and verses, writes `src/data/harmony.generated.json` and copies `assets/` to `public/assets/`
+6. Astro reads the generated JSON and produces the static site in `dist/`
 
 **Generated files** (do not edit directly): `src/data/harmony.generated.json`, `public/assets/`, `dist/`, `.astro/`
 
@@ -26,7 +28,8 @@ npm install              # install Node dependencies
 make                     # full build: generate data + build Astro site
 make serve               # dev server (runs build_site_data.py first via predev hook)
 make clean               # remove all generated outputs
-make refresh-bible       # rebuild bible.db from GetBible, default TRANSLATION=ls1910
+make refresh-bible       # rebuild bible.db from all enabled GetBible translations
+make refresh-bible TRANSLATION=darby
 npm run build            # just Astro build (runs build_site_data.py via prebuild hook)
 ```
 
@@ -36,7 +39,7 @@ Run `npm run build` before concluding any change. For data changes, check that `
 
 ## Data format
 
-In `data/harmony.json`, biblical references are keyed by book slug (`matthieu`, `marc`, `luc`, `jean`, `actes`) and use triplets `[chapter, start_verse, end_verse]`. The `bible.db` table is `versets` with columns `evangeliste`, `chapitre_id`, `verset_id`, `titre`, `texte`.
+In `data/harmony.json`, biblical references are keyed by book slug (`matthieu`, `marc`, `luc`, `jean`, `actes`) and use triplets `[chapter, start_verse, end_verse]`. The `bible.db` table is `versets` with columns `translation`, `evangeliste`, `chapitre_id`, `verset_id`, `titre`, `texte`.
 
 ## Astro site structure
 

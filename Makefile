@@ -5,7 +5,7 @@ node_modules: package-lock.json
 
 data: src/data/harmony.generated.json src/pages/annexes
 
-src/data/harmony.generated.json: data/harmony.json bible.db scripts/build_site_data.py assets
+src/data/harmony.generated.json: data/harmony.json data/translations.json bible.db scripts/build_site_data.py assets
 	python3 scripts/build_site_data.py
 
 src/pages/annexes: annexes scripts/build_annexes.py

@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import SiteShell from "../components/SiteShell.astro";
 import data from "../data/harmony.generated.json";
 const base = import.meta.env.BASE_URL;
+const siteRoot = base.endsWith("/") ? base : `${base}/`;
 ---
 
 <BaseLayout title="Accueil">
@@ -14,7 +15,7 @@ const base = import.meta.env.BASE_URL;
         Ce site rassemble les textes de Matthieu, Marc, Luc, Jean et des Actes dans une trame harmonisée,
         avec les lieux, les dates, les notes et les cartes qui aident à suivre le récit.
       </p>
-      <a class="primary-link" href={`${base}/evangiles/${data.chapters[0].slug}/`}>Commencer la lecture</a>
+      <a class="primary-link" href={`${siteRoot}evangiles/${data.chapters[0].slug}/`}>Commencer la lecture</a>
     </section>
 
     <section class="chapter-index">
@@ -22,7 +23,7 @@ const base = import.meta.env.BASE_URL;
       <ol>
         {data.chapters.map((chapter) => (
           <li>
-            <a href={`${base}/evangiles/${chapter.slug}/`}>
+            <a href={`${siteRoot}evangiles/${chapter.slug}/`}>
               <span>{chapter.number}</span>
               <strong>{chapter.title}</strong>
             </a>

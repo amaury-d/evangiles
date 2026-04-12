@@ -1,0 +1,72 @@
+---
+const { translations, defaultTranslation } = Astro.props;
+---
+
+<form class="translation-picker" data-translation-picker>
+  <label for="translation-select">Traduction</label>
+  <select id="translation-select" name="traduction" data-translation-select>
+    {translations.map((translation) => (
+      <option
+        value={translation.code}
+        data-translation-code={translation.code}
+        selected={translation.code === defaultTranslation}
+      >
+        {translation.label}
+      </option>
+    ))}
+  </select>
+</form>
+
+<script>
+  const STORAGE_KEY = "evangiles.translation";
+
+  function availableTranslations() {
+    return Array.from(document.querySelectorAll("[data-translation-code]"))
+      .map((option) => option.getAttribute("data-translation-code"))
+      .filter(Boolean);
+  }
+
+  function defaultTranslation() {
+    return document.querySelector("[data-default-translation]")?.getAttribute("data-default-translation")
+      || availableTranslations()[0];
+  }
+
+  function normalizeTranslation(code) {
+    const available = availableTranslations();
+    return available.includes(code) ? code : defaultTranslation();
+  }
+
+  function applyTranslation(code, updateUrl = true) {
+    const normalized = normalizeTranslation(code);
+    if (!normalized) return;
+
+    document.documentElement.dataset.translation = normalized;
+    document.querySelectorAll("[data-translation]").forEach((node) => {
+      node.hidden = node.getAttribute("data-translation") !== normalized;
+    });
+    document.querySelectorAll("[data-translation-select]").forEach((select) => {
+      select.value = normalized;
+    });
+
+    window.localStorage.setItem(STORAGE_KEY, normalized);
+
+    if (updateUrl) {
+      const url = new URL(window.location.href);
+      url.searchParams.set("traduction", normalized);
+      window.history.replaceState({}, "", url);
+    }
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  applyTranslation(
+    params.get("traduction") || window.localStorage.getItem(STORAGE_KEY) || defaultTranslation(),
+    Boolean(params.get("traduction"))
+  );
+
+  document.addEventListener("change", (event) => {
+    const target = event.target;
+    if (target instanceof HTMLSelectElement && target.matches("[data-translation-select]")) {
+      applyTranslation(target.value);
+    }
+  });
+</script>

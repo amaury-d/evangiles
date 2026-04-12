@@ -13,6 +13,7 @@ export function getStaticPaths() {
 
 const { chapter } = Astro.props;
 const base = import.meta.env.BASE_URL;
+const siteRoot = base.endsWith("/") ? base : `${base}/`;
 const images = chapter.images ? Object.entries(chapter.images) : [];
 ---
 
@@ -32,12 +33,18 @@ const images = chapter.images ? Object.entries(chapter.images) : [];
 
       {images.map(([src, caption]) => (
         <figure class="figure">
-          <img src={`${base}/assets/${src}`} alt={caption} />
+          <img src={`${siteRoot}assets/${src}`} alt={caption} />
           <figcaption>{caption}</figcaption>
         </figure>
       ))}
 
-      {chapter.sections.map((section) => <SectionBlock section={section} />)}
+      {chapter.sections.map((section) => (
+        <SectionBlock
+          section={section}
+          translations={data.translations}
+          defaultTranslation={data.defaultTranslation}
+        />
+      ))}
 
       {chapter.notes?.length > 0 && (
         <aside class="notes">

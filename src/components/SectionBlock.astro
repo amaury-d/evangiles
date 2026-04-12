@@ -1,8 +1,9 @@
 ---
 import Passage from "./Passage.astro";
 
-const { section } = Astro.props;
+const { section, translations, defaultTranslation } = Astro.props;
 const base = import.meta.env.BASE_URL;
+const siteRoot = base.endsWith("/") ? base : `${base}/`;
 const images = section.images ? Object.entries(section.images) : [];
 ---
 
@@ -19,14 +20,16 @@ const images = section.images ? Object.entries(section.images) : [];
 
   {images.map(([src, caption]) => (
     <figure class="figure">
-      <img src={`${base}/assets/${src}`} alt={caption} loading="lazy" />
+      <img src={`${siteRoot}assets/${src}`} alt={caption} loading="lazy" />
       <figcaption>{caption}</figcaption>
     </figure>
   ))}
 
   {section.passages?.length > 0 && (
     <div class="passage-grid">
-      {section.passages.map((passage) => <Passage passage={passage} />)}
+      {section.passages.map((passage) => (
+        <Passage passage={passage} translations={translations} defaultTranslation={defaultTranslation} />
+      ))}
     </div>
   )}
 

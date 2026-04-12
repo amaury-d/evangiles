@@ -1,0 +1,23 @@
+{
+  "default": "ls1910",
+  "translations": [
+    {
+      "code": "ls1910",
+      "label": "Louis Segond 1910",
+      "language": "fr",
+      "enabled": true
+    },
+    {
+      "code": "darby",
+      "label": "Darby 2024",
+      "language": "fr",
+      "enabled": true
+    },
+    {
+      "code": "web",
+      "label": "World English Bible",
+      "language": "en",
+      "enabled": true
+    }
+  ]
+}

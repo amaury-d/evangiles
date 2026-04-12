@@ -1,4 +1,6 @@
 ---
+import VerseText from "./VerseText.astro";
+
 const BOOK_LABELS = {
   matthieu: "Matthieu",
   marc: "Marc",
@@ -7,7 +9,7 @@ const BOOK_LABELS = {
   actes: "Actes",
 };
 
-const { passage } = Astro.props;
+const { passage, translations, defaultTranslation } = Astro.props;
 const label = BOOK_LABELS[passage.book] ?? passage.book;
 const ref = passage.startVerse === passage.endVerse
   ? `${passage.chapter}:${passage.startVerse}`
@@ -17,11 +19,30 @@ const ref = passage.startVerse === passage.endVerse
 <article class="passage">
   <header>
     <p>{label} <span>{ref}</span></p>
-    {passage.title && <h4>{passage.title}</h4>}
   </header>
-  <div class="verses">
-    {passage.verses.map((verse) => (
-      <p><sup>{verse.number}</sup>{verse.text}</p>
-    ))}
-  </div>
+  {translations.map((translation) => {
+    const translated = passage.translations?.[translation.code]
+      ?? passage.translations?.[defaultTranslation];
+    const tooltipPrefix = `${passage.book}-${passage.chapter}-${passage.startVerse}-${passage.endVerse}-${translation.code}`;
+
+    return translated && (
+      <div class="translation-verse-set" data-translation={translation.code} hidden={translation.code !== defaultTranslation}>
+        <p class="translation-name">
+          {translation.label}
+          {translated.fallback && (
+            <span>texte indisponible, affichage de la traduction par défaut</span>
+          )}
+        </p>
+        {translated.title && <h4>{translated.title}</h4>}
+        <div class="verses">
+          {translated.verses.map((verse) => (
+            <p>
+              <sup>{verse.number}</sup>
+              <VerseText text={verse.text} tooltipPrefix={`${tooltipPrefix}-${verse.number}`} />
+            </p>
+          ))}
+        </div>
+      </div>
+    );
+  })}
 </article>

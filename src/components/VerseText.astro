@@ -1,0 +1,96 @@
+---
+import termsData from "../../data/greek_terms.json";
+
+const { text, tooltipPrefix } = Astro.props;
+const terms = termsData.terms ?? [];
+
+function escapeRegex(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function normalizeLabel(value) {
+  return value
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLocaleLowerCase("fr")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+const labelToTerm = new Map();
+const labels = [];
+
+for (const term of terms) {
+  for (const label of term.labels ?? []) {
+    const normalized = normalizeLabel(label);
+    if (!labelToTerm.has(normalized)) {
+      labelToTerm.set(normalized, term);
+      labels.push(label);
+    }
+  }
+}
+
+labels.sort((a, b) => b.length - a.length);
+
+const matcher = labels.length
+  ? new RegExp(`(?<![\\p{L}\\p{M}\\p{N}_])(${labels.map(escapeRegex).join("|")})(?![\\p{L}\\p{M}\\p{N}_])`, "giu")
+  : null;
+
+function tokenize(value) {
+  if (!matcher) return [{ text: value }];
+
+  const parts = [];
+  let lastIndex = 0;
+
+  for (const match of value.matchAll(matcher)) {
+    const index = match.index ?? 0;
+    if (index < lastIndex) continue;
+
+    if (index > lastIndex) {
+      parts.push({ text: value.slice(lastIndex, index) });
+    }
+
+    const matchedText = match[0];
+    parts.push({
+      text: matchedText,
+      term: labelToTerm.get(normalizeLabel(matchedText)),
+    });
+    lastIndex = index + matchedText.length;
+  }
+
+  if (lastIndex < value.length) {
+    parts.push({ text: value.slice(lastIndex) });
+  }
+
+  return parts;
+}
+
+const parts = tokenize(text);
+---
+
+<span class="verse-text">
+  {parts.map((part, index) => {
+    if (!part.term) return part.text;
+
+    const tooltipId = `${tooltipPrefix}-greek-term-${part.term.id}-${index}`;
+
+    return (
+      <span class="greek-term-wrapper">
+        <button
+          class="greek-term"
+          type="button"
+          aria-describedby={tooltipId}
+          data-greek-term={part.term.id}
+        >
+          {part.text}
+        </button>
+        <span class="greek-term-tooltip" id={tooltipId} role="tooltip">
+          <strong>{part.term.lemma}</strong>
+          <span>{part.term.transliteration}</span>
+          <span>{part.term.short_definition}</span>
+          {part.term.notes && <em>{part.term.notes}</em>}
+        </span>
+      </span>
+    );
+  })}
+</span>
