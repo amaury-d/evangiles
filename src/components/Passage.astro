@@ -1,0 +1,27 @@
+---
+const BOOK_LABELS = {
+  matthieu: "Matthieu",
+  marc: "Marc",
+  luc: "Luc",
+  jean: "Jean",
+  actes: "Actes",
+};
+
+const { passage } = Astro.props;
+const label = BOOK_LABELS[passage.book] ?? passage.book;
+const ref = passage.startVerse === passage.endVerse
+  ? `${passage.chapter}:${passage.startVerse}`
+  : `${passage.chapter}:${passage.startVerse}-${passage.endVerse}`;
+---
+
+<article class="passage">
+  <header>
+    <p>{label} <span>{ref}</span></p>
+    {passage.title && <h4>{passage.title}</h4>}
+  </header>
+  <div class="verses">
+    {passage.verses.map((verse) => (
+      <p><sup>{verse.number}</sup>{verse.text}</p>
+    ))}
+  </div>
+</article>

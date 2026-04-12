@@ -1,0 +1,40 @@
+---
+import Passage from "./Passage.astro";
+
+const { section } = Astro.props;
+const images = section.images ? Object.entries(section.images) : [];
+---
+
+<section class="harmony-section" id={section.id}>
+  <header class="section-header">
+    <h2>{section.title}</h2>
+    {(section.date || section.lieu) && (
+      <dl class="meta-list">
+        {section.date && <><dt>Date</dt><dd>{section.date}</dd></>}
+        {section.lieu && <><dt>Lieu</dt><dd>{section.lieu}</dd></>}
+      </dl>
+    )}
+  </header>
+
+  {images.map(([src, caption]) => (
+    <figure class="figure">
+      <img src={`/assets/${src}`} alt={caption} loading="lazy" />
+      <figcaption>{caption}</figcaption>
+    </figure>
+  ))}
+
+  {section.passages?.length > 0 && (
+    <div class="passage-grid">
+      {section.passages.map((passage) => <Passage passage={passage} />)}
+    </div>
+  )}
+
+  {section.notes?.length > 0 && (
+    <aside class="notes">
+      <h3>Notes</h3>
+      <ul>
+        {section.notes.map((note) => <li set:html={note} />)}
+      </ul>
+    </aside>
+  )}
+</section>

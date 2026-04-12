@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SiteShell from "../components/SiteShell.astro";
+import data from "../data/harmony.generated.json";
+---
+
+<BaseLayout title="Accueil">
+  <SiteShell>
+    <section class="intro">
+      <p class="eyebrow">Projet personnel de lecture</p>
+      <h1>Une harmonie des Évangiles à lire comme un récit chronologique.</h1>
+      <p>
+        Ce site rassemble les textes de Matthieu, Marc, Luc, Jean et des Actes dans une trame harmonisée,
+        avec les lieux, les dates, les notes et les cartes qui aident à suivre le récit.
+      </p>
+      <a class="primary-link" href={`/evangiles/${data.chapters[0].slug}/`}>Commencer la lecture</a>
+    </section>
+
+    <section class="chapter-index">
+      <h2>Chapitres</h2>
+      <ol>
+        {data.chapters.map((chapter) => (
+          <li>
+            <a href={`/evangiles/${chapter.slug}/`}>
+              <span>{chapter.number}</span>
+              <strong>{chapter.title}</strong>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </section>
+  </SiteShell>
+</BaseLayout>

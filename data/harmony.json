@@ -1,0 +1,5098 @@
+{
+  "schema": 1,
+  "books": [
+    "matthieu",
+    "marc",
+    "luc",
+    "jean",
+    "actes"
+  ],
+  "chapters": [
+    {
+      "id": "prologue",
+      "number": 1,
+      "title": "Prologue",
+      "sections": [
+        {
+          "id": "prologue-1",
+          "title": "Introduction",
+          "refs": {
+            "marc": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "luc": [
+              [
+                1,
+                1,
+                4
+              ]
+            ],
+            "jean": [
+              [
+                1,
+                1,
+                5
+              ],
+              [
+                1,
+                9,
+                14
+              ]
+            ]
+          },
+          "notes": [
+            "[Qui est Théophile ?](http://www.interbible.org/interBible/decouverte/comprendre/2013/clb_131011.html)"
+          ]
+        },
+        {
+          "id": "prologue-2",
+          "title": "Généalogie",
+          "refs": {
+            "matthieu": [
+              [
+                1,
+                1,
+                17
+              ]
+            ],
+            "luc": [
+              [
+                3,
+                23,
+                38
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "jeunesse",
+      "number": 2,
+      "title": "Naissance et jeunesse de Jésus",
+      "sections": [
+        {
+          "id": "jeunesse-1",
+          "title": "Annonce par l'ange Gabriel de la naissance de Jean le Baptiste à Zacharie",
+          "refs": {
+            "luc": [
+              [
+                1,
+                5,
+                25
+              ]
+            ]
+          },
+          "date": "-3",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jeunesse-2",
+          "title": "Annonce par l'ange Gabriel de la naissance de Jésus à Marie",
+          "refs": {
+            "luc": [
+              [
+                1,
+                26,
+                38
+              ]
+            ]
+          },
+          "date": "-2",
+          "lieu": "Nazareth, Galilée"
+        },
+        {
+          "id": "jeunesse-3",
+          "title": "Visite de Marie à Élisabeth",
+          "refs": {
+            "luc": [
+              [
+                1,
+                39,
+                56
+              ]
+            ]
+          },
+          "date": "-2",
+          "lieu": "Judée",
+          "notes": [
+            "Marie passe 3 mois en Judée"
+          ]
+        },
+        {
+          "id": "jeunesse-4",
+          "title": "Naissance de Jean le Baptiste",
+          "refs": {
+            "luc": [
+              [
+                1,
+                57,
+                80
+              ]
+            ]
+          },
+          "date": "-3"
+        },
+        {
+          "id": "jeunesse-5",
+          "title": "La naissance de Jésus annoncée à Joseph",
+          "refs": {
+            "matthieu": [
+              [
+                1,
+                18,
+                25
+              ]
+            ]
+          },
+          "lieu": "Nazareth, Galilée"
+        },
+        {
+          "id": "jeunesse-6",
+          "title": "Naissance de Jésus",
+          "refs": {
+            "luc": [
+              [
+                2,
+                1,
+                7
+              ]
+            ]
+          },
+          "date": "-2 vers le 1er Octobre",
+          "lieu": "Bethléem, Judée",
+          "notes": [
+            "Jésus est né 5 mois et demi aprés Jean"
+          ]
+        },
+        {
+          "id": "jeunesse-7",
+          "title": "Annonce des anges aux bergers",
+          "refs": {
+            "luc": [
+              [
+                2,
+                8,
+                20
+              ]
+            ]
+          },
+          "date": "-2, début Octobre",
+          "lieu": "Près de Bethléem, Judée"
+        },
+        {
+          "id": "jeunesse-8",
+          "title": "Circoncision de Jésus et présentation au temple de Bethléem. Purification de Marie.",
+          "refs": {
+            "luc": [
+              [
+                2,
+                21,
+                38
+              ]
+            ]
+          },
+          "date": "-2, J+40 après naissance",
+          "lieu": "Bethléem ou Jérusalem, Judée",
+          "notes": [
+            "Jésus est circoncis au 8e jour après sa naissance puis présenté au temple par ses parents après le 40e jour. ([Lév. 12:1-4](https://www.aelf.org/bible/Lv/12))"
+          ]
+        },
+        {
+          "id": "jeunesse-9",
+          "title": "Visite des mages",
+          "refs": {
+            "matthieu": [
+              [
+                2,
+                1,
+                12
+              ]
+            ]
+          },
+          "date": "-2, 40/50 jours après naissance",
+          "lieu": "Bethléem, Judée"
+        },
+        {
+          "id": "jeunesse-10",
+          "title": "Fuite en Égypte",
+          "refs": {
+            "matthieu": [
+              [
+                2,
+                13,
+                15
+              ]
+            ]
+          },
+          "date": "-2",
+          "lieu": "Égypte"
+        },
+        {
+          "id": "jeunesse-11",
+          "title": "Meurtre des enfants de Bethléem par Hérode",
+          "refs": {
+            "matthieu": [
+              [
+                2,
+                16,
+                18
+              ]
+            ]
+          }
+        },
+        {
+          "id": "jeunesse-12",
+          "title": "Retour à Nazareth par crainte d'Archélaüs",
+          "refs": {
+            "matthieu": [
+              [
+                2,
+                19,
+                23
+              ]
+            ],
+            "luc": [
+              [
+                2,
+                39,
+                40
+              ]
+            ]
+          },
+          "date": "-1",
+          "lieu": "Nazareth, Galilée"
+        },
+        {
+          "id": "jeunesse-13",
+          "title": "Jésus au temple de Jérusalem à 12 ans",
+          "refs": {
+            "luc": [
+              [
+                2,
+                41,
+                50
+              ]
+            ]
+          },
+          "date": "+10",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jeunesse-14",
+          "title": "Jésus rentre à Nazareth (et devient charpentier);",
+          "refs": {
+            "luc": [
+              [
+                2,
+                51,
+                52
+              ]
+            ]
+          },
+          "date": "+10",
+          "lieu": "Nazareth, Galilée"
+        }
+      ],
+      "images": {
+        "carte1.jpg": "Carte 1"
+      }
+    },
+    {
+      "id": "debut",
+      "number": 3,
+      "title": "Debut du ministére avec Jean le Baptiste en Judée",
+      "sections": [
+        {
+          "id": "debut-1",
+          "title": "Jean le Baptiste prépare son ministère",
+          "refs": {
+            "matthieu": [
+              [
+                3,
+                1,
+                12
+              ]
+            ],
+            "marc": [
+              [
+                1,
+                2,
+                8
+              ]
+            ],
+            "luc": [
+              [
+                3,
+                1,
+                18
+              ]
+            ],
+            "jean": [
+              [
+                1,
+                6,
+                8
+              ]
+            ]
+          },
+          "date": "+29, Mars-Juin",
+          "lieu": "Rives du Jourdain, en Judée ou en Pérée"
+        },
+        {
+          "id": "debut-2",
+          "title": "Baptême de Jésus dans le Jourdain",
+          "refs": {
+            "matthieu": [
+              [
+                3,
+                13,
+                17
+              ]
+            ],
+            "marc": [
+              [
+                1,
+                9,
+                11
+              ]
+            ],
+            "luc": [
+              [
+                3,
+                21,
+                23
+              ]
+            ]
+          },
+          "date": "+29, Juin/Juillet",
+          "lieu": "Rives du Jourdain, en Judée ou en Pérée"
+        },
+        {
+          "id": "debut-3",
+          "title": "40 jours de tentation",
+          "refs": {
+            "matthieu": [
+              [
+                4,
+                1,
+                11
+              ]
+            ],
+            "marc": [
+              [
+                1,
+                12,
+                13
+              ]
+            ],
+            "luc": [
+              [
+                4,
+                1,
+                13
+              ]
+            ]
+          },
+          "date": "+29, Juillet-Septembre",
+          "lieu": "Désert de Judée",
+          "notes": [
+            "Ce séjour fait écho aux quarante ans du peuple hébreu dans le désert pendant l’Exode, qui a connu dans sa longue traversée du désert la faim, la soif, l’épreuve et le doute. "
+          ],
+          "images": {
+            "desert_de_judee.webp": "Vue du désert de Judée du mont Yair"
+          }
+        }
+      ],
+      "images": {
+        "carte2.jpg": "Carte 2"
+      }
+    },
+    {
+      "id": "bethanie",
+      "number": 4,
+      "title": "Jean le Baptiste à Béthanie",
+      "sections": [
+        {
+          "id": "bethanie-1",
+          "title": "Prologue du témoignage de Jean le Baptiste envers Jésus",
+          "refs": {
+            "jean": [
+              [
+                1,
+                15,
+                18
+              ]
+            ]
+          }
+        },
+        {
+          "id": "bethanie-2",
+          "title": "J1: Témoignage de Jean le Baptiste",
+          "refs": {
+            "jean": [
+              [
+                1,
+                19,
+                28
+              ]
+            ]
+          },
+          "date": "+29, Septembre-Novembre",
+          "lieu": "Béthanie en Pérée, au delà du Jourdain"
+        },
+        {
+          "id": "bethanie-3",
+          "title": "J2: Jean identifie Jésus comme l'agneau de Dieu",
+          "refs": {
+            "jean": [
+              [
+                1,
+                29,
+                34
+              ]
+            ]
+          },
+          "date": "+29, Septembre-Novembre",
+          "lieu": "Béthanie en Pérée, au delà du Jourdain"
+        },
+        {
+          "id": "bethanie-4",
+          "title": "J3: André suit Jésus et amène Simon-Pierre",
+          "refs": {
+            "jean": [
+              [
+                1,
+                35,
+                42
+              ]
+            ]
+          },
+          "date": "+29, Septembre-Novembre",
+          "lieu": "Béthanie en Pérée, au delà du Jourdain"
+        }
+      ],
+      "images": {
+        "carte2.jpg": "Carte 2"
+      }
+    },
+    {
+      "id": "galilee",
+      "number": 5,
+      "title": "Jésus en Galilée",
+      "sections": [
+        {
+          "id": "galilee-1",
+          "title": "J4: Jésus retourne en Galilée et appelle Philippe qui améne Nathanaël",
+          "refs": {
+            "jean": [
+              [
+                1,
+                43,
+                51
+              ]
+            ]
+          },
+          "date": "+29, Septembre-Novembre",
+          "lieu": "Béthanie en Pérée, au delà du Jourdain"
+        },
+        {
+          "id": "galilee-2",
+          "title": "J6: Noces de Cana",
+          "refs": {
+            "jean": [
+              [
+                2,
+                1,
+                11
+              ]
+            ]
+          },
+          "date": "+29, Septembre-Novembre",
+          "lieu": "Cana, Galilée",
+          "notes": [
+            "Les noces durent trois jours. Le miracle se réalise le troisième jour"
+          ]
+        },
+        {
+          "id": "galilee-3",
+          "title": "Jésus visite Capharnaüm",
+          "refs": {
+            "jean": [
+              [
+                2,
+                12,
+                12
+              ]
+            ]
+          },
+          "date": "+29, Novembre-Décembre",
+          "lieu": "Capharnaüm, Galilée"
+        }
+      ],
+      "images": {
+        "carte2.jpg": "Carte 2"
+      }
+    },
+    {
+      "id": "judee",
+      "number": 6,
+      "title": "Jésus et Jean le Baptiste en Judée",
+      "sections": [
+        {
+          "id": "judee-1",
+          "title": "Jésus va à Jérusalem pour la première Pâque de son ministère",
+          "refs": {
+            "jean": [
+              [
+                2,
+                13,
+                13
+              ]
+            ]
+          },
+          "date": "+30, Mars/Avril",
+          "lieu": "Jérusalem, Judée",
+          "notes": [
+            "Pessa'h, la Pâque juive, commémore la libération des esclaves israélites en Égypte antique"
+          ]
+        },
+        {
+          "id": "judee-2",
+          "title": "Il chasse les vendeurs et les changeurs du temple",
+          "refs": {
+            "jean": [
+              [
+                2,
+                14,
+                25
+              ]
+            ]
+          },
+          "date": "+30, Mars/Avril",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "judee-3",
+          "title": "Entretien de nuit avec Nicodème, pharisien",
+          "refs": {
+            "jean": [
+              [
+                3,
+                1,
+                21
+              ]
+            ]
+          },
+          "date": "+30, Avril",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "judee-4",
+          "title": "Jésus quitte Jérusalem mais reste en Judée et baptise",
+          "refs": {
+            "jean": [
+              [
+                3,
+                22,
+                22
+              ]
+            ]
+          },
+          "date": "+30, Avril-Octobre",
+          "lieu": "Judée"
+        },
+        {
+          "id": "judee-5",
+          "title": "Jean le Baptiste baptise à Aïnon (ou Ænon) ",
+          "refs": {
+            "jean": [
+              [
+                3,
+                23,
+                36
+              ]
+            ]
+          },
+          "date": "+30, Avril-Octobre",
+          "lieu": "[Aïnon, Judée](https://fr.wikipedia.org/wiki/A%C3%AFnon)"
+        },
+        {
+          "id": "judee-6",
+          "title": "Arrestation de Jean le Baptiste",
+          "refs": {
+            "luc": [
+              [
+                3,
+                19,
+                20
+              ]
+            ]
+          },
+          "date": "+30, Octobre"
+        },
+        {
+          "id": "judee-7",
+          "title": "Jésus quitte la Judée pour la Galilée",
+          "refs": {
+            "matthieu": [
+              [
+                4,
+                12,
+                12
+              ]
+            ],
+            "jean": [
+              [
+                4,
+                1,
+                3
+              ]
+            ]
+          },
+          "date": "+30, Novembre",
+          "lieu": "Judée"
+        },
+        {
+          "id": "judee-8",
+          "title": "Jésus passe par la Samarie : une femme de Sychar et plusieurs samaritains se convertissent",
+          "refs": {
+            "jean": [
+              [
+                4,
+                4,
+                42
+              ]
+            ]
+          },
+          "date": "+30, Décembre",
+          "lieu": "Sychar, Samarie"
+        }
+      ],
+      "images": {
+        "carte2.jpg": "Carte 2"
+      }
+    },
+    {
+      "id": "gallilee2",
+      "number": 7,
+      "title": "Jésus en Galilée",
+      "sections": [
+        {
+          "id": "gallilee2-1",
+          "title": "Commencement de son ministère public en Galilée",
+          "refs": {
+            "marc": [
+              [
+                1,
+                14,
+                15
+              ]
+            ],
+            "luc": [
+              [
+                4,
+                14,
+                30
+              ]
+            ],
+            "jean": [
+              [
+                4,
+                43,
+                45
+              ]
+            ]
+          },
+          "date": "+31, Janvier",
+          "lieu": "Galilée",
+          "notes": [
+            "Aprés que Jean eut été livré Marc 1:14"
+          ]
+        },
+        {
+          "id": "gallilee2-2",
+          "title": "Il s’établit à Capharnaüm où il enseigne",
+          "refs": {
+            "matthieu": [
+              [
+                4,
+                13,
+                17
+              ]
+            ],
+            "marc": [
+              [
+                1,
+                21,
+                22
+              ]
+            ],
+            "luc": [
+              [
+                4,
+                31,
+                32
+              ]
+            ]
+          },
+          "date": "+31, Janvier-Mars",
+          "lieu": "Capharnaüm, Galilée"
+        },
+        {
+          "id": "gallilee2-3",
+          "title": "La pêche miraculeuse ; l’appel de Simon, d’André, de Jacques et de Jean",
+          "refs": {
+            "matthieu": [
+              [
+                4,
+                18,
+                22
+              ]
+            ],
+            "marc": [
+              [
+                1,
+                16,
+                20
+              ]
+            ],
+            "luc": [
+              [
+                5,
+                1,
+                11
+              ]
+            ]
+          },
+          "date": "+31, Janvier-Mars",
+          "lieu": "Lac de Tibériade, près de Capharnaüm, Galilée"
+        },
+        {
+          "id": "gallilee2-4",
+          "title": "Jésus parcourt la Galilée avec ses disciples",
+          "refs": {
+            "matthieu": [
+              [
+                4,
+                23,
+                25
+              ]
+            ],
+            "marc": [
+              [
+                1,
+                35,
+                39
+              ]
+            ],
+            "luc": [
+              [
+                4,
+                42,
+                44
+              ]
+            ]
+          },
+          "date": "+31, Janvier-Mars",
+          "lieu": "Galilée"
+        },
+        {
+          "id": "gallilee2-5",
+          "title": "Jésus délivre un démoniaque",
+          "refs": {
+            "marc": [
+              [
+                1,
+                23,
+                28
+              ]
+            ],
+            "luc": [
+              [
+                4,
+                33,
+                37
+              ]
+            ]
+          },
+          "date": "+31, Janvier-Mars",
+          "lieu": "Galilée"
+        },
+        {
+          "id": "gallilee2-6",
+          "title": "Guérison de la belle-mère de Simon Pierre et d’autres malades",
+          "refs": {
+            "matthieu": [
+              [
+                8,
+                14,
+                17
+              ]
+            ],
+            "marc": [
+              [
+                1,
+                29,
+                34
+              ]
+            ],
+            "luc": [
+              [
+                4,
+                38,
+                41
+              ]
+            ]
+          },
+          "date": "+31, Janvier-Mars",
+          "lieu": "Capharnaüm, Galilée"
+        },
+        {
+          "id": "gallilee2-7",
+          "title": "Il visite Cana et guérit le fils d’un noble de Capharnaüm",
+          "refs": {
+            "jean": [
+              [
+                4,
+                46,
+                54
+              ]
+            ]
+          },
+          "date": "+31, Janvier-Mars",
+          "lieu": "Capharnaüm, Galilée"
+        },
+        {
+          "id": "gallilee2-8",
+          "title": "Il guérit un lépreux et fuyant la popularité, se retire au désert",
+          "refs": {
+            "matthieu": [
+              [
+                8,
+                1,
+                4
+              ]
+            ],
+            "marc": [
+              [
+                1,
+                40,
+                45
+              ]
+            ],
+            "luc": [
+              [
+                5,
+                12,
+                16
+              ]
+            ]
+          },
+          "date": "+31, Mars-Avril"
+        },
+        {
+          "id": "gallilee2-9",
+          "title": "De retour à Capharnaüm, il guérit un paralytique qui lui est amené et descendu par le toit",
+          "refs": {
+            "matthieu": [
+              [
+                9,
+                2,
+                8
+              ]
+            ],
+            "marc": [
+              [
+                2,
+                1,
+                12
+              ]
+            ],
+            "luc": [
+              [
+                5,
+                17,
+                26
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Capharnaüm, Galilée"
+        },
+        {
+          "id": "gallilee2-10",
+          "title": "L’appel de Matthieu, le festin et le discours dans sa maison — l’habit neuf et le vin nouveau",
+          "refs": {
+            "matthieu": [
+              [
+                9,
+                9,
+                13
+              ]
+            ],
+            "marc": [
+              [
+                2,
+                13,
+                17
+              ]
+            ],
+            "luc": [
+              [
+                5,
+                27,
+                32
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Capharnaüm, Galilée"
+        },
+        {
+          "id": "gallilee2-11",
+          "title": "Réponse à ceux qui l’interrogent sur le jeûne",
+          "refs": {
+            "matthieu": [
+              [
+                9,
+                14,
+                17
+              ]
+            ],
+            "marc": [
+              [
+                2,
+                18,
+                22
+              ]
+            ],
+            "luc": [
+              [
+                5,
+                33,
+                39
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Capharnaüm, Galilée"
+        },
+        {
+          "id": "gallilee2-12",
+          "title": "Passant par les champs, les disciples cueillent des épis le jour du sabbat",
+          "refs": {
+            "matthieu": [
+              [
+                12,
+                1,
+                8
+              ]
+            ],
+            "marc": [
+              [
+                2,
+                23,
+                28
+              ]
+            ],
+            "luc": [
+              [
+                6,
+                1,
+                5
+              ]
+            ]
+          },
+          "date": "+31, Avril-Mai"
+        },
+        {
+          "id": "gallilee2-13",
+          "title": "Jésus guérit un homme qui avait la main sèche ; les pharisiens et les hérodiens complotent contre Lui",
+          "refs": {
+            "matthieu": [
+              [
+                12,
+                9,
+                14
+              ]
+            ],
+            "marc": [
+              [
+                3,
+                1,
+                6
+              ]
+            ],
+            "luc": [
+              [
+                6,
+                6,
+                11
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Galilée"
+        },
+        {
+          "id": "gallilee2-14",
+          "title": "Il se retire près du lac et guérit plusieurs personnes",
+          "refs": {
+            "matthieu": [
+              [
+                12,
+                15,
+                21
+              ]
+            ],
+            "marc": [
+              [
+                3,
+                7,
+                12
+              ]
+            ],
+            "luc": [
+              [
+                6,
+                17,
+                19
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Lac de Tibériade, Galilée"
+        },
+        {
+          "id": "gallilee2-15",
+          "title": "Jésus choisit et nomme les douze apôtres",
+          "refs": {
+            "marc": [
+              [
+                3,
+                13,
+                19
+              ]
+            ],
+            "luc": [
+              [
+                6,
+                12,
+                16
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Galilée"
+        },
+        {
+          "id": "gallilee2-16",
+          "title": "Le sermon sur la montagne",
+          "refs": {
+            "matthieu": [
+              [
+                5,
+                1,
+                48
+              ],
+              [
+                6,
+                1,
+                34
+              ],
+              [
+                7,
+                1,
+                29
+              ],
+              [
+                8,
+                1,
+                1
+              ]
+            ],
+            "luc": [
+              [
+                6,
+                20,
+                49
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Près de Capharnaüm, Galilée"
+        },
+        {
+          "id": "gallilee2-17",
+          "title": "Guérison de l’esclave d’un centurion à Capharnaüm.",
+          "refs": {
+            "matthieu": [
+              [
+                8,
+                5,
+                13
+              ]
+            ],
+            "luc": [
+              [
+                7,
+                1,
+                10
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Capharnaüm, Galilée"
+        },
+        {
+          "id": "gallilee2-18",
+          "title": "Résurrection du fils d'une veuve",
+          "refs": {
+            "luc": [
+              [
+                7,
+                11,
+                17
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Naïn, Galilée",
+          "images": {
+            "nain.jpg": "Nain"
+          }
+        },
+        {
+          "id": "gallilee2-19",
+          "title": "Message de Jean-Baptiste à Jésus ; principe de changement de dispensation",
+          "refs": {
+            "matthieu": [
+              [
+                11,
+                2,
+                19
+              ]
+            ],
+            "luc": [
+              [
+                7,
+                18,
+                35
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Tibériade (Naïn ou environs), Galilée"
+        },
+        {
+          "id": "gallilee2-20",
+          "title": "Reproches de Jésus à Chorazim, Bethsaïda, Capharnaüm et Il invite les âmes chargées",
+          "refs": {
+            "matthieu": [
+              [
+                11,
+                20,
+                30
+              ]
+            ]
+          },
+          "date": "+31"
+        },
+        {
+          "id": "gallilee2-21",
+          "title": "La pécheresse pardonnée oint les pieds de Jésus chez Simon le pharisien",
+          "refs": {
+            "luc": [
+              [
+                7,
+                36,
+                50
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Tibériade (Naïn ou environs), Galilée"
+        },
+        {
+          "id": "gallilee2-22",
+          "title": "Il prêche de village en village en Galilée avec les 12 et des femmes pieuses",
+          "refs": {
+            "luc": [
+              [
+                8,
+                1,
+                3
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Galilée"
+        },
+        {
+          "id": "gallilee2-23",
+          "title": "De retour à Capharnaüm, Il guérit un démoniaque aveugle et muet ; les pharisiens attribuent ce miracle à Béelzébul, blasphèment contre le Saint Esprit",
+          "refs": {
+            "matthieu": [
+              [
+                12,
+                22,
+                37
+              ]
+            ],
+            "marc": [
+              [
+                3,
+                22,
+                30
+              ]
+            ],
+            "luc": [
+              [
+                11,
+                14,
+                15
+              ],
+              [
+                11,
+                17,
+                23
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Capharnaüm, Galilée"
+        },
+        {
+          "id": "gallilee2-24",
+          "title": "Recherche d’un signe de sa part",
+          "refs": {
+            "matthieu": [
+              [
+                12,
+                38,
+                45
+              ]
+            ],
+            "luc": [
+              [
+                11,
+                16,
+                16
+              ],
+              [
+                11,
+                24,
+                36
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Galilée"
+        },
+        {
+          "id": "gallilee2-25",
+          "title": "Sa mère et ses frères le cherchent",
+          "refs": {
+            "matthieu": [
+              [
+                12,
+                46,
+                50
+              ]
+            ],
+            "marc": [
+              [
+                3,
+                20,
+                21
+              ],
+              [
+                3,
+                31,
+                35
+              ]
+            ],
+            "luc": [
+              [
+                8,
+                19,
+                21
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Galilée"
+        },
+        {
+          "id": "gallilee2-26",
+          "title": "D’une barque Il énonce 7 paraboles",
+          "refs": {
+            "matthieu": [
+              [
+                13,
+                1,
+                53
+              ]
+            ],
+            "marc": [
+              [
+                4,
+                1,
+                34
+              ]
+            ],
+            "luc": [
+              [
+                8,
+                4,
+                18
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Galilée"
+        },
+        {
+          "id": "gallilee2-27",
+          "title": "Jésus traverse le lac avec ses disciples et apaise la tempête",
+          "refs": {
+            "matthieu": [
+              [
+                8,
+                18,
+                27
+              ]
+            ],
+            "marc": [
+              [
+                4,
+                35,
+                41
+              ]
+            ],
+            "luc": [
+              [
+                8,
+                22,
+                25
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Lac de Tibériade, Galilée"
+        },
+        {
+          "id": "gallilee2-28",
+          "title": "Guérison de deux démoniaques",
+          "refs": {
+            "matthieu": [
+              [
+                8,
+                28,
+                34
+              ]
+            ],
+            "marc": [
+              [
+                5,
+                1,
+                20
+              ]
+            ],
+            "luc": [
+              [
+                8,
+                26,
+                40
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Gadara, Galilée"
+        },
+        {
+          "id": "gallilee2-29",
+          "title": "Retournant à l’ouest du lac, Il ressuscite la fille de Jaïrus et guérit une femme qui avait une perte de sang",
+          "refs": {
+            "matthieu": [
+              [
+                9,
+                1,
+                1
+              ],
+              [
+                9,
+                18,
+                26
+              ]
+            ],
+            "marc": [
+              [
+                5,
+                21,
+                43
+              ]
+            ],
+            "luc": [
+              [
+                8,
+                41,
+                56
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Capharnaüm?, Galilée"
+        },
+        {
+          "id": "gallilee2-30",
+          "title": "Il guérit deux aveugles et chasse un démon",
+          "refs": {
+            "matthieu": [
+              [
+                9,
+                27,
+                34
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Capharnaüm?, Galilée"
+        },
+        {
+          "id": "gallilee2-31",
+          "title": "Jésus revisite Nazareth ; incrédulité des habitants",
+          "refs": {
+            "matthieu": [
+              [
+                13,
+                54,
+                58
+              ]
+            ],
+            "marc": [
+              [
+                6,
+                1,
+                6
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Nazareth, Galilée"
+        },
+        {
+          "id": "gallilee2-32",
+          "title": "Enseigne en Galilée",
+          "refs": {
+            "matthieu": [
+              [
+                9,
+                35,
+                38
+              ]
+            ],
+            "marc": [
+              [
+                6,
+                6,
+                6
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Galilée"
+        },
+        {
+          "id": "gallilee2-33",
+          "title": "Envoi des 12 disciples en mission",
+          "refs": {
+            "matthieu": [
+              [
+                10,
+                1,
+                42
+              ],
+              [
+                11,
+                1,
+                1
+              ]
+            ],
+            "marc": [
+              [
+                6,
+                7,
+                13
+              ]
+            ],
+            "luc": [
+              [
+                9,
+                1,
+                6
+              ]
+            ]
+          },
+          "date": "+31",
+          "lieu": "Galilée"
+        }
+      ],
+      "images": {
+        "carte3.jpg": "Carte 3"
+      }
+    },
+    {
+      "id": "jerusalem",
+      "number": 8,
+      "title": "Jérusalem",
+      "sections": [
+        {
+          "id": "jerusalem-1",
+          "title": "Retour à Jérusalem pour la fête des Tabernacles. Il guérit un paralytique un jour de sabbat. Les pharisiens cherchent à le faire mourir",
+          "refs": {
+            "jean": [
+              [
+                5,
+                1,
+                47
+              ]
+            ]
+          },
+          "date": "+31, Septembre-Octobre",
+          "lieu": "Jérusalem, Judée",
+          "notes": [
+            "La fête des tabernacles est célébrée chaque année après le Grand Pardon, pendant laquelle les Juifs habitent des cabanes de branchages qui commémorent la traversée du désert sous la protection de Dieu."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "galilee3",
+      "number": 9,
+      "title": "Galilée",
+      "sections": [
+        {
+          "id": "galilee3-1",
+          "title": "Execution de Jean le Baptiste",
+          "refs": {
+            "matthieu": [
+              [
+                14,
+                1,
+                12
+              ]
+            ],
+            "marc": [
+              [
+                6,
+                14,
+                29
+              ]
+            ],
+            "luc": [
+              [
+                3,
+                19,
+                20
+              ],
+              [
+                9,
+                7,
+                9
+              ]
+            ]
+          },
+          "date": "+32, Décembre/Janvier",
+          "lieu": "Tibériade, Galilée"
+        },
+        {
+          "id": "galilee3-2",
+          "title": "Retour des 12 ; Jésus se retire à l’autre rive et nourrit une foule de 5000 hommes plus les femmes et les enfants",
+          "refs": {
+            "matthieu": [
+              [
+                14,
+                13,
+                21
+              ]
+            ],
+            "marc": [
+              [
+                6,
+                30,
+                44
+              ]
+            ],
+            "luc": [
+              [
+                9,
+                10,
+                17
+              ]
+            ],
+            "jean": [
+              [
+                6,
+                1,
+                15
+              ]
+            ]
+          },
+          "date": "+32, Mars/Avril, vers la Pâque",
+          "lieu": "Capharnaüm?, rive NE de le Lac de Tibériade, Galilée"
+        },
+        {
+          "id": "galilee3-3",
+          "title": "Envoi des disciples à Bethsaïda, de l’autre côté du lac, et de nuit Jésus vient à eux marchant sur l’eau",
+          "refs": {
+            "matthieu": [
+              [
+                14,
+                22,
+                33
+              ]
+            ],
+            "marc": [
+              [
+                6,
+                45,
+                54
+              ]
+            ],
+            "jean": [
+              [
+                6,
+                16,
+                21
+              ]
+            ]
+          },
+          "date": "+32, Avril/Mai, vers la Pâque",
+          "lieu": "Galilée"
+        },
+        {
+          "id": "galilee3-4",
+          "title": "La multitude nourrie miraculeusement cherche et trouve Jésus à Capharnaüm ; discours dans la synagogue et confession de Pierre",
+          "refs": {
+            "jean": [
+              [
+                6,
+                22,
+                71
+              ]
+            ]
+          },
+          "date": "+32, Avril/Mai, vers la Pâque",
+          "lieu": "Capharnaüm, Galilée"
+        },
+        {
+          "id": "galilee3-5",
+          "title": "Plusieurs guérisons dans la plaine de Génézareth",
+          "refs": {
+            "matthieu": [
+              [
+                14,
+                34,
+                36
+              ]
+            ],
+            "marc": [
+              [
+                6,
+                55,
+                56
+              ]
+            ]
+          },
+          "date": "+32, Avril/Mai, vers la Pâque",
+          "lieu": "Génézareth, Galilée",
+          "images": {
+            "Génézareth.png": "Emplacement de Génézareth",
+            "vue_de_génézareth.jpg": "Vue du lac depuis Génézareth"
+          }
+        },
+        {
+          "id": "galilee3-6",
+          "title": "Les pharisiens et la tradition",
+          "refs": {
+            "matthieu": [
+              [
+                15,
+                1,
+                20
+              ]
+            ],
+            "marc": [
+              [
+                7,
+                1,
+                23
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Capharnaüm ?, Galilée"
+        },
+        {
+          "id": "galilee3-7",
+          "title": "Jésus se dirige vers Tyr et Sidon ; guérison de la fille de la femme cananéenne",
+          "refs": {
+            "matthieu": [
+              [
+                15,
+                21,
+                28
+              ]
+            ],
+            "marc": [
+              [
+                7,
+                24,
+                30
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Phénicie, Décapole"
+        },
+        {
+          "id": "galilee3-8",
+          "title": "Retour par la Décapole vers le Lac de Tibériade ; nombreuses guérisons ; multiplication des pains à une foule d’au moins 4000 hommes",
+          "refs": {
+            "matthieu": [
+              [
+                15,
+                29,
+                38
+              ]
+            ],
+            "marc": [
+              [
+                7,
+                31,
+                37
+              ],
+              [
+                8,
+                1,
+                9
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Phénicie, Décapole"
+        },
+        {
+          "id": "galilee3-9",
+          "title": "Jésus se rend à Dalmanutha",
+          "refs": {
+            "matthieu": [
+              [
+                15,
+                39,
+                39
+              ]
+            ],
+            "marc": [
+              [
+                8,
+                10,
+                10
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "[Magdala (Magadân)](https://fr.wikipedia.org/wiki/Magdala_(Isra%C3%ABl)), Galilée"
+        },
+        {
+          "id": "galilee3-10",
+          "title": "Pharisiens et sadducéens cherchent un signe",
+          "refs": {
+            "matthieu": [
+              [
+                16,
+                1,
+                4
+              ]
+            ],
+            "marc": [
+              [
+                8,
+                11,
+                12
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "[Magdala (Magadân)](https://fr.wikipedia.org/wiki/Magdala_(Isra%C3%ABl)), Galilée"
+        },
+        {
+          "id": "galilee3-11",
+          "title": "Quitte pharisiens et sadducéens jugés ; les 12 lents de cœur",
+          "refs": {
+            "matthieu": [
+              [
+                16,
+                5,
+                12
+              ]
+            ],
+            "marc": [
+              [
+                8,
+                13,
+                21
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Lac de Tibériade, Galilée"
+        },
+        {
+          "id": "galilee3-12",
+          "title": "Guérison d’un aveugle",
+          "refs": {
+            "marc": [
+              [
+                8,
+                22,
+                26
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Bethsaïde, Galilée",
+          "images": {
+            "carte4.jpg": "Carte 4"
+          }
+        },
+        {
+          "id": "galilee3-13",
+          "title": "Jésus sur le territoire de Césarée de Philippe ; la confession de Pierre",
+          "refs": {
+            "matthieu": [
+              [
+                16,
+                13,
+                20
+              ]
+            ],
+            "marc": [
+              [
+                8,
+                27,
+                30
+              ]
+            ],
+            "luc": [
+              [
+                9,
+                18,
+                21
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Césarée de Philippe, Galilée"
+        },
+        {
+          "id": "galilee3-14",
+          "title": "Annonce Sa mort et Sa résurrection ; Pierre réprimandé",
+          "refs": {
+            "matthieu": [
+              [
+                16,
+                21,
+                28
+              ]
+            ],
+            "marc": [
+              [
+                8,
+                31,
+                38
+              ],
+              [
+                9,
+                1,
+                1
+              ]
+            ],
+            "luc": [
+              [
+                9,
+                22,
+                27
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Région de Césarée de Philippe, Galilée"
+        },
+        {
+          "id": "galilee3-15",
+          "title": "La transfiguration",
+          "refs": {
+            "matthieu": [
+              [
+                17,
+                1,
+                13
+              ]
+            ],
+            "marc": [
+              [
+                9,
+                2,
+                13
+              ]
+            ],
+            "luc": [
+              [
+                9,
+                28,
+                36
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Mont Hermon?, Syrie"
+        },
+        {
+          "id": "galilee3-16",
+          "title": "Le lendemain il chasse un démon",
+          "refs": {
+            "matthieu": [
+              [
+                17,
+                14,
+                21
+              ]
+            ],
+            "marc": [
+              [
+                9,
+                14,
+                29
+              ]
+            ],
+            "luc": [
+              [
+                9,
+                37,
+                43
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Région de Césarée de Philippe, Galilée"
+        },
+        {
+          "id": "galilee3-17",
+          "title": "Jésus annonce à nouveau sa mort et sa résurrection",
+          "refs": {
+            "matthieu": [
+              [
+                17,
+                22,
+                23
+              ]
+            ],
+            "marc": [
+              [
+                9,
+                30,
+                32
+              ]
+            ],
+            "luc": [
+              [
+                9,
+                44,
+                45
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Galilée"
+        },
+        {
+          "id": "galilee3-18",
+          "title": "Tribut payé miraculeusement",
+          "refs": {
+            "matthieu": [
+              [
+                17,
+                24,
+                27
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Capharnaüm, Galilée"
+        },
+        {
+          "id": "galilee3-19",
+          "title": "Les petits enfants un modèle — Les offenses",
+          "refs": {
+            "matthieu": [
+              [
+                18,
+                1,
+                11
+              ]
+            ],
+            "marc": [
+              [
+                9,
+                33,
+                48
+              ]
+            ],
+            "luc": [
+              [
+                9,
+                46,
+                48
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Capharnaüm, Galilée"
+        },
+        {
+          "id": "galilee3-20",
+          "title": "La brebis égarée",
+          "refs": {
+            "matthieu": [
+              [
+                18,
+                12,
+                14
+              ]
+            ],
+            "luc": [
+              [
+                15,
+                4,
+                7
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Capharnaüm, Galilée"
+        },
+        {
+          "id": "galilee3-21",
+          "title": "Parabole du débiteur et pardon",
+          "refs": {
+            "matthieu": [
+              [
+                18,
+                15,
+                35
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Capharnaüm, Galilée"
+        },
+        {
+          "id": "galilee3-22",
+          "title": "Chacun salé de feu",
+          "refs": {
+            "marc": [
+              [
+                9,
+                49,
+                51
+              ]
+            ]
+          }
+        },
+        {
+          "id": "galilee3-23",
+          "title": "Celui qui n’est pas contre vous est pour vous",
+          "refs": {
+            "luc": [
+              [
+                9,
+                49,
+                50
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Capharnaüm, Galilée"
+        },
+        {
+          "id": "galilee3-24",
+          "title": "Départ de la Galilée pour Jérusalem par la Samarie ; Il vient pour sauver et non pour détruire",
+          "refs": {
+            "luc": [
+              [
+                9,
+                51,
+                56
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Galilée -> Samarie"
+        },
+        {
+          "id": "galilee3-25",
+          "title": "Aucun lieu pour reposer sa tête — Laisser les morts ensevelir les morts — Ne pas regarder en arrière",
+          "refs": {
+            "luc": [
+              [
+                9,
+                57,
+                62
+              ]
+            ]
+          },
+          "date": "+32, après la Pâque",
+          "lieu": "Galilée -> Samarie"
+        },
+        {
+          "id": "galilee3-26",
+          "title": "Envoi des 70 — Jugement sur Chorazin, Tyr, Bethsaïda, Sidon — Celui qui méprise Christ méprise Celui qui L’a envoyé",
+          "refs": {
+            "luc": [
+              [
+                10,
+                1,
+                16
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-27",
+          "title": "Retour des 70 — Meilleure part, leurs noms sont écrits dans les cieux — Toutes choses livrées au Fils, bienheureux leurs yeux qui voient ce qu’ils voient",
+          "refs": {
+            "luc": [
+              [
+                10,
+                17,
+                24
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-28",
+          "title": "Question d’un docteur de la loi sur la vie éternelle — Histoire du Bon Samaritain",
+          "refs": {
+            "luc": [
+              [
+                10,
+                25,
+                37
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Béthanie, Judée"
+        },
+        {
+          "id": "galilee3-29",
+          "title": "Jésus visite Marthe et Marie à Béthanie — Marie écoute Sa parole, Marthe sert",
+          "refs": {
+            "luc": [
+              [
+                10,
+                38,
+                42
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Béthanie, Judée"
+        },
+        {
+          "id": "galilee3-30",
+          "title": "Il enseigne ses disciples à prier",
+          "refs": {
+            "luc": [
+              [
+                11,
+                1,
+                13
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-31",
+          "title": "Guérison d’un démoniaque muet — Blasphème contre le Saint Esprit — L’esprit immonde sorti — prend 7 autres de plus",
+          "refs": {
+            "luc": [
+              [
+                11,
+                14,
+                26
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-32",
+          "title": "Réception de la parole meilleure que la relation naturelle — Jugement de la génération par Jonas, Ninive, la reine de Shéba",
+          "refs": {
+            "luc": [
+              [
+                11,
+                27,
+                32
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-33",
+          "title": "Lumière sur le pied de lampe — Mais quel est l’œil qui la reçoit ?",
+          "refs": {
+            "luc": [
+              [
+                11,
+                33,
+                36
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-34",
+          "title": "Jugement des pharisiens, docteurs de la loi — Scribes Le pressent",
+          "refs": {
+            "luc": [
+              [
+                11,
+                37,
+                54
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-35",
+          "title": "Discours — Dieu doit être craint non pas l’homme — Toute chose sera connue",
+          "refs": {
+            "luc": [
+              [
+                12,
+                1,
+                7
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-36",
+          "title": "Disciples parlent par l’Esprit Saint — Parler contre l’Esprit Saint ne sera pas pardonné",
+          "refs": {
+            "luc": [
+              [
+                12,
+                8,
+                12
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-37",
+          "title": "Ne pas juger un conflit terrestre, fuir la convoitise, on n’est pas maître de sa vie",
+          "refs": {
+            "luc": [
+              [
+                12,
+                13,
+                21
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-38",
+          "title": "Ne pas être en souci, Dieu leur Père prend soin des disciples car ils Lui sont précieux — Le bon plaisir du Père est de leur donner le royaume",
+          "refs": {
+            "luc": [
+              [
+                12,
+                22,
+                34
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-39",
+          "title": "Attendre leur Seigneur jusqu’à ce qu’Il vienne ; alors l’amour du Christ les servira",
+          "refs": {
+            "luc": [
+              [
+                12,
+                35,
+                40
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-40",
+          "title": "Les serviteurs fidèles établis sur tous les biens du maître — Les infidèles jugés selon la connaissance de Sa volonté",
+          "refs": {
+            "luc": [
+              [
+                12,
+                41,
+                48
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-41",
+          "title": "Il n’apporte pas la paix ; discerner les temps ; se mettre d’accord avec la partie adverse de peur d’aller en prison",
+          "refs": {
+            "luc": [
+              [
+                12,
+                49,
+                59
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-42",
+          "title": "Ils doivent tous se repentir, ou bien seront détruits ; la patience de Dieu vis-à-vis de Son figuier est terminée",
+          "refs": {
+            "luc": [
+              [
+                13,
+                1,
+                9
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-43",
+          "title": "Guérison d’une femme infirme ; Il agit en grâce en Israël un jour de sabbat malgré l’hypocrisie",
+          "refs": {
+            "luc": [
+              [
+                13,
+                10,
+                17
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-44",
+          "title": "Royaume de Dieu semblable à un grain de moutarde, à du levain",
+          "refs": {
+            "luc": [
+              [
+                13,
+                18,
+                21
+              ]
+            ]
+          },
+          "date": "+32, fête des Tabernacles",
+          "lieu": "Judée"
+        },
+        {
+          "id": "galilee3-45",
+          "title": "Nombre des sauvés ; la nation rejette la porte étroite ; les derniers seront les premiers, les premiers, les derniers",
+          "refs": {
+            "luc": [
+              [
+                13,
+                22,
+                30
+              ]
+            ]
+          },
+          "date": "+32, après la fête de l’Inauguration",
+          "lieu": "Pérée"
+        },
+        {
+          "id": "galilee3-46",
+          "title": "Malgré les complots pour se débarrasser de Lui en Galilée Il doit mourir à Jérusalem au temps de Dieu quand Son œuvre sera faite",
+          "refs": {
+            "luc": [
+              [
+                13,
+                31,
+                33
+              ]
+            ]
+          },
+          "date": "+32, après la fête de l’Inauguration",
+          "lieu": "Pérée"
+        },
+        {
+          "id": "galilee3-47",
+          "title": "Plainte sur Jérusalem",
+          "refs": {
+            "luc": [
+              [
+                13,
+                34,
+                35
+              ]
+            ]
+          },
+          "date": "+32, après la fête de l’Inauguration",
+          "lieu": "Pérée"
+        },
+        {
+          "id": "galilee3-48",
+          "title": "Guérison d’un hydropique. Dieu doit être bon et travaille même un jour de sabbat",
+          "refs": {
+            "luc": [
+              [
+                14,
+                1,
+                6
+              ]
+            ]
+          },
+          "date": "+32, après la fête de l’Inauguration",
+          "lieu": "Pérée"
+        },
+        {
+          "id": "galilee3-49",
+          "title": "Paraboles des conviés — La grâce prend la dernière place et s’occupe de ceux qui ne peuvent pas rendre — Récompense en résurrection",
+          "refs": {
+            "luc": [
+              [
+                14,
+                7,
+                14
+              ]
+            ]
+          },
+          "date": "+32, après la fête de l’Inauguration",
+          "lieu": "Pérée"
+        },
+        {
+          "id": "galilee3-50",
+          "title": "Invitation au grand souper (caractère du Royaume) rejetée ; aller dans les rues puis dans les chemins ; les conviés sont rejetés",
+          "refs": {
+            "luc": [
+              [
+                14,
+                15,
+                24
+              ]
+            ]
+          },
+          "date": "+32, après la fête de l’Inauguration",
+          "lieu": "Pérée"
+        },
+        {
+          "id": "galilee3-51",
+          "title": "Renoncer aux relations et à la vie pour être Ses disciples ; calculer la dépense ; le sel doit garder sa saveur",
+          "refs": {
+            "luc": [
+              [
+                14,
+                25,
+                35
+              ]
+            ]
+          },
+          "date": "+32, après la fête de l’Inauguration",
+          "lieu": "Pérée"
+        },
+        {
+          "id": "galilee3-52",
+          "title": "Paraboles de la brebis égarée, de la drachme perdue et de l’enfant prodigue aux publicains — La grâce qui cherche, la grâce qui reçoit",
+          "refs": {
+            "luc": [
+              [
+                15,
+                1,
+                32
+              ]
+            ]
+          },
+          "date": "+32, après la fête de l’Inauguration",
+          "lieu": "Pérée"
+        },
+        {
+          "id": "galilee3-53",
+          "title": "La grâce compte sur le futur en vue des choses présentes — Parabole de l’économe injuste",
+          "refs": {
+            "luc": [
+              [
+                16,
+                1,
+                18
+              ]
+            ]
+          },
+          "date": "+32, après la fête de l’Inauguration",
+          "lieu": "Pérée"
+        },
+        {
+          "id": "galilee3-54",
+          "title": "Les choses futures manifestées en contraste avec les choses présentes — Parabole du mauvais riche et de Lazare. Les juifs n’écouteront pas même si quelqu’un ressuscitait d’entre les morts",
+          "refs": {
+            "luc": [
+              [
+                16,
+                19,
+                31
+              ]
+            ]
+          },
+          "date": "+32, après la fête de l’Inauguration",
+          "lieu": "Pérée"
+        },
+        {
+          "id": "galilee3-55",
+          "title": "Offenses ; puissance de la foi ; serviteurs infidèles",
+          "refs": {
+            "luc": [
+              [
+                17,
+                1,
+                10
+              ]
+            ]
+          },
+          "date": "+32, après la fête de l’Inauguration",
+          "lieu": "Pérée"
+        }
+      ]
+    },
+    {
+      "id": "samarie2",
+      "number": 10,
+      "title": "Samarie",
+      "sections": [
+        {
+          "id": "samarie2-1",
+          "title": "Guérison de 10 lépreux sur la frontière samaritaine",
+          "refs": {
+            "luc": [
+              [
+                17,
+                11,
+                19
+              ]
+            ]
+          },
+          "date": "+32, après la fête de l’Inauguration",
+          "lieu": "Samarie"
+        },
+        {
+          "id": "samarie2-2",
+          "title": "Parabole du juge inique",
+          "refs": {
+            "luc": [
+              [
+                17,
+                20,
+                37
+              ],
+              [
+                18,
+                1,
+                8
+              ]
+            ]
+          },
+          "date": "+32, après la fête de l’Inauguration",
+          "lieu": "Samarie"
+        },
+        {
+          "id": "samarie2-3",
+          "title": "Parabole du pharisien et du publicain",
+          "refs": {
+            "luc": [
+              [
+                18,
+                9,
+                14
+              ]
+            ]
+          },
+          "date": "+32, après la fête de l’Inauguration",
+          "lieu": "Samarie"
+        }
+      ],
+      "date": "+32 Août/Septembre"
+    },
+    {
+      "id": "judee",
+      "number": 11,
+      "title": "Judée",
+      "sections": [
+        {
+          "id": "judee-1",
+          "title": "Voyage de Jésus pour la fête des Tabernacles",
+          "refs": {
+            "jean": [
+              [
+                7,
+                1,
+                10
+              ]
+            ]
+          },
+          "date": "+32 Septembre/Octobre",
+          "lieu": "Judée"
+        },
+        {
+          "id": "judee-2",
+          "title": "Jésus quitte la fête et enseigne dans le temple",
+          "refs": {
+            "jean": [
+              [
+                7,
+                11,
+                14
+              ]
+            ]
+          },
+          "date": "+32",
+          "lieu": "Judée"
+        },
+        {
+          "id": "judee-3",
+          "title": "Projets d’arrestation",
+          "refs": {
+            "jean": [
+              [
+                7,
+                15,
+                53
+              ]
+            ]
+          },
+          "date": "+32",
+          "lieu": "Judée"
+        },
+        {
+          "id": "judee-4",
+          "title": "Femme adultère",
+          "refs": {
+            "jean": [
+              [
+                8,
+                1,
+                11
+              ]
+            ]
+          },
+          "date": "+32",
+          "lieu": "Judée"
+        },
+        {
+          "id": "judee-5",
+          "title": "Jésus au temple se déclare la lumière du monde ; les Juifs cherchent à le lapider",
+          "refs": {
+            "jean": [
+              [
+                8,
+                12,
+                59
+              ]
+            ]
+          },
+          "date": "+32",
+          "lieu": "Judée"
+        },
+        {
+          "id": "judee-6",
+          "title": "Guérison d’un aveugle-né",
+          "refs": {
+            "jean": [
+              [
+                9,
+                1,
+                41
+              ]
+            ]
+          },
+          "date": "+32",
+          "lieu": "Judée"
+        },
+        {
+          "id": "judee-7",
+          "title": "Les pharisiens questionnent Jésus sur le divorce",
+          "refs": {
+            "matthieu": [
+              [
+                19,
+                1,
+                12
+              ]
+            ],
+            "marc": [
+              [
+                10,
+                1,
+                12
+              ]
+            ]
+          },
+          "date": "+32",
+          "lieu": "Pérée"
+        },
+        {
+          "id": "judee-8",
+          "title": "Les parents amènent leurs enfants à Jésus",
+          "refs": {
+            "matthieu": [
+              [
+                19,
+                13,
+                15
+              ]
+            ],
+            "marc": [
+              [
+                10,
+                13,
+                16
+              ]
+            ],
+            "luc": [
+              [
+                18,
+                15,
+                17
+              ]
+            ]
+          },
+          "date": "+32",
+          "lieu": "Pérée"
+        },
+        {
+          "id": "judee-9",
+          "title": "Le jeune homme riche ; danger des richesses ; l’œuvre de salut est de Dieu et est impossible à l’homme ; tout quitter pour suivre Jésus",
+          "refs": {
+            "matthieu": [
+              [
+                19,
+                16,
+                30
+              ]
+            ],
+            "marc": [
+              [
+                10,
+                17,
+                31
+              ]
+            ],
+            "luc": [
+              [
+                18,
+                18,
+                30
+              ]
+            ]
+          },
+          "date": "+32",
+          "lieu": "Pérée"
+        },
+        {
+          "id": "judee-10",
+          "title": "Parabole des ouvriers de la vigne",
+          "refs": {
+            "matthieu": [
+              [
+                20,
+                1,
+                16
+              ]
+            ]
+          },
+          "date": "+32",
+          "lieu": "Pérée"
+        },
+        {
+          "id": "judee-11",
+          "title": "Jésus annonce pour la 3ème fois Sa mort et Sa résurrection",
+          "refs": {
+            "matthieu": [
+              [
+                20,
+                17,
+                19
+              ]
+            ],
+            "marc": [
+              [
+                10,
+                32,
+                34
+              ]
+            ],
+            "luc": [
+              [
+                18,
+                31,
+                34
+              ]
+            ]
+          },
+          "date": "+32",
+          "lieu": "Pérée?"
+        },
+        {
+          "id": "judee-12",
+          "title": "Demande des fils de Zébédée ; la place dans le royaume est pour ceux pour lesquels le Père l’a préparée ; la place d’abaissement des disciples",
+          "refs": {
+            "matthieu": [
+              [
+                20,
+                20,
+                28
+              ]
+            ],
+            "marc": [
+              [
+                10,
+                35,
+                45
+              ]
+            ]
+          },
+          "date": "+32",
+          "lieu": "Pérée?"
+        },
+        {
+          "id": "judee-13",
+          "title": "Guérison de 2 aveugles près de Jéricho ; Fils de David",
+          "refs": {
+            "matthieu": [
+              [
+                20,
+                29,
+                34
+              ]
+            ],
+            "marc": [
+              [
+                10,
+                46,
+                52
+              ]
+            ],
+            "luc": [
+              [
+                18,
+                35,
+                43
+              ],
+              [
+                19,
+                1,
+                1
+              ]
+            ]
+          },
+          "date": "+32",
+          "lieu": "Jéricho"
+        },
+        {
+          "id": "judee-14",
+          "title": "Le publicain Zachée",
+          "refs": {
+            "luc": [
+              [
+                19,
+                2,
+                10
+              ]
+            ]
+          },
+          "date": "+32",
+          "lieu": "Jéricho"
+        },
+        {
+          "id": "judee-15",
+          "title": "Parabole des 10 mines ; l’homme noble s’en va pour recevoir un royaume et au retour juge ses ennemis",
+          "refs": {
+            "luc": [
+              [
+                19,
+                11,
+                27
+              ]
+            ]
+          },
+          "date": "+32",
+          "lieu": "Jéricho"
+        },
+        {
+          "id": "judee-16",
+          "title": "Parabole du Bon Berger",
+          "refs": {
+            "jean": [
+              [
+                10,
+                1,
+                21
+              ]
+            ]
+          },
+          "date": "+32"
+        },
+        {
+          "id": "judee-17",
+          "title": "Jésus, à Jérusalem, pendant la fête de la Dédicace, déclare Son Unité avec le Père ; pour la 3ème fois les autorités cherchent à le lapider",
+          "refs": {
+            "jean": [
+              [
+                10,
+                22,
+                42
+              ]
+            ]
+          },
+          "date": "+32 Novembre/Décembre",
+          "lieu": "Jérusalem, Judée"
+        }
+      ],
+      "images": {
+        "carte5.jpg": "Carte 5"
+      }
+    },
+    {
+      "id": "bethanie2",
+      "number": 12,
+      "title": "Pérée",
+      "sections": [
+        {
+          "id": "bethanie2-1",
+          "title": "2ème voyage de Jésus à Béthanie : Lazare malade",
+          "refs": {
+            "jean": [
+              [
+                11,
+                1,
+                16
+              ]
+            ]
+          },
+          "lieu": "Béthanie, Judée"
+        },
+        {
+          "id": "bethanie2-2",
+          "title": "À Béthanie Jésus ressuscite Lazare",
+          "refs": {
+            "jean": [
+              [
+                11,
+                17,
+                46
+              ]
+            ]
+          },
+          "lieu": "Béthanie, Judée"
+        },
+        {
+          "id": "bethanie2-3",
+          "title": "Le sanhédrin décide de faire mourir Jésus",
+          "refs": {
+            "jean": [
+              [
+                11,
+                47,
+                53
+              ]
+            ]
+          }
+        },
+        {
+          "id": "bethanie2-4",
+          "title": "Jesus se retire à Éphraïm",
+          "refs": {
+            "jean": [
+              [
+                11,
+                54,
+                54
+              ]
+            ]
+          },
+          "lieu": "Taïyibé, Samarie",
+          "notes": [
+            "Éphraïm correspond peut-être à Taïyibé en Samarie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jerusalem2",
+      "number": 13,
+      "title": "La quatrième Pâque",
+      "sections": [
+        {
+          "id": "jerusalem2-1",
+          "title": "Jésus à Béthanie chez Simon le lépreux",
+          "refs": {
+            "jean": [
+              [
+                11,
+                55,
+                57
+              ]
+            ]
+          },
+          "date": "Samedi 28 mars 33, 8 Nisan",
+          "lieu": "Béthanie, Judée"
+        },
+        {
+          "id": "jerusalem2-2",
+          "title": "Des judéens viennent voir Jésus et Lazare à Béthanie",
+          "refs": {
+            "jean": [
+              [
+                12,
+                9,
+                11
+              ]
+            ]
+          },
+          "date": "Samedi 28 mars 33, 8 Nisan",
+          "lieu": "Béthanie, Judée"
+        },
+        {
+          "id": "jerusalem2-3",
+          "title": "Entrée triomphale de Jésus à Jérusalem sur un âne",
+          "refs": {
+            "matthieu": [
+              [
+                21,
+                1,
+                11
+              ]
+            ],
+            "marc": [
+              [
+                11,
+                1,
+                10
+              ]
+            ],
+            "luc": [
+              [
+                19,
+                28,
+                40
+              ]
+            ],
+            "jean": [
+              [
+                12,
+                12,
+                19
+              ]
+            ]
+          },
+          "date": "Dimanche 29 mars 33, 9 Nisan",
+          "lieu": "Béthanie -> Bethphagé -> Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-4",
+          "title": "Pleurs sur Jérusalem",
+          "refs": {
+            "luc": [
+              [
+                19,
+                41,
+                44
+              ]
+            ]
+          },
+          "date": "Dimanche 29 mars 33, 9 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-5",
+          "title": "Des grecs cherchent Jésus",
+          "refs": {
+            "jean": [
+              [
+                12,
+                20,
+                36
+              ]
+            ]
+          },
+          "date": "Dimanche 29 mars 33, 9 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-6",
+          "title": "Jésus visite le temple et retourne dormir à Béthanie",
+          "refs": {
+            "matthieu": [
+              [
+                21,
+                14,
+                17
+              ]
+            ],
+            "marc": [
+              [
+                11,
+                11,
+                11
+              ]
+            ],
+            "jean": [
+              [
+                12,
+                37,
+                43
+              ]
+            ]
+          },
+          "date": "Dimanche 29 mars 33, 9 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-7",
+          "title": "Le figuier stérile",
+          "refs": {
+            "matthieu": [
+              [
+                21,
+                18,
+                19
+              ]
+            ],
+            "marc": [
+              [
+                11,
+                12,
+                14
+              ]
+            ]
+          },
+          "date": "Lundi 30 mars 33, 10 Nisan",
+          "lieu": "Béthanie -> Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-8",
+          "title": "Jésus chasse les marchands du temple",
+          "refs": {
+            "matthieu": [
+              [
+                21,
+                12,
+                13
+              ]
+            ],
+            "marc": [
+              [
+                11,
+                15,
+                17
+              ]
+            ],
+            "luc": [
+              [
+                19,
+                45,
+                46
+              ]
+            ]
+          },
+          "date": "Lundi 30 mars 33, 10 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-9",
+          "title": "Les prêtres et les scribes veulent tuer Jésus",
+          "refs": {
+            "marc": [
+              [
+                11,
+                18,
+                18
+              ]
+            ],
+            "luc": [
+              [
+                19,
+                47,
+                48
+              ]
+            ]
+          },
+          "date": "Lundi 30 mars 33, 10 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-10",
+          "title": "Retour à Béthanie",
+          "refs": {
+            "marc": [
+              [
+                11,
+                19,
+                19
+              ]
+            ]
+          },
+          "date": "Lundi 30 mars 33, 10 Nisan",
+          "lieu": "Béthanie, Judée"
+        },
+        {
+          "id": "jerusalem2-11",
+          "title": "La foi véritable",
+          "refs": {
+            "jean": [
+              [
+                12,
+                44,
+                50
+              ]
+            ]
+          },
+          "date": "Lundi 30 mars 33, 10 Nisan",
+          "lieu": "Béthanie, Judée"
+        },
+        {
+          "id": "jerusalem2-12",
+          "title": "Enseignement du figuier",
+          "refs": {
+            "matthieu": [
+              [
+                21,
+                20,
+                22
+              ]
+            ],
+            "marc": [
+              [
+                11,
+                20,
+                26
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Judée"
+        },
+        {
+          "id": "jerusalem2-13",
+          "title": "Il enseigne au temple, Son autorité mise en question par le sanhédrin",
+          "refs": {
+            "matthieu": [
+              [
+                21,
+                23,
+                27
+              ]
+            ],
+            "marc": [
+              [
+                11,
+                27,
+                33
+              ]
+            ],
+            "luc": [
+              [
+                20,
+                1,
+                8
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Temple, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-14",
+          "title": "Parabole des deux fils",
+          "refs": {
+            "matthieu": [
+              [
+                21,
+                28,
+                32
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Temple, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-15",
+          "title": "Parabole des vignerons",
+          "refs": {
+            "matthieu": [
+              [
+                21,
+                33,
+                46
+              ]
+            ],
+            "marc": [
+              [
+                12,
+                1,
+                12
+              ]
+            ],
+            "luc": [
+              [
+                20,
+                9,
+                18
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Temple, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-16",
+          "title": "Parabole des noces",
+          "refs": {
+            "matthieu": [
+              [
+                22,
+                1,
+                14
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Temple, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-17",
+          "title": "Les pharisiens et les hérodiens lui posent des questions pièges sur le tribut dû à César",
+          "refs": {
+            "matthieu": [
+              [
+                22,
+                15,
+                22
+              ]
+            ],
+            "marc": [
+              [
+                12,
+                13,
+                17
+              ]
+            ],
+            "luc": [
+              [
+                20,
+                19,
+                26
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Temple, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-18",
+          "title": "Les sadducéens le questionnent sur la résurrection",
+          "refs": {
+            "matthieu": [
+              [
+                22,
+                23,
+                33
+              ]
+            ],
+            "marc": [
+              [
+                12,
+                18,
+                27
+              ]
+            ],
+            "luc": [
+              [
+                20,
+                27,
+                39
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Temple, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-19",
+          "title": "Il répond au sujet du plus grand commandement à un scribe",
+          "refs": {
+            "matthieu": [
+              [
+                22,
+                34,
+                40
+              ]
+            ],
+            "marc": [
+              [
+                12,
+                28,
+                34
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Temple, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-20",
+          "title": "Jésus demande aux pharisiens de qui le Messie est le fils.",
+          "refs": {
+            "matthieu": [
+              [
+                22,
+                41,
+                46
+              ]
+            ],
+            "marc": [
+              [
+                12,
+                35,
+                37
+              ]
+            ],
+            "luc": [
+              [
+                20,
+                40,
+                44
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Temple, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-21",
+          "title": "Les sept reproches aux scribes et aux pharisiens",
+          "refs": {
+            "matthieu": [
+              [
+                23,
+                1,
+                36
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Temple, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-22",
+          "title": "Mise en garde contre les scribes",
+          "refs": {
+            "marc": [
+              [
+                12,
+                38,
+                40
+              ]
+            ],
+            "luc": [
+              [
+                20,
+                45,
+                47
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Temple, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-23",
+          "title": "L'offrande de la veuve",
+          "refs": {
+            "marc": [
+              [
+                12,
+                41,
+                44
+              ]
+            ],
+            "luc": [
+              [
+                21,
+                1,
+                4
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Temple,  Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-24",
+          "title": "Lamentations sur Jérusalem",
+          "refs": {
+            "matthieu": [
+              [
+                23,
+                37,
+                39
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Temple, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-25",
+          "title": "Jésus annonce la destruction du temple",
+          "refs": {
+            "matthieu": [
+              [
+                24,
+                1,
+                2
+              ]
+            ],
+            "marc": [
+              [
+                13,
+                1,
+                2
+              ]
+            ],
+            "luc": [
+              [
+                21,
+                5,
+                6
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Mont des Oliviers, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-26",
+          "title": "Discours des oliviers",
+          "refs": {
+            "matthieu": [
+              [
+                24,
+                3,
+                51
+              ],
+              [
+                25,
+                1,
+                46
+              ]
+            ],
+            "marc": [
+              [
+                13,
+                3,
+                37
+              ]
+            ],
+            "luc": [
+              [
+                21,
+                7,
+                36
+              ]
+            ]
+          },
+          "date": "Mardi 31 mars 33, 11 Nisan",
+          "lieu": "Mont des oliviers, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-27",
+          "title": "Enseignements au temple",
+          "refs": {
+            "luc": [
+              [
+                21,
+                37,
+                38
+              ]
+            ]
+          },
+          "date": "Mercredi 01 avril 33, 12 Nisan",
+          "lieu": "Temple, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-28",
+          "title": "Jésus annonce sa crucifixition",
+          "refs": {
+            "matthieu": [
+              [
+                26,
+                1,
+                2
+              ]
+            ]
+          },
+          "date": "Mercredi 01 avril 33, 12 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-29",
+          "title": "Les prêtres et les scribes complotent pour tuer Jésus",
+          "refs": {
+            "matthieu": [
+              [
+                26,
+                3,
+                5
+              ]
+            ],
+            "marc": [
+              [
+                14,
+                1,
+                2
+              ]
+            ],
+            "luc": [
+              [
+                22,
+                1,
+                2
+              ]
+            ],
+            "jean": [
+              [
+                11,
+                45,
+                53
+              ]
+            ]
+          },
+          "date": "Mercredi 01 avril 33, 12 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-30",
+          "title": "Jésus oint à Béthanie",
+          "refs": {
+            "matthieu": [
+              [
+                26,
+                6,
+                13
+              ]
+            ],
+            "marc": [
+              [
+                14,
+                3,
+                9
+              ]
+            ],
+            "jean": [
+              [
+                12,
+                1,
+                8
+              ]
+            ]
+          },
+          "date": "Mercredi 01 avril 33, 12 Nisan",
+          "lieu": "Béthanie, Judée"
+        },
+        {
+          "id": "jerusalem2-31",
+          "title": "Judas Iscarioth choisit de trahir Jésus",
+          "refs": {
+            "matthieu": [
+              [
+                26,
+                14,
+                16
+              ]
+            ],
+            "marc": [
+              [
+                14,
+                10,
+                11
+              ]
+            ],
+            "luc": [
+              [
+                22,
+                3,
+                6
+              ]
+            ]
+          },
+          "date": "Mercredi 01 avril 33, 12 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-32",
+          "title": "Jésus envoie 2 disciples préparer le repas de la Pâque",
+          "refs": {
+            "matthieu": [
+              [
+                26,
+                17,
+                19
+              ]
+            ],
+            "marc": [
+              [
+                14,
+                12,
+                16
+              ]
+            ],
+            "luc": [
+              [
+                22,
+                7,
+                13
+              ]
+            ]
+          },
+          "date": "Jeudi 2 avril 33, 13 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-33",
+          "title": "19h-21h: Le repas de la Pâque",
+          "refs": {
+            "matthieu": [
+              [
+                26,
+                20,
+                29
+              ]
+            ],
+            "marc": [
+              [
+                14,
+                17,
+                25
+              ]
+            ],
+            "luc": [
+              [
+                22,
+                14,
+                38
+              ]
+            ],
+            "jean": [
+              [
+                13,
+                1,
+                35
+              ],
+              [
+                14,
+                1,
+                31
+              ],
+              [
+                15,
+                1,
+                27
+              ],
+              [
+                16,
+                1,
+                33
+              ],
+              [
+                17,
+                1,
+                26
+              ]
+            ]
+          },
+          "date": "Jeudi 2 avril 33, 13 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-34",
+          "title": "21h-23h: Jésus prédit le reniement de Simon Pierre",
+          "refs": {
+            "matthieu": [
+              [
+                26,
+                30,
+                35
+              ]
+            ],
+            "marc": [
+              [
+                14,
+                26,
+                31
+              ]
+            ],
+            "luc": [
+              [
+                22,
+                32,
+                34
+              ]
+            ],
+            "jean": [
+              [
+                13,
+                36,
+                38
+              ]
+            ]
+          },
+          "date": "Jeudi 2 avril 33, 13 Nisan",
+          "lieu": "Mont des oliviers, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-35",
+          "title": "21h-23h: Prières à Gethsémani",
+          "refs": {
+            "matthieu": [
+              [
+                26,
+                36,
+                46
+              ]
+            ],
+            "marc": [
+              [
+                14,
+                32,
+                42
+              ]
+            ],
+            "luc": [
+              [
+                22,
+                39,
+                46
+              ]
+            ]
+          },
+          "date": "Jeudi 2 avril 33, 13 Nisan",
+          "lieu": "Gethsémani, Mont des oliviers, Jérusalem, Judée",
+          "notes": [
+            "Gethsémani pourrait être l'oliveraie au pied du Mont des oliviers"
+          ]
+        },
+        {
+          "id": "jerusalem2-36",
+          "title": "23h: Jésus arrêté",
+          "refs": {
+            "matthieu": [
+              [
+                26,
+                47,
+                56
+              ]
+            ],
+            "marc": [
+              [
+                14,
+                43,
+                52
+              ]
+            ],
+            "luc": [
+              [
+                22,
+                47,
+                53
+              ]
+            ],
+            "jean": [
+              [
+                18,
+                1,
+                12
+              ]
+            ]
+          },
+          "date": "Jeudi 2 avril 33, 13 Nisan",
+          "lieu": "Mont des oliviers, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-37",
+          "title": "23h-4h30: Jésus devant le grand prêtre Caiaphas",
+          "refs": {
+            "matthieu": [
+              [
+                26,
+                57,
+                68
+              ]
+            ],
+            "marc": [
+              [
+                14,
+                53,
+                64
+              ]
+            ],
+            "luc": [
+              [
+                22,
+                54,
+                54
+              ]
+            ],
+            "jean": [
+              [
+                18,
+                13,
+                14
+              ],
+              [
+                18,
+                19,
+                24
+              ]
+            ]
+          },
+          "date": "Jeudi 2 avril 33, 13 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-38",
+          "title": "23h-4h30: Simon Pierre renie Jésus",
+          "refs": {
+            "matthieu": [
+              [
+                26,
+                69,
+                75
+              ]
+            ],
+            "marc": [
+              [
+                14,
+                66,
+                72
+              ]
+            ],
+            "luc": [
+              [
+                22,
+                55,
+                62
+              ]
+            ],
+            "jean": [
+              [
+                18,
+                15,
+                18
+              ],
+              [
+                18,
+                25,
+                27
+              ]
+            ]
+          },
+          "date": "Jeudi 2 avril 33, 13 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-39",
+          "title": "23h-4h30: Jésus est houspillé par les gardes",
+          "refs": {
+            "marc": [
+              [
+                14,
+                65,
+                65
+              ]
+            ],
+            "luc": [
+              [
+                22,
+                63,
+                65
+              ]
+            ]
+          },
+          "date": "Jeudi 2 avril 33, 13 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-40",
+          "title": "23h-4h30: Jésus devant le Sanhédrin",
+          "refs": {
+            "luc": [
+              [
+                22,
+                66,
+                71
+              ]
+            ]
+          },
+          "date": "Jeudi 2 avril 33, 13 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-41",
+          "title": "4h: Jésus est amené devant Ponce Pilate, le gouverneur",
+          "refs": {
+            "matthieu": [
+              [
+                27,
+                1,
+                2
+              ]
+            ],
+            "marc": [
+              [
+                15,
+                1,
+                1
+              ]
+            ],
+            "luc": [
+              [
+                23,
+                1,
+                1
+              ]
+            ],
+            "jean": [
+              [
+                18,
+                28,
+                28
+              ]
+            ]
+          },
+          "date": "Vendredi 3 avril 33, 14 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-42",
+          "title": "4h30-6h: Judas Iscarioth se pend",
+          "refs": {
+            "matthieu": [
+              [
+                27,
+                3,
+                10
+              ]
+            ],
+            "actes": [
+              [
+                1,
+                16,
+                19
+              ]
+            ]
+          },
+          "date": "Vendredi 3 avril 33, 14 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-43",
+          "title": "4h30-6h: Jésus face à Pilate",
+          "refs": {
+            "matthieu": [
+              [
+                27,
+                11,
+                14
+              ]
+            ],
+            "marc": [
+              [
+                15,
+                2,
+                5
+              ]
+            ],
+            "luc": [
+              [
+                23,
+                2,
+                5
+              ]
+            ],
+            "jean": [
+              [
+                18,
+                29,
+                38
+              ]
+            ]
+          },
+          "date": "Vendredi 3 avril 33, 14 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-44",
+          "title": "4h30-6h: Jésus face à Hérode, roi de Judée",
+          "refs": {
+            "luc": [
+              [
+                23,
+                6,
+                12
+              ]
+            ]
+          },
+          "date": "Vendredi 3 avril 33, 14 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-45",
+          "title": "6h: Barrabas le meurtrier libéré",
+          "refs": {
+            "matthieu": [
+              [
+                27,
+                15,
+                23
+              ]
+            ],
+            "marc": [
+              [
+                15,
+                6,
+                14
+              ]
+            ],
+            "luc": [
+              [
+                23,
+                13,
+                25
+              ]
+            ],
+            "jean": [
+              [
+                18,
+                39,
+                40
+              ]
+            ]
+          },
+          "date": "Vendredi 3 avril 33, 14 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-46",
+          "title": "6h: Pilate fait fouetter Jésus, cherche à le relâcher puis le livre",
+          "refs": {
+            "matthieu": [
+              [
+                27,
+                24,
+                31
+              ]
+            ],
+            "marc": [
+              [
+                15,
+                15,
+                20
+              ]
+            ],
+            "jean": [
+              [
+                19,
+                1,
+                16
+              ]
+            ]
+          },
+          "date": "Vendredi 3 avril 33, 14 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-47",
+          "title": "8h: Jésus porte sa croix jusqu’à la porte de la ville où Simon de Cyrène s’en charge",
+          "refs": {
+            "matthieu": [
+              [
+                27,
+                32,
+                32
+              ]
+            ],
+            "marc": [
+              [
+                15,
+                21,
+                22
+              ]
+            ],
+            "luc": [
+              [
+                23,
+                26,
+                32
+              ]
+            ],
+            "jean": [
+              [
+                19,
+                17,
+                17
+              ]
+            ]
+          },
+          "date": "Vendredi 3 avril 33, 14 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-48",
+          "title": "9h: Arrivé au Golgotha, Jésus refuse de boire du vin mélé de fiel",
+          "refs": {
+            "matthieu": [
+              [
+                27,
+                33,
+                34
+              ]
+            ],
+            "marc": [
+              [
+                15,
+                23,
+                23
+              ]
+            ]
+          },
+          "date": "Vendredi 3 avril 33, 14 Nisan",
+          "lieu": "Golgotha, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-49",
+          "title": "9h-12h: Crucifixion au Golgotha",
+          "refs": {
+            "matthieu": [
+              [
+                27,
+                35,
+                44
+              ]
+            ],
+            "marc": [
+              [
+                15,
+                24,
+                32
+              ]
+            ],
+            "luc": [
+              [
+                23,
+                33,
+                43
+              ]
+            ],
+            "jean": [
+              [
+                19,
+                18,
+                24
+              ]
+            ]
+          },
+          "date": "Vendredi 3 avril 33, 14 Nisan",
+          "lieu": "Golgotha, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-50",
+          "title": "12h-15h: L'obscurité",
+          "refs": {
+            "matthieu": [
+              [
+                27,
+                45,
+                45
+              ]
+            ],
+            "marc": [
+              [
+                15,
+                33,
+                33
+              ]
+            ],
+            "luc": [
+              [
+                23,
+                44,
+                45
+              ]
+            ]
+          },
+          "date": "Vendredi 3 avril 33, 14 Nisan",
+          "lieu": "Golgotha, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-51",
+          "title": "15h: Décés de Jésus",
+          "refs": {
+            "matthieu": [
+              [
+                27,
+                46,
+                56
+              ]
+            ],
+            "marc": [
+              [
+                15,
+                34,
+                41
+              ]
+            ],
+            "luc": [
+              [
+                23,
+                46,
+                49
+              ]
+            ],
+            "jean": [
+              [
+                19,
+                25,
+                37
+              ]
+            ]
+          },
+          "date": "Vendredi 3 avril 33, 14 Nisan",
+          "lieu": "Golgotha, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-52",
+          "title": "16h-17h: Mise au tombeau de Jésus",
+          "refs": {
+            "matthieu": [
+              [
+                27,
+                57,
+                61
+              ]
+            ],
+            "marc": [
+              [
+                15,
+                42,
+                47
+              ]
+            ],
+            "luc": [
+              [
+                23,
+                50,
+                56
+              ]
+            ],
+            "jean": [
+              [
+                19,
+                38,
+                42
+              ]
+            ]
+          },
+          "date": "Vendredi 3 avril 33, 14 Nisan",
+          "lieu": "Porte de Damas, Jérusalem, Judée"
+        },
+        {
+          "id": "jerusalem2-53",
+          "title": "La tombe est scellée puis gardée",
+          "refs": {
+            "matthieu": [
+              [
+                27,
+                62,
+                66
+              ]
+            ]
+          },
+          "date": "Samedi 04 avril 33, 15 Nisan",
+          "lieu": "Porte de Damas, Jérusalem, Judée"
+        }
+      ],
+      "images": {
+        "carte6.jpg": "Carte 6"
+      }
+    },
+    {
+      "id": "resurrection",
+      "number": 14,
+      "title": "La résurrection et les apparitions",
+      "sections": [
+        {
+          "id": "resurrection-1",
+          "title": "La résurrection à l’aube",
+          "refs": {
+            "matthieu": [
+              [
+                28,
+                2,
+                4
+              ]
+            ]
+          },
+          "date": "Dimanche 05 avril 33, 16 Nisan",
+          "lieu": "Porte de Damas, Jérusalem, Judée"
+        },
+        {
+          "id": "resurrection-2",
+          "title": "Les femmes viennent avec des aromates au sépulcre et le trouvent ouvert et vide.",
+          "refs": {
+            "matthieu": [
+              [
+                28,
+                1,
+                1
+              ]
+            ],
+            "marc": [
+              [
+                16,
+                1,
+                4
+              ]
+            ],
+            "luc": [
+              [
+                24,
+                1,
+                3
+              ]
+            ],
+            "jean": [
+              [
+                20,
+                1,
+                2
+              ]
+            ]
+          },
+          "date": "Dimanche 05 avril 33, 16 Nisan",
+          "lieu": "Porte de Damas, Jérusalem, Judée"
+        },
+        {
+          "id": "resurrection-3",
+          "title": "Les femmes restées au sépulcre voient deux anges qui leur annoncent la résurrection",
+          "refs": {
+            "matthieu": [
+              [
+                28,
+                5,
+                7
+              ]
+            ],
+            "marc": [
+              [
+                16,
+                5,
+                7
+              ]
+            ],
+            "luc": [
+              [
+                24,
+                4,
+                8
+              ]
+            ]
+          },
+          "date": "Dimanche 05 avril 33, 16 Nisan",
+          "lieu": "Porte de Damas, Jérusalem, Judée"
+        },
+        {
+          "id": "resurrection-4",
+          "title": "Marie de Magdala revient au sépulcre, Jésus se révèle à elle",
+          "refs": {
+            "marc": [
+              [
+                16,
+                9,
+                11
+              ]
+            ],
+            "jean": [
+              [
+                20,
+                11,
+                18
+              ]
+            ]
+          },
+          "date": "Dimanche 05 avril 33, 16 Nisan",
+          "lieu": "Porte de Damas, Jérusalem, Judée"
+        },
+        {
+          "id": "resurrection-5",
+          "title": "Jésus rencontre les femmes (Marie de Magdala, Jeanne, Marie mère de Jacques) à leur retour",
+          "refs": {
+            "matthieu": [
+              [
+                28,
+                8,
+                10
+              ]
+            ],
+            "marc": [
+              [
+                16,
+                8,
+                8
+              ]
+            ],
+            "luc": [
+              [
+                24,
+                9,
+                11
+              ]
+            ]
+          },
+          "date": "Dimanche 05 avril 33, 16 Nisan",
+          "lieu": "Porte de Damas, Jérusalem, Judée"
+        },
+        {
+          "id": "resurrection-6",
+          "title": "Le rapport des gardes",
+          "refs": {
+            "matthieu": [
+              [
+                28,
+                11,
+                15
+              ]
+            ]
+          },
+          "date": "Dimanche 05 avril 33, 16 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "resurrection-7",
+          "title": "Pierre et Jean trouvent le sépulcre vide",
+          "refs": {
+            "luc": [
+              [
+                24,
+                12,
+                12
+              ]
+            ],
+            "jean": [
+              [
+                20,
+                3,
+                10
+              ]
+            ]
+          },
+          "date": "Dimanche 05 avril 33, 16 Nisan",
+          "lieu": "Porte de Damas, Jérusalem, Judée"
+        },
+        {
+          "id": "resurrection-8",
+          "title": "Jésus apparaît et marche avec deux disciples sur la route d’Emmaüs",
+          "refs": {
+            "marc": [
+              [
+                16,
+                12,
+                13
+              ]
+            ],
+            "luc": [
+              [
+                24,
+                13,
+                35
+              ]
+            ]
+          },
+          "date": "Dimanche 05 avril 33, 16 Nisan",
+          "lieu": "Entre Jérusalem et Emmaüs, Judée"
+        },
+        {
+          "id": "resurrection-9",
+          "title": "Jésus apparaît dans la soirée à dix apôtres",
+          "refs": {
+            "luc": [
+              [
+                24,
+                36,
+                49
+              ]
+            ],
+            "jean": [
+              [
+                20,
+                19,
+                25
+              ]
+            ]
+          },
+          "date": "Dimanche 05 avril 33, 16 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "resurrection-10",
+          "title": "Jésus apparaît à nouveau aux onze apôtres réunis",
+          "refs": {
+            "marc": [
+              [
+                16,
+                14,
+                14
+              ]
+            ],
+            "jean": [
+              [
+                20,
+                26,
+                29
+              ]
+            ]
+          },
+          "date": "Dimanche 12 avril 33, 23 Nisan",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "resurrection-11",
+          "title": "Les onze s’en vont en Galilée à la montagne qu’il leur a indiquée. Jésus leur apparaît et leur commande d’évangéliser toutes les nations.",
+          "refs": {
+            "matthieu": [
+              [
+                28,
+                16,
+                20
+              ]
+            ],
+            "marc": [
+              [
+                16,
+                15,
+                18
+              ]
+            ]
+          },
+          "lieu": "Galilée"
+        },
+        {
+          "id": "resurrection-12",
+          "title": "Jésus apparaît au bord du lac de Tibériade. Il confie à Pierre le soin des brebis et des agneaux",
+          "refs": {
+            "jean": [
+              [
+                21,
+                1,
+                14
+              ]
+            ]
+          },
+          "lieu": "Galilée"
+        },
+        {
+          "id": "resurrection-13",
+          "title": "La tâche de Simon Pierre",
+          "refs": {
+            "jean": [
+              [
+                21,
+                15,
+                24
+              ]
+            ]
+          },
+          "lieu": "Galilée"
+        }
+      ]
+    },
+    {
+      "id": "ascension",
+      "number": 15,
+      "title": "Ascension et Pentecôte",
+      "sections": [
+        {
+          "id": "ascension-1",
+          "title": "Promesse de la venue du Saint Esprit",
+          "refs": {
+            "actes": [
+              [
+                1,
+                6,
+                8
+              ]
+            ]
+          },
+          "date": "Jeudi 14 Mai 33",
+          "lieu": "Mont des Oliviers, Jérusalem, Judée"
+        },
+        {
+          "id": "ascension-2",
+          "title": "L'ascension",
+          "refs": {
+            "marc": [
+              [
+                16,
+                19,
+                20
+              ]
+            ],
+            "luc": [
+              [
+                24,
+                50,
+                53
+              ]
+            ],
+            "actes": [
+              [
+                1,
+                9,
+                11
+              ]
+            ]
+          },
+          "date": "Jeudi 14 Mai 33",
+          "lieu": "Mont des Oliviers, Jérusalem, Judée"
+        },
+        {
+          "id": "ascension-3",
+          "title": "Retour à Jérusalem et rassemblement",
+          "refs": {
+            "actes": [
+              [
+                1,
+                12,
+                26
+              ]
+            ]
+          },
+          "date": "Mai 33",
+          "lieu": "Jérusalem, Judée"
+        },
+        {
+          "id": "ascension-4",
+          "title": "La Pentecôte et le discours de Pierre",
+          "refs": {
+            "actes": [
+              [
+                2,
+                1,
+                41
+              ]
+            ]
+          },
+          "date": "Dimanche 24 Mai 33",
+          "lieu": "Jérusalem, Judée",
+          "notes": [
+            "La pentecôte vient du grec pentêkostê qui signifie \"cinquantième\". La Pentecôte est en effet célébrée cinquante jour après Pâques"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apotres1",
+      "number": 16,
+      "title": "Actes: Débuts et 1er voyage de Paul",
+      "sections": [
+        {
+          "id": "apotres1-1",
+          "title": "Les débuts de l'Église primitive ",
+          "refs": {
+            "actes": [
+              [
+                2,
+                42,
+                100
+              ]
+            ]
+          }
+        },
+        {
+          "id": "apotres1-2",
+          "title": "Le ministère de Pierre et de Jean à Jérusalem ",
+          "refs": {
+            "actes": [
+              [
+                3,
+                1,
+                100
+              ],
+              [
+                4,
+                1,
+                100
+              ],
+              [
+                5,
+                1,
+                100
+              ],
+              [
+                6,
+                1,
+                100
+              ],
+              [
+                7,
+                1,
+                100
+              ],
+              [
+                8,
+                1,
+                100
+              ]
+            ]
+          }
+        },
+        {
+          "id": "apotres1-3",
+          "title": "La conversion de Paul et son ministère",
+          "refs": {
+            "actes": [
+              [
+                9,
+                1,
+                100
+              ],
+              [
+                10,
+                1,
+                100
+              ],
+              [
+                11,
+                1,
+                100
+              ],
+              [
+                12,
+                1,
+                100
+              ]
+            ]
+          }
+        },
+        {
+          "id": "apotres1-4",
+          "title": "Le premier voyage missionnaire de Paul",
+          "refs": {
+            "actes": [
+              [
+                13,
+                1,
+                100
+              ],
+              [
+                14,
+                1,
+                100
+              ]
+            ]
+          },
+          "date": "De mi 45 à fin 48"
+        }
+      ]
+    },
+    {
+      "id": "apotres2",
+      "number": 17,
+      "title": "Actes: Concile et 2ême voyage de Paul",
+      "sections": [
+        {
+          "id": "apotres2-1",
+          "title": "Le Concile de Jérusalem",
+          "refs": {
+            "actes": [
+              [
+                15,
+                1,
+                100
+              ]
+            ]
+          },
+          "date": "Avril/mai 49"
+        },
+        {
+          "id": "apotres2-2",
+          "title": "Le deuxième voyage missionnaire de Paul ",
+          "refs": {
+            "actes": [
+              [
+                16,
+                1,
+                100
+              ],
+              [
+                17,
+                1,
+                100
+              ],
+              [
+                18,
+                1,
+                22
+              ]
+            ]
+          },
+          "date": "Mai 49 à Novembre 51"
+        }
+      ]
+    },
+    {
+      "id": "apotres3",
+      "number": 18,
+      "title": "Actes: 3ême voyage de Paul et son arrestation",
+      "sections": [
+        {
+          "id": "apotres3-1",
+          "title": "Le troisième voyage missionnaire de Paul ",
+          "refs": {
+            "actes": [
+              [
+                18,
+                23,
+                100
+              ],
+              [
+                19,
+                1,
+                100
+              ],
+              [
+                20,
+                1,
+                100
+              ],
+              [
+                21,
+                1,
+                11
+              ]
+            ]
+          },
+          "date": "De 52 à mai 55"
+        },
+        {
+          "id": "apotres3-2",
+          "title": "La judée, le voyage à Rome et l'arrestation de Paul",
+          "refs": {
+            "actes": [
+              [
+                21,
+                12,
+                100
+              ],
+              [
+                22,
+                1,
+                100
+              ],
+              [
+                23,
+                1,
+                100
+              ],
+              [
+                24,
+                1,
+                100
+              ],
+              [
+                25,
+                1,
+                100
+              ],
+              [
+                26,
+                1,
+                100
+              ],
+              [
+                27,
+                1,
+                100
+              ],
+              [
+                28,
+                1,
+                100
+              ]
+            ]
+          },
+          "date": "Juin 55 à mars 60"
+        }
+      ]
+    }
+  ]
+}

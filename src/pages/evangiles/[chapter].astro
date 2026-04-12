@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SiteShell from "../../components/SiteShell.astro";
+import SectionBlock from "../../components/SectionBlock.astro";
+import data from "../../data/harmony.generated.json";
+
+export function getStaticPaths() {
+  return data.chapters.map((chapter) => ({
+    params: { chapter: chapter.slug },
+    props: { chapter },
+  }));
+}
+
+const { chapter } = Astro.props;
+const images = chapter.images ? Object.entries(chapter.images) : [];
+---
+
+<BaseLayout title={`${chapter.number}. ${chapter.title}`}>
+  <SiteShell currentSlug={chapter.slug}>
+    <article class="chapter-page">
+      <header class="chapter-header">
+        <p class="eyebrow">Chapitre {chapter.number}</p>
+        <h1>{chapter.title}</h1>
+        {(chapter.date || chapter.lieu) && (
+          <dl class="meta-list">
+            {chapter.date && <><dt>Date</dt><dd>{chapter.date}</dd></>}
+            {chapter.lieu && <><dt>Lieu</dt><dd>{chapter.lieu}</dd></>}
+          </dl>
+        )}
+      </header>
+
+      {images.map(([src, caption]) => (
+        <figure class="figure">
+          <img src={`/assets/${src}`} alt={caption} />
+          <figcaption>{caption}</figcaption>
+        </figure>
+      ))}
+
+      {chapter.sections.map((section) => <SectionBlock section={section} />)}
+
+      {chapter.notes?.length > 0 && (
+        <aside class="notes">
+          <h2>Notes du chapitre</h2>
+          <ul>
+            {chapter.notes.map((note) => <li set:html={note} />)}
+          </ul>
+        </aside>
+      )}
+    </article>
+  </SiteShell>
+</BaseLayout>

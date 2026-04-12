@@ -1,28 +1,24 @@
-all: _site
+all: build
 
-evangiles/chapitre_*.md: extractor bible.db
-	rm -f evangiles/chapitre_*.md
-	python3 extractor/compare.py
+node_modules: package-lock.json
+	npm install
 
-Gemfile.lock: Gemfile
-	bundle install
+data: src/data/harmony.generated.json
 
-_site: Gemfile.lock Gemfile _bibliography _layouts *.html  *.md *.yml assets evangiles/chapitre_*.md
-	bundle exec jekyll build
+src/data/harmony.generated.json: data/harmony.json bible.db scripts/build_site_data.py assets
+	python3 scripts/build_site_data.py
 
-serve: Gemfile.lock _site
-	bundle exec jekyll serve
+build: node_modules
+	npm run build
 
-bible.db:
+serve: node_modules
+	npm run dev
+
+migrate-harmony:
+	python3 scripts/migrate_harmony.py
+
+refresh-bible:
 	python3 extractor/fetch_tob.py
 
-trous:
-	python3 extractor/trous.py
-
-publish: _site
-	rsync -av --delete _site/ /Users/amaury/Library/CloudStorage/Dropbox/backup-server/static-sites/evangiles/
-
 clean:
-	rm -f evangiles/chapitre_*.md
-	find . -name '__pycache__' -type d -delete
-	rm -rf _site .jekyll-cache .jekyll-metadata
+	rm -rf dist .astro public/assets src/data/harmony.generated.json

@@ -570,7 +570,7 @@ harmonie=[
                 'date':  '+32, après la Pâque',
                 'lieu': 'Bethsaïde, Galilée',
                 'images': {
-                    'carte4.png': 'Carte 4',
+                    'carte4.jpg': 'Carte 4',
                 }
             },
             {

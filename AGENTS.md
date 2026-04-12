@@ -2,37 +2,37 @@
 
 ## Structure du projet
 
-Ce dépôt contient un site Jekyll intitulé "Mon harmonie des Évangiles". La configuration est dans `_config.yml`. Les modèles et fragments HTML sont dans `_layouts/` et `_includes/`. Les styles Sass sont dans `_sass/` et `assets/main.scss`. Les contenus Markdown se trouvent à la racine, dans `annexes/` et dans `evangiles/`. La bibliographie est dans `_bibliography/references.bib`.
+Ce dépôt contient une refonte Astro du site "Mon harmonie des Évangiles". La source de l'harmonie est `data/harmony.json`. Les versets TOB viennent de la base SQLite `bible.db`, régénérable avec `extractor/fetch_tob.py`. Les scripts de transformation sont dans `scripts/`, et le site Astro est dans `src/`.
 
-Les scripts Python de `extractor/` génèrent les chapitres harmonisés à partir de `bible.db` et `extractor/harmonie.py`. Considérez `evangiles/chapitre_*.md` et `_site/` comme des sorties générées : modifiez les sources, puis reconstruisez le site.
+Les images sources sont dans `assets/`. `public/assets/`, `src/data/harmony.generated.json`, `dist/` et `.astro/` sont générés et ne doivent pas être modifiés directement.
 
-## Commandes de build, test et développement
+Les anciens fichiers Jekyll restent présents comme référence de migration, mais le chemin principal est désormais `data/harmony.json` -> `scripts/build_site_data.py` -> Astro.
 
-- `bundle install` : installe les dépendances Ruby déclarées dans `Gemfile`.
-- `make` : lance le build par défaut, régénère le contenu nécessaire puis exécute `jekyll build`.
-- `make serve` : démarre un serveur Jekyll local pour relire le site.
-- `make clean` : supprime les chapitres générés, les caches Jekyll et `_site/`.
-- `make trous` : exécute `extractor/trous.py` pour repérer des données manquantes ou incomplètes.
-- `make publish` : synchronise `_site/` vers le chemin Dropbox local configuré ; réservé au mainteneur.
+## Commandes de développement
 
-Pour lancer Jekyll manuellement : `bundle exec jekyll build` ou `bundle exec jekyll serve`.
+- `npm install` : installe les dépendances Node.
+- `make` ou `npm run build` : génère les données enrichies puis construit le site dans `dist/`.
+- `make serve` ou `npm run dev` : lance le serveur local Astro.
+- `make clean` : supprime les sorties générées.
+- `make refresh-bible` : reconstruit `bible.db` via `extractor/fetch_tob.py`.
+- `make migrate-harmony` : régénère `data/harmony.json` depuis l'ancien `extractor/harmonie.py`.
 
-## Style et conventions de nommage
+## Style et conventions
 
-Les pages Markdown utilisent un en-tête YAML avec `layout`, `title`, `permalink`, `has_children` et `nav_order`. Gardez des noms descriptifs en minuscules. Les chapitres générés suivent `evangiles/chapitre_<numéro>-<slug>.md`.
+Gardez `data/harmony.json` comme source éditable de l'ordre harmonisé, des notes, dates, lieux et images. Les références bibliques sont indexées par livre (`matthieu`, `marc`, `luc`, `jean`, `actes`) et utilisent des triplets `[chapitre, verset_debut, verset_fin]`.
 
-Les scripts Python utilisent une indentation de 4 espaces. Conservez le style éditorial français, les accents et la terminologie existante. Limitez les changements Sass à `assets/main.scss` ou aux partiels de `_sass/`.
+Les composants Astro vivent dans `src/components/`, les pages dans `src/pages/`, et le CSS global dans `src/styles/main.css`. Préférez des composants simples et lisibles : l'objectif est une expérience de lecture quotidienne, pas une application lourde.
 
 ## Validation
 
-Il n'existe pas de suite de tests automatisés dédiée. Validez avec `make`, puis relisez le résultat avec `make serve`. Pour un extracteur, lancez le script concerné, par exemple `python3 extractor/compare.py`, puis reconstruisez les pages affectées.
+Avant de conclure une modification, exécutez :
 
-## Commits et pull requests
+```sh
+npm run build
+```
 
-L'historique actuel ne montre qu'un commit initial ; aucune convention stricte n'est établie. Utilisez des messages courts à l'impératif, par exemple `Corrige les notes sur la Galilée`.
+Pour les changements de données, vérifiez aussi que `scripts/build_site_data.py` ne signale ni verset manquant ni image absente.
 
-Une pull request doit décrire le changement de contenu ou de génération, lister les commandes de validation exécutées et signaler les fichiers générés inclus. Ajoutez des captures d'écran lorsque la mise en page, les cartes, les images ou la navigation sont modifiées.
+## Publication
 
-## Instructions pour les agents
-
-Ne modifiez pas `_site/` directement. Préférez le Markdown, les modèles Jekyll, le Sass, la bibliographie ou les données d'extraction, puis régénérez avec `make`.
+Le site produit est statique. Il peut être servi depuis `dist/` en auto-hébergement, ou publié via GitHub Pages avec `.github/workflows/deploy-pages.yml` si Pages est configuré pour utiliser GitHub Actions.

@@ -1,0 +1,33 @@
+---
+import data from "../data/harmony.generated.json";
+
+const { currentSlug = "" } = Astro.props;
+---
+
+<div class="site-shell">
+  <aside class="sidebar" aria-label="Navigation principale">
+    <a class="brand" href="/">
+      <span>Mon harmonie</span>
+      <strong>des Évangiles</strong>
+    </a>
+
+    <nav>
+      <a class:list={["nav-link", { active: currentSlug === "" }]} href="/">Accueil</a>
+      <p class="nav-heading">Chapitres</p>
+      <ol class="chapter-nav">
+        {data.chapters.map((chapter) => (
+          <li>
+            <a class:list={["nav-link", { active: currentSlug === chapter.slug }]} href={`/evangiles/${chapter.slug}/`}>
+              <span>{chapter.number}.</span>
+              {chapter.title}
+            </a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <slot />
+  </main>
+</div>
