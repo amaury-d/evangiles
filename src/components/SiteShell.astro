@@ -3,22 +3,23 @@ import data from "../data/harmony.generated.json";
 import annexes from "../data/annexes.generated.json";
 
 const { currentSlug = "" } = Astro.props;
+const base = import.meta.env.BASE_URL;
 ---
 
 <div class="site-shell">
   <aside class="sidebar" aria-label="Navigation principale">
-    <a class="brand" href="/">
+    <a class="brand" href={base}>
       <span>Mon harmonie</span>
       <strong>des Évangiles</strong>
     </a>
 
     <nav>
-      <a class:list={["nav-link", { active: currentSlug === "" }]} href="/">Accueil</a>
+      <a class:list={["nav-link", { active: currentSlug === "" }]} href={base}>Accueil</a>
       <p class="nav-heading">Chapitres</p>
       <ol class="chapter-nav">
         {data.chapters.map((chapter) => (
           <li>
-            <a class:list={["nav-link", { active: currentSlug === chapter.slug }]} href={`/evangiles/${chapter.slug}/`}>
+            <a class:list={["nav-link", { active: currentSlug === chapter.slug }]} href={`${base}/evangiles/${chapter.slug}/`}>
               <span>{chapter.number}.</span>
               {chapter.title}
             </a>
@@ -29,7 +30,7 @@ const { currentSlug = "" } = Astro.props;
       <ul class="chapter-nav">
         {annexes.map((a) => (
           <li>
-            <a class:list={["nav-link", { active: currentSlug === "annexes" }]} href={`/annexes/${a.slug}/`}>
+            <a class:list={["nav-link", { active: currentSlug === "annexes" }]} href={`${base}/annexes/${a.slug}/`}>
               {a.title}
             </a>
           </li>

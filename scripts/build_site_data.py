@@ -45,6 +45,7 @@ def main() -> None:
 
     validate_images(generated)
     copy_assets()
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(generated, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {OUTPUT.relative_to(ROOT)}")
 

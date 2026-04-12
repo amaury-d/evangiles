@@ -520,7 +520,7 @@
         },
         {
           "id": "galilee-3",
-          "title": "Jésus visite Capharnaüm",
+          "title": "Jésus visite Capharnaüm",
           "refs": {
             "jean": [
               [
@@ -531,7 +531,7 @@
             ]
           },
           "date": "+29, Novembre-Décembre",
-          "lieu": "Capharnaüm, Galilée"
+          "lieu": "Capharnaüm, Galilée"
         }
       ],
       "images": {
@@ -716,7 +716,7 @@
         },
         {
           "id": "gallilee2-2",
-          "title": "Il s’établit à Capharnaüm où il enseigne",
+          "title": "Il s’établit à Capharnaüm où il enseigne",
           "refs": {
             "matthieu": [
               [
@@ -741,7 +741,7 @@
             ]
           },
           "date": "+31, Janvier-Mars",
-          "lieu": "Capharnaüm, Galilée"
+          "lieu": "Capharnaüm, Galilée"
         },
         {
           "id": "gallilee2-3",
@@ -854,7 +854,7 @@
         },
         {
           "id": "gallilee2-7",
-          "title": "Il visite Cana et guérit le fils d’un noble de Capharnaüm",
+          "title": "Il visite Cana et guérit le fils d’un noble de Capharnaüm",
           "refs": {
             "jean": [
               [
@@ -865,7 +865,7 @@
             ]
           },
           "date": "+31, Janvier-Mars",
-          "lieu": "Capharnaüm, Galilée"
+          "lieu": "Capharnaüm, Galilée"
         },
         {
           "id": "gallilee2-8",
@@ -897,7 +897,7 @@
         },
         {
           "id": "gallilee2-9",
-          "title": "De retour à Capharnaüm, il guérit un paralytique qui lui est amené et descendu par le toit",
+          "title": "De retour à Capharnaüm, il guérit un paralytique qui lui est amené et descendu par le toit",
           "refs": {
             "matthieu": [
               [
@@ -922,7 +922,7 @@
             ]
           },
           "date": "+31",
-          "lieu": "Capharnaüm, Galilée"
+          "lieu": "Capharnaüm, Galilée"
         },
         {
           "id": "gallilee2-10",
@@ -951,7 +951,7 @@
             ]
           },
           "date": "+31",
-          "lieu": "Capharnaüm, Galilée"
+          "lieu": "Capharnaüm, Galilée"
         },
         {
           "id": "gallilee2-11",
@@ -980,7 +980,7 @@
             ]
           },
           "date": "+31",
-          "lieu": "Capharnaüm, Galilée"
+          "lieu": "Capharnaüm, Galilée"
         },
         {
           "id": "gallilee2-12",
@@ -1129,7 +1129,7 @@
         },
         {
           "id": "gallilee2-17",
-          "title": "Guérison de l’esclave d’un centurion à Capharnaüm.",
+          "title": "Guérison de l’esclave d’un centurion à Capharnaüm.",
           "refs": {
             "matthieu": [
               [
@@ -1147,7 +1147,7 @@
             ]
           },
           "date": "+31",
-          "lieu": "Capharnaüm, Galilée"
+          "lieu": "Capharnaüm, Galilée"
         },
         {
           "id": "gallilee2-18",
@@ -1191,7 +1191,7 @@
         },
         {
           "id": "gallilee2-20",
-          "title": "Reproches de Jésus à Chorazim, Bethsaïda, Capharnaüm et Il invite les âmes chargées",
+          "title": "Reproches de Jésus à Chorazim, Bethsaïda, Capharnaüm et Il invite les âmes chargées",
           "refs": {
             "matthieu": [
               [
@@ -1235,7 +1235,7 @@
         },
         {
           "id": "gallilee2-23",
-          "title": "De retour à Capharnaüm, Il guérit un démoniaque aveugle et muet ; les pharisiens attribuent ce miracle à Béelzébul, blasphèment contre le Saint Esprit",
+          "title": "De retour à Capharnaüm, Il guérit un démoniaque aveugle et muet ; les pharisiens attribuent ce miracle à Béelzébul, blasphèment contre le Saint Esprit",
           "refs": {
             "matthieu": [
               [
@@ -1265,7 +1265,7 @@
             ]
           },
           "date": "+31",
-          "lieu": "Capharnaüm, Galilée"
+          "lieu": "Capharnaüm, Galilée"
         },
         {
           "id": "gallilee2-24",
@@ -1678,7 +1678,7 @@
         },
         {
           "id": "galilee3-4",
-          "title": "La multitude nourrie miraculeusement cherche et trouve Jésus à Capharnaüm ; discours dans la synagogue et confession de Pierre",
+          "title": "La multitude nourrie miraculeusement cherche et trouve Jésus à Capharnaüm ; discours dans la synagogue et confession de Pierre",
           "refs": {
             "jean": [
               [
@@ -1689,7 +1689,7 @@
             ]
           },
           "date": "+32, Avril/Mai, vers la Pâque",
-          "lieu": "Capharnaüm, Galilée"
+          "lieu": "Capharnaüm, Galilée"
         },
         {
           "id": "galilee3-5",
@@ -1713,8 +1713,8 @@
           "date": "+32, Avril/Mai, vers la Pâque",
           "lieu": "Génézareth, Galilée",
           "images": {
-            "Génézareth.png": "Emplacement de Génézareth",
-            "vue_de_génézareth.jpg": "Vue du lac depuis Génézareth"
+            "Genezareth.png": "Emplacement de Génézareth",
+            "vue_de_genezareth.jpg": "Vue du lac depuis Génézareth"
           }
         },
         {
@@ -1737,7 +1737,7 @@
             ]
           },
           "date": "+32, après la Pâque",
-          "lieu": "Capharnaüm ?, Galilée"
+          "lieu": "Capharnaüm ?, Galilée"
         },
         {
           "id": "galilee3-7",

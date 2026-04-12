@@ -111,12 +111,13 @@ def main() -> None:
 
     # Generate index page
     links = "\n".join(
-        f'        <li><a href="/annexes/{a["slug"]}/">{a["title"]}</a></li>'
+        f'        <li><a href={{`${{base}}/annexes/{a["slug"]}/`}}>{a["title"]}</a></li>'
         for a in annexes
     )
     index = f"""---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import SiteShell from "../../components/SiteShell.astro";
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="Annexes">

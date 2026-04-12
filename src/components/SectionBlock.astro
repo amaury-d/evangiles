@@ -2,6 +2,7 @@
 import Passage from "./Passage.astro";
 
 const { section } = Astro.props;
+const base = import.meta.env.BASE_URL;
 const images = section.images ? Object.entries(section.images) : [];
 ---
 
@@ -18,7 +19,7 @@ const images = section.images ? Object.entries(section.images) : [];
 
   {images.map(([src, caption]) => (
     <figure class="figure">
-      <img src={`/assets/${src}`} alt={caption} loading="lazy" />
+      <img src={`${base}/assets/${src}`} alt={caption} loading="lazy" />
       <figcaption>{caption}</figcaption>
     </figure>
   ))}
