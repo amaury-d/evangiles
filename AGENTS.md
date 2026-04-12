@@ -6,8 +6,6 @@ Ce dépôt contient une refonte Astro du site "Mon harmonie des Évangiles". La 
 
 Les images sources sont dans `assets/`. `public/assets/`, `src/data/harmony.generated.json`, `dist/` et `.astro/` sont générés et ne doivent pas être modifiés directement.
 
-Les anciens fichiers Jekyll restent présents comme référence de migration, mais le chemin principal est désormais `data/harmony.json` -> `scripts/build_site_data.py` -> Astro.
-
 ## Commandes de développement
 
 - `npm install` : installe les dépendances Node.
@@ -15,7 +13,6 @@ Les anciens fichiers Jekyll restent présents comme référence de migration, ma
 - `make serve` ou `npm run dev` : lance le serveur local Astro.
 - `make clean` : supprime les sorties générées.
 - `make refresh-bible` : reconstruit `bible.db` via `extractor/fetch_tob.py`.
-- `make migrate-harmony` : régénère `data/harmony.json` depuis l'ancien `extractor/harmonie.py`.
 
 ## Style et conventions
 

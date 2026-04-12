@@ -6,3 +6,4 @@ dist/
 .astro/
 public/assets/
 src/data/*.generated.json
+src/pages/annexes/

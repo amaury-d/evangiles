@@ -1,5 +1,6 @@
 ---
 import data from "../data/harmony.generated.json";
+import annexes from "../data/annexes.generated.json";
 
 const { currentSlug = "" } = Astro.props;
 ---
@@ -24,6 +25,16 @@ const { currentSlug = "" } = Astro.props;
           </li>
         ))}
       </ol>
+      <p class="nav-heading">Annexes</p>
+      <ul class="chapter-nav">
+        {annexes.map((a) => (
+          <li>
+            <a class:list={["nav-link", { active: currentSlug === "annexes" }]} href={`/annexes/${a.slug}/`}>
+              {a.title}
+            </a>
+          </li>
+        ))}
+      </ul>
     </nav>
   </aside>
 
