@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build enriched site data from harmony config and the local TOB database."""
+"""Build enriched site data from harmony config and the local Bible database."""
 
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ ASSETS_DEST = ROOT / "public" / "assets"
 
 def main() -> None:
     if not DB.exists():
-        raise SystemExit("Missing bible.db. Run python3 extractor/fetch_tob.py first.")
+        raise SystemExit("Missing bible.db. Run python3 extractor/fetch_bible.py first.")
 
     config = json.loads(CONFIG.read_text(encoding="utf-8"))
     conn = sqlite3.connect(DB)

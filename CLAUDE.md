@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project overview
 
-Static site presenting a personal chronological harmony of the Gospels (Matthew, Mark, Luke, John, Acts). Built with Astro, fed from a SQLite database of TOB Bible verses and a hand-curated harmony configuration.
+Static site presenting a personal chronological harmony of the Gospels (Matthew, Mark, Luke, John, Acts). Built with Astro, fed from a SQLite database of Bible verses and a hand-curated harmony configuration.
 
 The site is in French. Published at https://evangiles.decre.me/.
 
@@ -12,7 +12,7 @@ The site is in French. Published at https://evangiles.decre.me/.
 
 The data flows in one direction:
 
-1. `bible.db` (SQLite, committed) contains TOB verses, populated by `extractor/fetch_tob.py`
+1. `bible.db` (SQLite, committed) contains Bible verses, populated by `extractor/fetch_bible.py`
 2. `data/harmony.json` is the **single source of truth** for the harmony: chapter order, sections, biblical references, dates, places, images, and notes
 3. `scripts/build_site_data.py` reads both, validates images and verses, writes `src/data/harmony.generated.json` and copies `assets/` to `public/assets/`
 4. Astro reads the generated JSON and produces the static site in `dist/`
@@ -26,7 +26,7 @@ npm install              # install Node dependencies
 make                     # full build: generate data + build Astro site
 make serve               # dev server (runs build_site_data.py first via predev hook)
 make clean               # remove all generated outputs
-make refresh-bible       # re-scrape TOB into bible.db (fragile, use sparingly)
+make refresh-bible       # rebuild bible.db from GetBible, default TRANSLATION=ls1910
 npm run build            # just Astro build (runs build_site_data.py via prebuild hook)
 ```
 

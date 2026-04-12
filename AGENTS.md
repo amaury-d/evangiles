@@ -2,7 +2,7 @@
 
 ## Structure du projet
 
-Ce dépôt contient une refonte Astro du site "Mon harmonie des Évangiles". La source de l'harmonie est `data/harmony.json`. Les versets TOB viennent de la base SQLite `bible.db`, régénérable avec `extractor/fetch_tob.py`. Les scripts de transformation sont dans `scripts/`, et le site Astro est dans `src/`.
+Ce dépôt contient une refonte Astro du site "Mon harmonie des Évangiles". La source de l'harmonie est `data/harmony.json`. Les versets bibliques viennent de la base SQLite `bible.db`, régénérable avec `extractor/fetch_bible.py`. Les scripts de transformation sont dans `scripts/`, et le site Astro est dans `src/`.
 
 Les images sources sont dans `assets/`. `public/assets/`, `src/data/harmony.generated.json`, `dist/` et `.astro/` sont générés et ne doivent pas être modifiés directement.
 
@@ -12,7 +12,7 @@ Les images sources sont dans `assets/`. `public/assets/`, `src/data/harmony.gene
 - `make` ou `npm run build` : génère les données enrichies puis construit le site dans `dist/`.
 - `make serve` ou `npm run dev` : lance le serveur local Astro.
 - `make clean` : supprime les sorties générées.
-- `make refresh-bible` : reconstruit `bible.db` via `extractor/fetch_tob.py`.
+- `make refresh-bible` : reconstruit `bible.db` via `extractor/fetch_bible.py`; la traduction par défaut est `ls1910`, modifiable avec `TRANSLATION=darby`.
 
 ## Style et conventions
 

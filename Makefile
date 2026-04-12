@@ -18,7 +18,7 @@ serve: node_modules
 	npm run dev
 
 refresh-bible:
-	python3 extractor/fetch_tob.py
+	python3 extractor/fetch_bible.py $(TRANSLATION)
 
 clean:
 	rm -rf dist .astro public/assets src/data/harmony.generated.json src/data/annexes.generated.json src/pages/annexes
