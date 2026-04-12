@@ -2,4 +2,3 @@
 _site
 *.db
 __pycache__
-Gemfile.lock

@@ -35,7 +35,8 @@ Les fichiers `_site/` et `evangiles/chapitre_*.md` sont donc des sorties génér
 
 Prérequis :
 
-- Ruby et Bundler ;
+- Ruby `3.3.6` ou une version compatible `>= 3.1` et `< 4.0` ;
+- Bundler ;
 - Python 3 ;
 - dépendances Python utilisées par l'extraction : `requests` et `beautifulsoup4`.
 
@@ -45,11 +46,16 @@ Installer les dépendances Ruby :
 bundle install
 ```
 
-Dans l'environnement actuel, `Gemfile.lock` attend Bundler `2.4.18`. Si `bundle exec` échoue avec une erreur de version, installer cette version :
+Le fichier `.ruby-version` permet à `rbenv`, `asdf` ou `mise` de sélectionner Ruby `3.3.6`. Avec `rbenv`, par exemple :
 
 ```sh
-gem install bundler:2.4.18
+rbenv install 3.3.6
+rbenv local 3.3.6
+gem install bundler
+bundle install
 ```
+
+`Gemfile.lock` est versionné pour conserver les versions de gems qui construisent le site. Si vous devez le régénérer, supprimez-le puis relancez `bundle install`.
 
 ## Commandes utiles
 
@@ -63,7 +69,7 @@ Reconstruit le site. Si les chapitres générés sont absents, `make` lance auss
 make serve
 ```
 
-Démarre un serveur Jekyll local pour relire le site.
+Démarre un serveur Jekyll local pour relire le site, généralement sur <http://127.0.0.1:4000/>. N'ouvrez pas `_site/index.html` directement en `file://` : le thème utilise des chemins absolus comme `/assets/...`, qui nécessitent un serveur HTTP à la racine de `_site`.
 
 ```sh
 make clean

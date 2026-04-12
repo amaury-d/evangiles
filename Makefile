@@ -5,13 +5,13 @@ evangiles/chapitre_*.md: extractor bible.db
 	python3 extractor/compare.py
 
 Gemfile.lock: Gemfile
-	bundle
+	bundle install
 
 _site: Gemfile.lock Gemfile _bibliography _layouts *.html  *.md *.yml assets evangiles/chapitre_*.md
-	jekyll build
+	bundle exec jekyll build
 
 serve: Gemfile.lock _site
-	jekyll serve
+	bundle exec jekyll serve
 
 bible.db:
 	python3 extractor/fetch_tob.py
