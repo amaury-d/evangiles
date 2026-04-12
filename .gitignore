@@ -1,6 +1,5 @@
 .DS_Store
 _site
-*.db
 __pycache__
 node_modules/
 dist/
