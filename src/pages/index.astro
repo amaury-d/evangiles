@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SiteShell from "../components/SiteShell.astro";
+import DailyGospel from "../components/DailyGospel.astro";
 import data from "../data/harmony.generated.json";
 const base = import.meta.env.BASE_URL;
 const siteRoot = base.endsWith("/") ? base : `${base}/`;
@@ -17,6 +18,8 @@ const siteRoot = base.endsWith("/") ? base : `${base}/`;
       </p>
       <a class="primary-link" href={`${siteRoot}evangiles/${data.chapters[0].slug}/`}>Commencer la lecture</a>
     </section>
+
+    <DailyGospel />
 
     <section class="chapter-index">
       <h2>Chapitres</h2>

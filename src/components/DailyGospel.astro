@@ -1,0 +1,181 @@
+---
+import data from "../data/harmony.generated.json";
+
+const base = import.meta.env.BASE_URL;
+const siteRoot = base.endsWith("/") ? base : `${base}/`;
+
+const harmonyIndex = data.chapters.flatMap((chapter) =>
+  chapter.sections.flatMap((section) =>
+    Object.entries(section.refs ?? {}).flatMap(([book, refs]) =>
+      refs.map(([chapterNumber, startVerse, endVerse]) => ({
+        book,
+        chapter: chapterNumber,
+        startVerse,
+        endVerse,
+        title: section.title,
+        chapterTitle: chapter.title,
+        href: `${siteRoot}evangiles/${chapter.slug}/#${section.id}`,
+      }))
+    )
+  )
+);
+---
+
+<section class="daily-gospel" data-daily-gospel data-harmony-index={JSON.stringify(harmonyIndex)}>
+  <p class="eyebrow">Aujourd'hui</p>
+  <h2>Évangile du jour</h2>
+  <p class="daily-gospel-status" data-daily-gospel-status aria-live="polite">Recherche de la référence liturgique...</p>
+  <div class="daily-gospel-result" data-daily-gospel-result hidden>
+    <p class="daily-gospel-ref" data-daily-gospel-ref></p>
+    <p class="daily-gospel-title" data-daily-gospel-title></p>
+    <p class="daily-gospel-match" data-daily-gospel-match></p>
+  </div>
+</section>
+
+<script>
+  const BOOKS = {
+    mt: "matthieu",
+    matthieu: "matthieu",
+    mc: "marc",
+    marc: "marc",
+    mk: "marc",
+    lc: "luc",
+    luc: "luc",
+    lk: "luc",
+    jn: "jean",
+    jean: "jean",
+    john: "jean",
+  };
+
+  const BOOK_LABELS = {
+    matthieu: "Évangile selon Matthieu",
+    marc: "Évangile selon Marc",
+    luc: "Évangile selon Luc",
+    jean: "Évangile selon Jean",
+  };
+
+  function parisDate() {
+    const parts = new Intl.DateTimeFormat("fr-CA", {
+      timeZone: "Europe/Paris",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).formatToParts(new Date());
+    const byType = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+    return `${byType.year}-${byType.month}-${byType.day}`;
+  }
+
+  function parseAelfReference(reference) {
+    const normalized = reference
+      .normalize("NFD")
+      .replace(/\p{Diacritic}/gu, "")
+      .replace(/[–—]/g, "-")
+      .replace(/\s+/g, " ")
+      .trim()
+      .toLowerCase();
+    const match = normalized.match(/^([a-z]+)\s+(\d+)\s*,\s*(.+)$/i);
+    if (!match) return [];
+
+    const book = BOOKS[match[1]];
+    const chapter = Number(match[2]);
+    if (!book || !Number.isInteger(chapter)) return [];
+
+    return match[3]
+      .replace(/\([^)]*\)/g, "")
+      .split(/[.;]/)
+      .map((part) => part.trim())
+      .filter(Boolean)
+      .map((part) => {
+        const range = part.match(/^(\d+)(?:\s*-\s*(\d+))?/);
+        if (!range) return null;
+        const startVerse = Number(range[1]);
+        const endVerse = Number(range[2] ?? range[1]);
+        return { book, chapter, startVerse, endVerse };
+      })
+      .filter(Boolean);
+  }
+
+  function findHarmonyMatch(index, ranges) {
+    for (const range of ranges) {
+      const exact = index.find((entry) =>
+        entry.book === range.book
+        && entry.chapter === range.chapter
+        && entry.startVerse <= range.startVerse
+        && entry.endVerse >= range.endVerse
+      );
+      if (exact) return exact;
+
+      const overlap = index.find((entry) =>
+        entry.book === range.book
+        && entry.chapter === range.chapter
+        && entry.startVerse <= range.endVerse
+        && entry.endVerse >= range.startVerse
+      );
+      if (overlap) return overlap;
+    }
+    return null;
+  }
+
+  function setText(root, selector, value) {
+    const element = root.querySelector(selector);
+    if (element) element.textContent = value;
+  }
+
+  function setStatus(root, value) {
+    setText(root, "[data-daily-gospel-status]", value);
+  }
+
+  function showResult(root) {
+    const result = root.querySelector("[data-daily-gospel-result]");
+    if (result) result.hidden = false;
+  }
+
+  async function loadDailyGospel(root) {
+    const date = parisDate();
+    const response = await fetch(`https://api.aelf.org/v1/messes/${date}/france`, {
+      headers: { accept: "application/json" },
+    });
+    if (!response.ok) {
+      throw new Error(`AELF ${response.status}`);
+    }
+
+    const data = await response.json();
+    const readings = data?.messes?.[0]?.lectures ?? [];
+    const gospel = readings.find((reading) => reading.type === "evangile");
+    if (!gospel?.ref) {
+      throw new Error("Aucune référence d'évangile trouvée");
+    }
+
+    const index = JSON.parse(root.dataset.harmonyIndex || "[]");
+    const ranges = parseAelfReference(gospel.ref);
+    const match = findHarmonyMatch(index, ranges);
+
+    setText(root, "[data-daily-gospel-ref]", gospel.ref);
+    setText(root, "[data-daily-gospel-title]", BOOK_LABELS[ranges[0]?.book] || "Évangile du jour");
+
+    const matchElement = root.querySelector("[data-daily-gospel-match]");
+    if (matchElement) {
+      matchElement.textContent = "";
+      if (match) {
+        const link = document.createElement("a");
+        link.href = match.href;
+        link.textContent = `${match.chapterTitle} - ${match.title}`;
+        matchElement.append("Dans l'harmonie : ", link);
+      } else {
+        const link = document.createElement("a");
+        link.href = `https://www.aelf.org/bible/${gospel.ref.split(/\s+/)[0]}/${ranges[0]?.chapter ?? ""}`;
+        link.textContent = "ouvrir sur AELF";
+        matchElement.append("Je n'ai pas trouvé de section harmonisée exacte. ", link);
+      }
+    }
+
+    setStatus(root, `Référence liturgique du ${date}`);
+    showResult(root);
+  }
+
+  for (const root of document.querySelectorAll("[data-daily-gospel]")) {
+    loadDailyGospel(root).catch(() => {
+      setStatus(root, "Impossible de charger l'évangile du jour pour le moment.");
+    });
+  }
+</script>
