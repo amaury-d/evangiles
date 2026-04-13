@@ -401,6 +401,10 @@ h2 {
   margin: 0.45rem 0;
 }
 
+.markdown-meta p {
+  margin: 0;
+}
+
 .annexe-page {
   max-width: 860px;
 }

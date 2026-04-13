@@ -26,8 +26,8 @@ const images = chapter.images ? Object.entries(chapter.images) : [];
         <h1>{chapter.title}</h1>
         {(chapter.date || chapter.lieu) && (
           <dl class="meta-list">
-            {chapter.date && <><dt>Date</dt><dd>{chapter.date}</dd></>}
-            {chapter.lieu && <><dt>Lieu</dt><dd>{chapter.lieu}</dd></>}
+            {chapter.date && <><dt>Date</dt><MarkdownNote as="dd" class="markdown-meta" note={chapter.date} /></>}
+            {chapter.lieu && <><dt>Lieu</dt><MarkdownNote as="dd" class="markdown-meta" note={chapter.lieu} /></>}
           </dl>
         )}
       </header>

@@ -13,8 +13,8 @@ const images = section.images ? Object.entries(section.images) : [];
     <h2>{section.title}</h2>
     {(section.date || section.lieu) && (
       <dl class="meta-list">
-        {section.date && <><dt>Date</dt><dd>{section.date}</dd></>}
-        {section.lieu && <><dt>Lieu</dt><dd>{section.lieu}</dd></>}
+        {section.date && <><dt>Date</dt><MarkdownNote as="dd" class="markdown-meta" note={section.date} /></>}
+        {section.lieu && <><dt>Lieu</dt><MarkdownNote as="dd" class="markdown-meta" note={section.lieu} /></>}
       </dl>
     )}
   </header>
