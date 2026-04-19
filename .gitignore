@@ -7,3 +7,4 @@ dist/
 public/assets/
 src/data/*.generated.json
 src/pages/annexes/
+graphify-out/cache/
