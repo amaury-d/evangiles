@@ -1,29 +1,34 @@
-# Graph Report - .  (2026-04-20)
+# Graph Report - /Users/amaury/git/evangiles  (2026-04-20)
 
 ## Corpus Check
-- Large corpus: 53 files · ~660,841 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
+- 6 files · ~673,531 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 125 nodes · 221 edges · 15 communities detected
-- Extraction: 77% EXTRACTED · 23% INFERRED · 0% AMBIGUOUS · INFERRED: 50 edges (avg confidence: 0.84)
+- 115 nodes · 194 edges · 19 communities detected
+- Extraction: 74% EXTRACTED · 26% INFERRED · 0% AMBIGUOUS · INFERRED: 50 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Gospel Journey Maps|Gospel Journey Maps]]
-- [[_COMMUNITY_Build Pipeline & Data|Build Pipeline & Data]]
-- [[_COMMUNITY_Chapter Maps (SVG)|Chapter Maps (SVG)]]
-- [[_COMMUNITY_Annexes Migration|Annexes Migration]]
-- [[_COMMUNITY_Map Generation|Map Generation]]
-- [[_COMMUNITY_Jerusalem Sites|Jerusalem Sites]]
-- [[_COMMUNITY_Judea & Desert|Judea & Desert]]
-- [[_COMMUNITY_TOB Bible Extractor|TOB Bible Extractor]]
-- [[_COMMUNITY_Agent Instructions|Agent Instructions]]
-- [[_COMMUNITY_Astro Site Config|Astro Site Config]]
-- [[_COMMUNITY_Annex Build Script|Annex Build Script]]
-- [[_COMMUNITY_Astro Config (duplicate)|Astro Config (duplicate)]]
-- [[_COMMUNITY_Site Data Generator|Site Data Generator]]
-- [[_COMMUNITY_Greek Terms|Greek Terms]]
-- [[_COMMUNITY_Google Verification|Google Verification]]
+- [[_COMMUNITY_Community 0|Community 0]]
+- [[_COMMUNITY_Community 1|Community 1]]
+- [[_COMMUNITY_Community 2|Community 2]]
+- [[_COMMUNITY_Community 3|Community 3]]
+- [[_COMMUNITY_Community 4|Community 4]]
+- [[_COMMUNITY_Community 5|Community 5]]
+- [[_COMMUNITY_Community 6|Community 6]]
+- [[_COMMUNITY_Community 7|Community 7]]
+- [[_COMMUNITY_Community 8|Community 8]]
+- [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Community 10|Community 10]]
+- [[_COMMUNITY_Community 11|Community 11]]
+- [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 14|Community 14]]
+- [[_COMMUNITY_Community 15|Community 15]]
+- [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 17|Community 17]]
+- [[_COMMUNITY_Community 18|Community 18]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Carte 4 — Itinéraires entre Galilée et Jérusalem (ministère tardif)` - 22 edges
@@ -32,21 +37,21 @@
 4. `Jérusalem` - 15 edges
 5. `Galilée` - 12 edges
 6. `Carte Chapitre 7 : Ministère en Galilée` - 11 edges
-7. `main()` - 10 edges
-8. `main()` - 9 edges
-9. `Judée` - 9 edges
-10. `Carte Chapitre 6 : Jésus et Jean en Judée` - 8 edges
+7. `build_annexes.main — converts annexes/*.md and .bib to Astro pages` - 9 edges
+8. `Judée` - 9 edges
+9. `Carte Chapitre 6 : Jésus et Jean en Judée` - 8 edges
+10. `Holy Sites of Jesus in Palestine (base cartographique CC0)` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `copy_assets()` --shares_data_with--> `public/assets/maps/README.md — (copy) map sources and conventions`  [INFERRED]
-  scripts/build_site_data.py → public/assets/maps/README.md
-- `main()` --shares_data_with--> `src/pages/annexes/apocryphes.md — Astro annexe on apocryphal gospels`  [EXTRACTED]
+- `Mon harmonie des Évangiles (project overview)` --conceptually_related_to--> `astro.config.mjs — Astro site configuration`  [INFERRED]
+  README.md → astro.config.mjs
+- `build_annexes.main — converts annexes/*.md and .bib to Astro pages` --shares_data_with--> `src/pages/annexes/apocryphes.md — Astro annexe on apocryphal gospels`  [EXTRACTED]
   scripts/build_annexes.py → src/pages/annexes/apocryphes.md
-- `main()` --shares_data_with--> `src/pages/annexes/bibliographie.md — Astro bibliography annexe`  [EXTRACTED]
+- `build_annexes.main — converts annexes/*.md and .bib to Astro pages` --shares_data_with--> `src/pages/annexes/bibliographie.md — Astro bibliography annexe`  [EXTRACTED]
   scripts/build_annexes.py → src/pages/annexes/bibliographie.md
-- `main()` --shares_data_with--> `src/data/annexes.generated.json — generated annexe index`  [EXTRACTED]
+- `build_annexes.main — converts annexes/*.md and .bib to Astro pages` --shares_data_with--> `src/data/annexes.generated.json — generated annexe index`  [EXTRACTED]
   scripts/build_annexes.py → src/data/annexes.generated.json
-- `main()` --shares_data_with--> `src/data/harmony.generated.json — generated enriched harmony data`  [EXTRACTED]
+- `build_site_data.main — reads harmony.json, queries DB, writes generated JSON` --shares_data_with--> `src/data/harmony.generated.json — generated enriched harmony data`  [EXTRACTED]
   scripts/build_site_data.py → src/data/harmony.generated.json
 
 ## Hyperedges (group relationships)
@@ -68,100 +73,124 @@
 
 ## Communities
 
-### Community 0 - "Gospel Journey Maps"
+### Community 0 - "Community 0"
 Cohesion: 0.15
 Nodes (25): Carte 4 — Itinéraires entre Galilée et Jérusalem (ministère tardif), Carte 5 — Derniers voyages vers Jérusalem via Pérée et Samarie, Carte 6 — Galilée, Judée et vue aérienne de Jérusalem (entrée triomphale), Carte routière moderne de la région de Génézareth / Mer de Galilée, La Terre Sainte à l'époque du Nouveau Testament — carte générale, Béthanie, Bethphagé, Bethsaïde (+17 more)
 
-### Community 1 - "Build Pipeline & Data"
-Cohesion: 0.13
-Nodes (21): bible.db — SQLite multi-translation Bible database, build_passages(), copy_assets(), ensure_multi_translation_schema(), fetch_passage_rows(), main(), validate_images(), configured_translations() (+13 more)
+### Community 1 - "Community 1"
+Cohesion: 0.15
+Nodes (17): bible.db — SQLite multi-translation Bible database, build_site_data.build_passages — queries bible.db for multi-translation passages, build_site_data.main — reads harmony.json, queries DB, writes generated JSON, build_site_data.validate_images — checks assets exist, fetch_bible.configured_translations — reads enabled translations from config, fetch_bible.main — orchestrates DB rebuild from GetBible, fetch_bible.py — GetBible API extractor, fetch_bible.selected_translations — filters by CLI args (+9 more)
 
-### Community 2 - "Chapter Maps (SVG)"
-Cohesion: 0.21
-Nodes (21): Carte Chapitre 2 : Naissance et jeunesse de Jésus, Carte Chapitre 3 : Début du ministère en Judée, Carte Chapitre 4 : Jean le Baptiste à Béthanie, Carte Chapitre 5 : Jésus en Galilée, Carte Chapitre 7 : Ministère en Galilée, Carte Chapitre 7 : Traversée du lac, Holy Sites of Jesus in Palestine (base cartographique CC0), Béthanie au-delà du Jourdain (+13 more)
+### Community 2 - "Community 2"
+Cohesion: 0.25
+Nodes (14): Désert de Judée — paysage aride et rocheux, Carte Chapitre 3 : Début du ministère en Judée, Carte Chapitre 4 : Jean le Baptiste à Béthanie, Carte Chapitre 5 : Jésus en Galilée, Carte Chapitre 6 : Jésus et Jean en Judée, Holy Sites of Jesus in Palestine (base cartographique CC0), Aïnon, Béthanie au-delà du Jourdain (+6 more)
 
-### Community 3 - "Annexes Migration"
-Cohesion: 0.18
-Nodes (15): annexes/apocryphes.md — legacy Jekyll annex on apocryphal gospels, src/data/annexes.generated.json — generated annexe index, annexes/harmonie.md — legacy Jekyll harmony source annex, annexes/index.md — legacy Jekyll annexe index, annexes/marc.md — legacy Jekyll annex on the Gospel of Mark, bib_to_markdown(), main(), parse_bib() (+7 more)
-
-### Community 4 - "Map Generation"
+### Community 3 - "Community 3"
 Cohesion: 0.23
-Nodes (11): assets/maps/README.md — map sources and conventions, generate_map(), generate_raster_map(), main(), generate_maps.py — SVG map generator, Jerusalem_premier_siecle.JPG — Jerusalem 1st century raster source, Holy_sites_of_Jesus_in_Palestine.svg — CC0 cartographic base, public/assets/maps/README.md — (copy) map sources and conventions (+3 more)
+Nodes (13): Plan de Jérusalem au premier siècle — Temple, Antonia, murs, citadelle, Carte Chapitre 2 : Naissance et jeunesse de Jésus, Carte Chapitre 8 : Jérusalem au temps du Second Temple, Forteresse Antonia (Jérusalem 1er siècle), Bethléem, Égypte, Jérusalem, Mont des Oliviers (+5 more)
 
-### Community 5 - "Jerusalem Sites"
-Cohesion: 0.31
-Nodes (9): Plan de Jérusalem au premier siècle — Temple, Antonia, murs, citadelle, Carte Chapitre 8 : Jérusalem au temps du Second Temple, Forteresse Antonia (Jérusalem 1er siècle), Jérusalem, Piscine de Bethesda, Temple de Jérusalem (1er siècle), Temple de Jérusalem, Vallée du Cédron (+1 more)
+### Community 4 - "Community 4"
+Cohesion: 0.23
+Nodes (12): annexes/apocryphes.md — legacy Jekyll annex on apocryphal gospels, src/data/annexes.generated.json — generated annexe index, annexes/harmonie.md — legacy Jekyll harmony source annex, annexes/index.md — legacy Jekyll annexe index, annexes/marc.md — legacy Jekyll annex on the Gospel of Mark, build_annexes.bib_to_markdown — formats bib entries as markdown list, build_annexes.main — converts annexes/*.md and .bib to Astro pages, build_annexes.parse_bib — parses .bib files into dicts (+4 more)
 
-### Community 6 - "Judea & Desert"
-Cohesion: 0.38
-Nodes (7): Désert de Judée — paysage aride et rocheux, Carte Chapitre 6 : Jésus et Jean en Judée, Aïnon, Judée, Samarie, Sychar (Samarie), Thème : désert et lieu de retraite spirituelle
+### Community 5 - "Community 5"
+Cohesion: 0.42
+Nodes (10): Carte Chapitre 7 : Ministère en Galilée, Carte Chapitre 7 : Traversée du lac, Cana, Capharnaüm, Gadara, Galilée, Lac de Tibériade, Naïn (+2 more)
 
-### Community 7 - "TOB Bible Extractor"
-Cohesion: 1.0
-Nodes (0): 
+### Community 6 - "Community 6"
+Cohesion: 0.28
+Nodes (9): assets/maps/README.md — map sources and conventions, build_site_data.copy_assets — copies assets/ to public/assets/, generate_maps.generate_map — injects overlay into SVG source, generate_maps.generate_raster_map — embeds JPG in SVG with overlay, generate_maps.main — iterates MAPS list and dispatches to generators, Jerusalem_premier_siecle.JPG — Jerusalem 1st century raster source, Holy_sites_of_Jesus_in_Palestine.svg — CC0 cartographic base, public/assets/maps/README.md — (copy) map sources and conventions (+1 more)
 
-### Community 8 - "Agent Instructions"
-Cohesion: 1.0
-Nodes (2): AGENTS.md — repository instructions for agents, CLAUDE.md — project guidance for Claude Code
-
-### Community 9 - "Astro Site Config"
+### Community 7 - "Community 7"
 Cohesion: 1.0
 Nodes (2): astro.config.mjs — Astro site configuration, Mon harmonie des Évangiles (project overview)
 
-### Community 10 - "Annex Build Script"
+### Community 8 - "Community 8"
 Cohesion: 1.0
 Nodes (2): build_annexes.py — Jekyll-to-Astro annexe converter, Rationale: annexes/ are a Jekyll legacy migrated to Astro via build_annexes.py
 
-### Community 11 - "Astro Config (duplicate)"
+### Community 9 - "Community 9"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): AGENTS.md — repository instructions for agents, CLAUDE.md — project guidance for Claude Code
 
-### Community 12 - "Site Data Generator"
+### Community 10 - "Community 10"
 Cohesion: 1.0
 Nodes (1): build_site_data.py — generates harmony.generated.json
 
-### Community 13 - "Greek Terms"
+### Community 11 - "Community 11"
+Cohesion: 1.0
+Nodes (1): generate_maps.py — SVG map generator
+
+### Community 12 - "Community 12"
+Cohesion: 1.0
+Nodes (1): Return (frontmatter dict, body) from a Jekyll markdown file.
+
+### Community 13 - "Community 13"
+Cohesion: 1.0
+Nodes (1): Parse a .bib file into a list of entries with key/value fields.
+
+### Community 14 - "Community 14"
+Cohesion: 1.0
+Nodes (1): Convert parsed bib entries to a markdown list.
+
+### Community 15 - "Community 15"
 Cohesion: 1.0
 Nodes (1): data/greek_terms.json — Greek theological term definitions
 
-### Community 14 - "Google Verification"
+### Community 16 - "Community 16"
 Cohesion: 1.0
 Nodes (1): google7be578b7e788ac0e.html — Google Search Console verification
 
+### Community 17 - "Community 17"
+Cohesion: 1.0
+Nodes (1): Rationale: use numbered markers by default, arrows only for explicit movement
+
+### Community 18 - "Community 18"
+Cohesion: 1.0
+Nodes (1): Rationale: Jerusalem JPG embedded in SVG to allow sharp overlays without degrading source labels
+
 ## Knowledge Gaps
-- **32 isolated node(s):** `Return (frontmatter dict, body) from a Jekyll markdown file.`, `Parse a .bib file into a list of entries with key/value fields.`, `Convert parsed bib entries to a markdown list.`, `Mon harmonie des Évangiles (project overview)`, `CLAUDE.md — project guidance for Claude Code` (+27 more)
+- **37 isolated node(s):** `astro.config.mjs — Astro site configuration`, `fetch_bible.py — GetBible API extractor`, `GetBible API — external Bible verse API`, `Rationale: fetch_tob.py is legacy single-translation scraper superseded by fetch_bible.py`, `build_annexes.py — Jekyll-to-Astro annexe converter` (+32 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `TOB Bible Extractor`** (2 nodes): `fetch_tob.py`, `insert_verset()`
+- **Thin community `Community 7`** (2 nodes): `astro.config.mjs — Astro site configuration`, `Mon harmonie des Évangiles (project overview)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Agent Instructions`** (2 nodes): `AGENTS.md — repository instructions for agents`, `CLAUDE.md — project guidance for Claude Code`
+- **Thin community `Community 8`** (2 nodes): `build_annexes.py — Jekyll-to-Astro annexe converter`, `Rationale: annexes/ are a Jekyll legacy migrated to Astro via build_annexes.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Astro Site Config`** (2 nodes): `astro.config.mjs — Astro site configuration`, `Mon harmonie des Évangiles (project overview)`
+- **Thin community `Community 9`** (2 nodes): `AGENTS.md — repository instructions for agents`, `CLAUDE.md — project guidance for Claude Code`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Annex Build Script`** (2 nodes): `build_annexes.py — Jekyll-to-Astro annexe converter`, `Rationale: annexes/ are a Jekyll legacy migrated to Astro via build_annexes.py`
+- **Thin community `Community 10`** (1 nodes): `build_site_data.py — generates harmony.generated.json`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Astro Config (duplicate)`** (1 nodes): `astro.config.mjs`
+- **Thin community `Community 11`** (1 nodes): `generate_maps.py — SVG map generator`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Site Data Generator`** (1 nodes): `build_site_data.py — generates harmony.generated.json`
+- **Thin community `Community 12`** (1 nodes): `Return (frontmatter dict, body) from a Jekyll markdown file.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Greek Terms`** (1 nodes): `data/greek_terms.json — Greek theological term definitions`
+- **Thin community `Community 13`** (1 nodes): `Parse a .bib file into a list of entries with key/value fields.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Google Verification`** (1 nodes): `google7be578b7e788ac0e.html — Google Search Console verification`
+- **Thin community `Community 14`** (1 nodes): `Convert parsed bib entries to a markdown list.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 15`** (1 nodes): `data/greek_terms.json — Greek theological term definitions`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 16`** (1 nodes): `google7be578b7e788ac0e.html — Google Search Console verification`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 17`** (1 nodes): `Rationale: use numbered markers by default, arrows only for explicit movement`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 18`** (1 nodes): `Rationale: Jerusalem JPG embedded in SVG to allow sharp overlays without degrading source labels`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Carte 4 — Itinéraires entre Galilée et Jérusalem (ministère tardif)` connect `Gospel Journey Maps` to `Chapter Maps (SVG)`, `Jerusalem Sites`, `Judea & Desert`?**
-  _High betweenness centrality (0.065) - this node is a cross-community bridge._
-- **Why does `Jérusalem` connect `Jerusalem Sites` to `Gospel Journey Maps`, `Chapter Maps (SVG)`, `Judea & Desert`?**
-  _High betweenness centrality (0.053) - this node is a cross-community bridge._
-- **Why does `Galilée` connect `Chapter Maps (SVG)` to `Gospel Journey Maps`, `Judea & Desert`?**
-  _High betweenness centrality (0.049) - this node is a cross-community bridge._
+- **Why does `Carte 4 — Itinéraires entre Galilée et Jérusalem (ministère tardif)` connect `Community 0` to `Community 2`, `Community 3`, `Community 5`?**
+  _High betweenness centrality (0.077) - this node is a cross-community bridge._
+- **Why does `Jérusalem` connect `Community 3` to `Community 0`, `Community 2`?**
+  _High betweenness centrality (0.063) - this node is a cross-community bridge._
+- **Why does `Galilée` connect `Community 5` to `Community 0`, `Community 2`, `Community 3`?**
+  _High betweenness centrality (0.057) - this node is a cross-community bridge._
 - **Are the 5 inferred relationships involving `Carte 4 — Itinéraires entre Galilée et Jérusalem (ministère tardif)` (e.g. with `Thème : itinéraires de Jésus dans les Évangiles` and `Carte 5 — Derniers voyages vers Jérusalem via Pérée et Samarie`) actually correct?**
   _`Carte 4 — Itinéraires entre Galilée et Jérusalem (ministère tardif)` has 5 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 4 inferred relationships involving `Carte 5 — Derniers voyages vers Jérusalem via Pérée et Samarie` (e.g. with `Thème : itinéraires de Jésus dans les Évangiles` and `Carte 4 — Itinéraires entre Galilée et Jérusalem (ministère tardif)`) actually correct?**
+- **Are the 4 inferred relationships involving `Carte 5 — Derniers voyages vers Jérusalem via Pérée et Samarie` (e.g. with `Carte 4 — Itinéraires entre Galilée et Jérusalem (ministère tardif)` and `Thème : itinéraires de Jésus dans les Évangiles`) actually correct?**
   _`Carte 5 — Derniers voyages vers Jérusalem via Pérée et Samarie` has 4 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 4 inferred relationships involving `Carte 6 — Galilée, Judée et vue aérienne de Jérusalem (entrée triomphale)` (e.g. with `Thème : itinéraires de Jésus dans les Évangiles` and `Carte 4 — Itinéraires entre Galilée et Jérusalem (ministère tardif)`) actually correct?**
+- **Are the 4 inferred relationships involving `Carte 6 — Galilée, Judée et vue aérienne de Jérusalem (entrée triomphale)` (e.g. with `Carte 4 — Itinéraires entre Galilée et Jérusalem (ministère tardif)` and `Carte 5 — Derniers voyages vers Jérusalem via Pérée et Samarie`) actually correct?**
   _`Carte 6 — Galilée, Judée et vue aérienne de Jérusalem (entrée triomphale)` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `Jérusalem` (e.g. with `Judée` and `La Terre Sainte à l'époque du Nouveau Testament — carte générale`) actually correct?**
   _`Jérusalem` has 3 INFERRED edges - model-reasoned connections that need verification._

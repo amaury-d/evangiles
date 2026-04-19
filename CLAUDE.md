@@ -1,23 +1,23 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Guidance for Claude Code (claude.ai/code) working in this repo.
 
 ## Project overview
 
-Static site presenting a personal chronological harmony of the Gospels (Matthew, Mark, Luke, John, Acts). Built with Astro, fed from a multi-translation SQLite database of Bible verses and a hand-curated harmony configuration.
+Static site: personal chronological Gospel harmony (Matthew, Mark, Luke, John, Acts). Built with Astro. Data from multi-translation SQLite Bible DB + hand-curated harmony config.
 
-The site is in French. Published at https://evangiles.decre.me/.
+Site in French. Published at https://evangiles.decre.me/.
 
 ## Build pipeline
 
-The data flows in one direction:
+Data flows one direction:
 
-1. `data/translations.json` declares enabled GetBible translations and the default translation
-2. `bible.db` (SQLite, committed) contains Bible verses with a `translation` column, populated by `extractor/fetch_bible.py`
-3. `data/harmony.json` is the **single source of truth** for the harmony: chapter order, sections, biblical references, dates, places, images, and notes
-4. `data/greek_terms.json` stores theological/Greek term definitions and detection labels
-5. `scripts/build_site_data.py` reads these inputs, validates images and verses, writes `src/data/harmony.generated.json` and copies `assets/` to `public/assets/`
-6. Astro reads the generated JSON and produces the static site in `dist/`
+1. `data/translations.json` declares enabled GetBible translations + default
+2. `bible.db` (SQLite, committed) holds Bible verses with `translation` column, populated by `extractor/fetch_bible.py`
+3. `data/harmony.json` — **single source of truth**: chapter order, sections, refs, dates, places, images, notes
+4. `data/greek_terms.json` stores theological/Greek term definitions + detection labels
+5. `scripts/build_site_data.py` reads inputs, validates images/verses, writes `src/data/harmony.generated.json`, copies `assets/` to `public/assets/`
+6. Astro reads generated JSON, produces static site in `dist/`
 
 **Generated files** (do not edit directly): `src/data/harmony.generated.json`, `public/assets/`, `dist/`, `.astro/`
 
@@ -35,34 +35,33 @@ npm run build            # just Astro build (runs build_site_data.py via prebuil
 
 ## Validation
 
-Run `npm run build` before concluding any change. For data changes, check that `scripts/build_site_data.py` reports no missing verses or images.
+Run `npm run build` before concluding any change. For data changes, check `scripts/build_site_data.py` reports no missing verses or images.
 
 ## Data format
 
-In `data/harmony.json`, biblical references are keyed by book slug (`matthieu`, `marc`, `luc`, `jean`, `actes`) and use triplets `[chapter, start_verse, end_verse]`. The `bible.db` table is `versets` with columns `translation`, `evangeliste`, `chapitre_id`, `verset_id`, `titre`, `texte`.
+In `data/harmony.json`, refs keyed by book slug (`matthieu`, `marc`, `luc`, `jean`, `actes`), triplets `[chapter, start_verse, end_verse]`. `bible.db` table is `versets`, columns: `translation`, `evangeliste`, `chapitre_id`, `verset_id`, `titre`, `texte`.
 
 ## Astro site structure
 
 - `src/layouts/BaseLayout.astro` — HTML shell, imports global CSS
-- `src/components/SiteShell.astro` — sidebar navigation + main content slot
+- `src/components/SiteShell.astro` — sidebar nav + main content slot
 - `src/components/SectionBlock.astro` — renders one harmony section (metadata, images, passages, notes)
-- `src/components/Passage.astro` — renders verses for a single biblical passage
+- `src/components/Passage.astro` — renders verses for single biblical passage
 - `src/pages/index.astro` — home page with chapter index
-- `src/pages/evangiles/[chapter].astro` — dynamic route generating one page per chapter via `getStaticPaths`
+- `src/pages/evangiles/[chapter].astro` — dynamic route, one page per chapter via `getStaticPaths`
 - `src/styles/main.css` — global styles
 
 ## Maps
 
-Use `assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg` as the free cartographic base. It comes from Wikimedia Commons under CC0 1.0. Put project-specific derived maps in `assets/maps/generated/`, preferably as SVG, and reference them from `data/harmony.json` with paths relative to `assets/`, for example `maps/generated/chapitre-06-judee.svg`.
+Use `assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg` as cartographic base. From Wikimedia Commons, CC0 1.0. Project-derived maps go in `assets/maps/generated/`, preferably SVG. Reference from `data/harmony.json` with paths relative to `assets/`, e.g. `maps/generated/chapitre-06-judee.svg`.
 
-Generate scripted maps with `python3 scripts/generate_maps.py`. When a generated SVG needs changes, update the script rather than editing the generated SVG by hand.
+Generate scripted maps with `python3 scripts/generate_maps.py`. When generated SVG needs changes, update script — don't edit generated SVG by hand.
 
-Use one chapter map when the narrative stays at the same geographic scale. Create multiple maps, by section or by section group, when the story clearly changes place, scale, or geographic focus. Use numbered markers by default; add arrows only when the biblical text explicitly describes a movement or route.
+One chapter map when narrative stays same geographic scale. Multiple maps (by section or section group) when story changes place, scale, or geographic focus. Numbered markers by default. Arrows only when biblical text explicitly describes movement or route.
 
 ## Deployment
 
-GitHub Actions workflow `.github/workflows/deploy-pages.yml` builds and publishes `dist/` to GitHub Pages.
-
+GitHub Actions `.github/workflows/deploy-pages.yml` builds + publishes `dist/` to GitHub Pages.
 
 ## Context Navigation (Graphify)
 
@@ -76,8 +75,8 @@ GitHub Actions workflow `.github/workflows/deploy-pages.yml` builds and publishe
 ### When to rebuild the graph
 - After structural changes (new modules, major refactors)
 - Command: `graphify . --update` (only processes modified files)
-- The graph is persistent — NO need to rebuild every session
+- Graph is persistent — NO need to rebuild every session
 
 ### Do NOT
 - Don't manually modify files inside `graphify-out/`
-- Don't re-read the entire codebase if the graph already has the information
+- Don't re-read entire codebase if graph already has the information

@@ -239,288 +239,6 @@
   },
   "nodes": [
     {
-      "label": "astro.config.mjs",
-      "file_type": "code",
-      "source_file": "astro.config.mjs",
-      "source_location": "L1",
-      "id": "astro_config_mjs",
-      "community": 11,
-      "norm_label": "astro.config.mjs"
-    },
-    {
-      "label": "fetch_bible.py",
-      "file_type": "code",
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "L1",
-      "id": "extractor_fetch_bible_py",
-      "community": 1,
-      "norm_label": "fetch_bible.py"
-    },
-    {
-      "label": "fetch_json()",
-      "file_type": "code",
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "L38",
-      "id": "fetch_bible_fetch_json",
-      "community": 1,
-      "norm_label": "fetch_json()"
-    },
-    {
-      "label": "configured_translations()",
-      "file_type": "code",
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "L44",
-      "id": "fetch_bible_configured_translations",
-      "community": 1,
-      "norm_label": "configured_translations()"
-    },
-    {
-      "label": "selected_translations()",
-      "file_type": "code",
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "L57",
-      "id": "fetch_bible_selected_translations",
-      "community": 1,
-      "norm_label": "selected_translations()"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "L80",
-      "id": "fetch_bible_main",
-      "community": 1,
-      "norm_label": "main()"
-    },
-    {
-      "label": "fetch_tob.py",
-      "file_type": "code",
-      "source_file": "extractor/fetch_tob.py",
-      "source_location": "L1",
-      "id": "extractor_fetch_tob_py",
-      "community": 7,
-      "norm_label": "fetch_tob.py"
-    },
-    {
-      "label": "insert_verset()",
-      "file_type": "code",
-      "source_file": "extractor/fetch_tob.py",
-      "source_location": "L42",
-      "id": "fetch_tob_insert_verset",
-      "community": 7,
-      "norm_label": "insert_verset()"
-    },
-    {
-      "label": "build_annexes.py",
-      "file_type": "code",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "L1",
-      "id": "scripts_build_annexes_py",
-      "community": 3,
-      "norm_label": "build_annexes.py"
-    },
-    {
-      "label": "parse_frontmatter()",
-      "file_type": "code",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "L18",
-      "id": "build_annexes_parse_frontmatter",
-      "community": 3,
-      "norm_label": "parse_frontmatter()"
-    },
-    {
-      "label": "parse_bib()",
-      "file_type": "code",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "L31",
-      "id": "build_annexes_parse_bib",
-      "community": 3,
-      "norm_label": "parse_bib()"
-    },
-    {
-      "label": "bib_to_markdown()",
-      "file_type": "code",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "L46",
-      "id": "build_annexes_bib_to_markdown",
-      "community": 3,
-      "norm_label": "bib_to_markdown()"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "L76",
-      "id": "build_annexes_main",
-      "community": 3,
-      "norm_label": "main()"
-    },
-    {
-      "label": "Return (frontmatter dict, body) from a Jekyll markdown file.",
-      "file_type": "rationale",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "L19",
-      "id": "build_annexes_rationale_19",
-      "community": 3,
-      "norm_label": "return (frontmatter dict, body) from a jekyll markdown file."
-    },
-    {
-      "label": "Parse a .bib file into a list of entries with key/value fields.",
-      "file_type": "rationale",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "L32",
-      "id": "build_annexes_rationale_32",
-      "community": 3,
-      "norm_label": "parse a .bib file into a list of entries with key/value fields."
-    },
-    {
-      "label": "Convert parsed bib entries to a markdown list.",
-      "file_type": "rationale",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "L47",
-      "id": "build_annexes_rationale_47",
-      "community": 3,
-      "norm_label": "convert parsed bib entries to a markdown list."
-    },
-    {
-      "label": "build_site_data.py",
-      "file_type": "code",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "L1",
-      "id": "scripts_build_site_data_py",
-      "community": 1,
-      "norm_label": "build_site_data.py"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "L21",
-      "id": "build_site_data_main",
-      "community": 1,
-      "norm_label": "main()"
-    },
-    {
-      "label": "ensure_multi_translation_schema()",
-      "file_type": "code",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "L72",
-      "id": "build_site_data_ensure_multi_translation_schema",
-      "community": 1,
-      "norm_label": "ensure_multi_translation_schema()"
-    },
-    {
-      "label": "build_passages()",
-      "file_type": "code",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "L84",
-      "id": "build_site_data_build_passages",
-      "community": 1,
-      "norm_label": "build_passages()"
-    },
-    {
-      "label": "fetch_passage_rows()",
-      "file_type": "code",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "L146",
-      "id": "build_site_data_fetch_passage_rows",
-      "community": 1,
-      "norm_label": "fetch_passage_rows()"
-    },
-    {
-      "label": "validate_images()",
-      "file_type": "code",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "L169",
-      "id": "build_site_data_validate_images",
-      "community": 1,
-      "norm_label": "validate_images()"
-    },
-    {
-      "label": "copy_assets()",
-      "file_type": "code",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "L181",
-      "id": "build_site_data_copy_assets",
-      "community": 1,
-      "norm_label": "copy_assets()"
-    },
-    {
-      "label": "generate_maps.py",
-      "file_type": "code",
-      "source_file": "scripts/generate_maps.py",
-      "source_location": "L1",
-      "id": "scripts_generate_maps_py",
-      "community": 4,
-      "norm_label": "generate_maps.py"
-    },
-    {
-      "label": "generate_map()",
-      "file_type": "code",
-      "source_file": "scripts/generate_maps.py",
-      "source_location": "L295",
-      "id": "generate_maps_generate_map",
-      "community": 4,
-      "norm_label": "generate_map()"
-    },
-    {
-      "label": "generate_raster_map()",
-      "file_type": "code",
-      "source_file": "scripts/generate_maps.py",
-      "source_location": "L303",
-      "id": "generate_maps_generate_raster_map",
-      "community": 4,
-      "norm_label": "generate_raster_map()"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": "scripts/generate_maps.py",
-      "source_location": "L316",
-      "id": "generate_maps_main",
-      "community": 4,
-      "norm_label": "main()"
-    },
-    {
-      "label": "Mon harmonie des \u00c9vangiles (project overview)",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": null,
-      "source_url": "https://evangiles.decre.me/",
-      "captured_at": null,
-      "author": "Amaury Decr\u00eame",
-      "contributor": null,
-      "id": "readme_project",
-      "community": 9,
-      "norm_label": "mon harmonie des evangiles (project overview)"
-    },
-    {
-      "label": "CLAUDE.md \u2014 project guidance for Claude Code",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "claude_md_project",
-      "community": 8,
-      "norm_label": "claude.md \u2014 project guidance for claude code"
-    },
-    {
-      "label": "AGENTS.md \u2014 repository instructions for agents",
-      "file_type": "document",
-      "source_file": "AGENTS.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "agents_md_project",
-      "community": 8,
-      "norm_label": "agents.md \u2014 repository instructions for agents"
-    },
-    {
       "label": "astro.config.mjs \u2014 Astro site configuration",
       "file_type": "code",
       "source_file": "astro.config.mjs",
@@ -530,7 +248,7 @@
       "author": null,
       "contributor": null,
       "id": "astro_config",
-      "community": 9,
+      "community": 7,
       "norm_label": "astro.config.mjs \u2014 astro site configuration"
     },
     {
@@ -547,6 +265,67 @@
       "norm_label": "fetch_bible.py \u2014 getbible api extractor"
     },
     {
+      "label": "GetBible API \u2014 external Bible verse API",
+      "file_type": "document",
+      "source_file": "extractor/fetch_bible.py",
+      "source_location": "API_BASE = 'https://api.getbible.net/v2'",
+      "source_url": "https://api.getbible.net/v2",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "getbible api \u2014 external bible verse api",
+      "id": "getbible_api"
+    },
+    {
+      "label": "fetch_bible.main \u2014 orchestrates DB rebuild from GetBible",
+      "file_type": "code",
+      "source_file": "extractor/fetch_bible.py",
+      "source_location": "def main()",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fetch_bible_main",
+      "community": 1,
+      "norm_label": "fetch_bible.main \u2014 orchestrates db rebuild from getbible"
+    },
+    {
+      "label": "fetch_bible.configured_translations \u2014 reads enabled translations from config",
+      "file_type": "code",
+      "source_file": "extractor/fetch_bible.py",
+      "source_location": "def configured_translations()",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fetch_bible_configured_translations",
+      "community": 1,
+      "norm_label": "fetch_bible.configured_translations \u2014 reads enabled translations from config"
+    },
+    {
+      "label": "fetch_bible.selected_translations \u2014 filters by CLI args",
+      "file_type": "code",
+      "source_file": "extractor/fetch_bible.py",
+      "source_location": "def selected_translations()",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fetch_bible_selected_translations",
+      "community": 1,
+      "norm_label": "fetch_bible.selected_translations \u2014 filters by cli args"
+    },
+    {
+      "label": "versets \u2014 SQLite table with multi-translation Bible verses",
+      "file_type": "document",
+      "source_file": "extractor/fetch_bible.py",
+      "source_location": "CREATE TABLE versets",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "versets \u2014 sqlite table with multi-translation bible verses",
+      "id": "versets_table"
+    },
+    {
       "label": "fetch_tob.py \u2014 legacy TOB scraper",
       "file_type": "code",
       "source_file": "extractor/fetch_tob.py",
@@ -560,30 +339,16 @@
       "norm_label": "fetch_tob.py \u2014 legacy tob scraper"
     },
     {
-      "label": "build_site_data.py \u2014 generates harmony.generated.json",
-      "file_type": "code",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": null,
-      "source_url": null,
+      "label": "Rationale: fetch_tob.py is legacy single-translation scraper superseded by fetch_bible.py",
+      "file_type": "document",
+      "source_file": "extractor/fetch_tob.py",
+      "source_location": "old schema without translation column",
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "build_site_data_script",
-      "community": 12,
-      "norm_label": "build_site_data.py \u2014 generates harmony.generated.json"
-    },
-    {
-      "label": "generate_maps.py \u2014 SVG map generator",
-      "file_type": "code",
-      "source_file": "scripts/generate_maps.py",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "generate_maps_script",
-      "community": 4,
-      "norm_label": "generate_maps.py \u2014 svg map generator"
+      "community": 1,
+      "norm_label": "rationale: fetch_tob.py is legacy single-translation scraper superseded by fetch_bible.py",
+      "id": "rationale_fetch_tob_legacy"
     },
     {
       "label": "build_annexes.py \u2014 Jekyll-to-Astro annexe converter",
@@ -595,8 +360,244 @@
       "author": null,
       "contributor": null,
       "id": "build_annexes_script",
-      "community": 10,
+      "community": 8,
       "norm_label": "build_annexes.py \u2014 jekyll-to-astro annexe converter"
+    },
+    {
+      "label": "build_annexes.main \u2014 converts annexes/*.md and .bib to Astro pages",
+      "file_type": "code",
+      "source_file": "scripts/build_annexes.py",
+      "source_location": "def main()",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "build_annexes_main",
+      "community": 4,
+      "norm_label": "build_annexes.main \u2014 converts annexes/*.md and .bib to astro pages"
+    },
+    {
+      "label": "build_annexes.parse_frontmatter \u2014 strips Jekyll frontmatter",
+      "file_type": "code",
+      "source_file": "scripts/build_annexes.py",
+      "source_location": "def parse_frontmatter()",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "build_annexes_parse_frontmatter",
+      "community": 4,
+      "norm_label": "build_annexes.parse_frontmatter \u2014 strips jekyll frontmatter"
+    },
+    {
+      "label": "build_annexes.parse_bib \u2014 parses .bib files into dicts",
+      "file_type": "code",
+      "source_file": "scripts/build_annexes.py",
+      "source_location": "def parse_bib()",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "build_annexes_parse_bib",
+      "community": 4,
+      "norm_label": "build_annexes.parse_bib \u2014 parses .bib files into dicts"
+    },
+    {
+      "label": "build_annexes.bib_to_markdown \u2014 formats bib entries as markdown list",
+      "file_type": "code",
+      "source_file": "scripts/build_annexes.py",
+      "source_location": "def bib_to_markdown()",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "build_annexes_bib_to_markdown",
+      "community": 4,
+      "norm_label": "build_annexes.bib_to_markdown \u2014 formats bib entries as markdown list"
+    },
+    {
+      "label": "Rationale: annexes/ are a Jekyll legacy migrated to Astro via build_annexes.py",
+      "file_type": "document",
+      "source_file": "scripts/build_annexes.py",
+      "source_location": "Generate Astro markdown pages from annexes/*.md",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 8,
+      "norm_label": "rationale: annexes/ are a jekyll legacy migrated to astro via build_annexes.py",
+      "id": "rationale_annexes_jekyll_migration"
+    },
+    {
+      "label": "build_site_data.py \u2014 generates harmony.generated.json",
+      "file_type": "code",
+      "source_file": "scripts/build_site_data.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "build_site_data_script",
+      "community": 10,
+      "norm_label": "build_site_data.py \u2014 generates harmony.generated.json"
+    },
+    {
+      "label": "build_site_data.main \u2014 reads harmony.json, queries DB, writes generated JSON",
+      "file_type": "code",
+      "source_file": "scripts/build_site_data.py",
+      "source_location": "def main()",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "build_site_data_main",
+      "community": 1,
+      "norm_label": "build_site_data.main \u2014 reads harmony.json, queries db, writes generated json"
+    },
+    {
+      "label": "build_site_data.build_passages \u2014 queries bible.db for multi-translation passages",
+      "file_type": "code",
+      "source_file": "scripts/build_site_data.py",
+      "source_location": "def build_passages()",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "build_site_data_build_passages",
+      "community": 1,
+      "norm_label": "build_site_data.build_passages \u2014 queries bible.db for multi-translation passages"
+    },
+    {
+      "label": "build_site_data.validate_images \u2014 checks assets exist",
+      "file_type": "code",
+      "source_file": "scripts/build_site_data.py",
+      "source_location": "def validate_images()",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "build_site_data_validate_images",
+      "community": 1,
+      "norm_label": "build_site_data.validate_images \u2014 checks assets exist"
+    },
+    {
+      "label": "build_site_data.copy_assets \u2014 copies assets/ to public/assets/",
+      "file_type": "code",
+      "source_file": "scripts/build_site_data.py",
+      "source_location": "def copy_assets()",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "build_site_data_copy_assets",
+      "community": 6,
+      "norm_label": "build_site_data.copy_assets \u2014 copies assets/ to public/assets/"
+    },
+    {
+      "label": "generate_maps.py \u2014 SVG map generator",
+      "file_type": "code",
+      "source_file": "scripts/generate_maps.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "generate_maps_script",
+      "community": 11,
+      "norm_label": "generate_maps.py \u2014 svg map generator"
+    },
+    {
+      "label": "generate_maps.main \u2014 iterates MAPS list and dispatches to generators",
+      "file_type": "code",
+      "source_file": "scripts/generate_maps.py",
+      "source_location": "def main()",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "generate_maps_main",
+      "community": 6,
+      "norm_label": "generate_maps.main \u2014 iterates maps list and dispatches to generators"
+    },
+    {
+      "label": "generate_maps.generate_map \u2014 injects overlay into SVG source",
+      "file_type": "code",
+      "source_file": "scripts/generate_maps.py",
+      "source_location": "def generate_map()",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "generate_maps_generate_map",
+      "community": 6,
+      "norm_label": "generate_maps.generate_map \u2014 injects overlay into svg source"
+    },
+    {
+      "label": "generate_maps.generate_raster_map \u2014 embeds JPG in SVG with overlay",
+      "file_type": "code",
+      "source_file": "scripts/generate_maps.py",
+      "source_location": "def generate_raster_map()",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "generate_maps_generate_raster_map",
+      "community": 6,
+      "norm_label": "generate_maps.generate_raster_map \u2014 embeds jpg in svg with overlay"
+    },
+    {
+      "label": "Return (frontmatter dict, body) from a Jekyll markdown file.",
+      "file_type": "rationale",
+      "source_file": "scripts/build_annexes.py",
+      "source_location": "L19",
+      "community": 12,
+      "norm_label": "return (frontmatter dict, body) from a jekyll markdown file.",
+      "id": "build_annexes_rationale_19"
+    },
+    {
+      "label": "Parse a .bib file into a list of entries with key/value fields.",
+      "file_type": "rationale",
+      "source_file": "scripts/build_annexes.py",
+      "source_location": "L32",
+      "community": 13,
+      "norm_label": "parse a .bib file into a list of entries with key/value fields.",
+      "id": "build_annexes_rationale_32"
+    },
+    {
+      "label": "Convert parsed bib entries to a markdown list.",
+      "file_type": "rationale",
+      "source_file": "scripts/build_annexes.py",
+      "source_location": "L47",
+      "community": 14,
+      "norm_label": "convert parsed bib entries to a markdown list.",
+      "id": "build_annexes_rationale_47"
+    },
+    {
+      "label": "Mon harmonie des \u00c9vangiles (project overview)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": "https://evangiles.decre.me/",
+      "captured_at": null,
+      "author": "Amaury Decr\u00eame",
+      "contributor": null,
+      "community": 7,
+      "norm_label": "mon harmonie des evangiles (project overview)",
+      "id": "readme_project"
+    },
+    {
+      "label": "CLAUDE.md \u2014 project guidance for Claude Code",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 9,
+      "norm_label": "claude.md \u2014 project guidance for claude code",
+      "id": "claude_md_project"
+    },
+    {
+      "label": "AGENTS.md \u2014 repository instructions for agents",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 9,
+      "norm_label": "agents.md \u2014 repository instructions for agents",
+      "id": "agents_md_project"
     },
     {
       "label": "bible.db \u2014 SQLite multi-translation Bible database",
@@ -607,9 +608,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "bible_db",
       "community": 1,
-      "norm_label": "bible.db \u2014 sqlite multi-translation bible database"
+      "norm_label": "bible.db \u2014 sqlite multi-translation bible database",
+      "id": "bible_db"
     },
     {
       "label": "data/harmony.json \u2014 single source of truth for the harmony",
@@ -620,9 +621,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "harmony_json",
       "community": 1,
-      "norm_label": "data/harmony.json \u2014 single source of truth for the harmony"
+      "norm_label": "data/harmony.json \u2014 single source of truth for the harmony",
+      "id": "harmony_json"
     },
     {
       "label": "data/translations.json \u2014 enabled GetBible translations",
@@ -633,9 +634,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "translations_json",
       "community": 1,
-      "norm_label": "data/translations.json \u2014 enabled getbible translations"
+      "norm_label": "data/translations.json \u2014 enabled getbible translations",
+      "id": "translations_json"
     },
     {
       "label": "data/greek_terms.json \u2014 Greek theological term definitions",
@@ -646,9 +647,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "greek_terms_json",
-      "community": 13,
-      "norm_label": "data/greek_terms.json \u2014 greek theological term definitions"
+      "community": 15,
+      "norm_label": "data/greek_terms.json \u2014 greek theological term definitions",
+      "id": "greek_terms_json"
     },
     {
       "label": "src/data/harmony.generated.json \u2014 generated enriched harmony data",
@@ -659,9 +660,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "harmony_generated_json",
       "community": 1,
-      "norm_label": "src/data/harmony.generated.json \u2014 generated enriched harmony data"
+      "norm_label": "src/data/harmony.generated.json \u2014 generated enriched harmony data",
+      "id": "harmony_generated_json"
     },
     {
       "label": "src/data/annexes.generated.json \u2014 generated annexe index",
@@ -672,9 +673,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "annexes_generated_json",
-      "community": 3,
-      "norm_label": "src/data/annexes.generated.json \u2014 generated annexe index"
+      "community": 4,
+      "norm_label": "src/data/annexes.generated.json \u2014 generated annexe index",
+      "id": "annexes_generated_json"
     },
     {
       "label": "Holy_sites_of_Jesus_in_Palestine.svg \u2014 CC0 cartographic base",
@@ -685,9 +686,9 @@
       "captured_at": null,
       "author": "un.org",
       "contributor": null,
-      "id": "map_source_palestine_svg",
-      "community": 4,
-      "norm_label": "holy_sites_of_jesus_in_palestine.svg \u2014 cc0 cartographic base"
+      "community": 6,
+      "norm_label": "holy_sites_of_jesus_in_palestine.svg \u2014 cc0 cartographic base",
+      "id": "map_source_palestine_svg"
     },
     {
       "label": "Jerusalem_premier_siecle.JPG \u2014 Jerusalem 1st century raster source",
@@ -698,9 +699,9 @@
       "captured_at": null,
       "author": "Olevy",
       "contributor": null,
-      "id": "map_source_jerusalem_jpg",
-      "community": 4,
-      "norm_label": "jerusalem_premier_siecle.jpg \u2014 jerusalem 1st century raster source"
+      "community": 6,
+      "norm_label": "jerusalem_premier_siecle.jpg \u2014 jerusalem 1st century raster source",
+      "id": "map_source_jerusalem_jpg"
     },
     {
       "label": "assets/maps/README.md \u2014 map sources and conventions",
@@ -711,9 +712,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "assets_maps_readme",
-      "community": 4,
-      "norm_label": "assets/maps/readme.md \u2014 map sources and conventions"
+      "community": 6,
+      "norm_label": "assets/maps/readme.md \u2014 map sources and conventions",
+      "id": "assets_maps_readme"
     },
     {
       "label": "public/assets/maps/README.md \u2014 (copy) map sources and conventions",
@@ -724,9 +725,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "public_assets_maps_readme",
-      "community": 4,
-      "norm_label": "public/assets/maps/readme.md \u2014 (copy) map sources and conventions"
+      "community": 6,
+      "norm_label": "public/assets/maps/readme.md \u2014 (copy) map sources and conventions",
+      "id": "public_assets_maps_readme"
     },
     {
       "label": "google7be578b7e788ac0e.html \u2014 Google Search Console verification",
@@ -737,9 +738,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "google_site_verification",
-      "community": 14,
-      "norm_label": "google7be578b7e788ac0e.html \u2014 google search console verification"
+      "community": 16,
+      "norm_label": "google7be578b7e788ac0e.html \u2014 google search console verification",
+      "id": "google_site_verification"
     },
     {
       "label": "annexes/marc.md \u2014 legacy Jekyll annex on the Gospel of Mark",
@@ -750,9 +751,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "annexes_marc_legacy",
-      "community": 3,
-      "norm_label": "annexes/marc.md \u2014 legacy jekyll annex on the gospel of mark"
+      "community": 4,
+      "norm_label": "annexes/marc.md \u2014 legacy jekyll annex on the gospel of mark",
+      "id": "annexes_marc_legacy"
     },
     {
       "label": "annexes/index.md \u2014 legacy Jekyll annexe index",
@@ -763,9 +764,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "annexes_index_legacy",
-      "community": 3,
-      "norm_label": "annexes/index.md \u2014 legacy jekyll annexe index"
+      "community": 4,
+      "norm_label": "annexes/index.md \u2014 legacy jekyll annexe index",
+      "id": "annexes_index_legacy"
     },
     {
       "label": "annexes/harmonie.md \u2014 legacy Jekyll harmony source annex",
@@ -776,9 +777,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "annexes_harmonie_legacy",
-      "community": 3,
-      "norm_label": "annexes/harmonie.md \u2014 legacy jekyll harmony source annex"
+      "community": 4,
+      "norm_label": "annexes/harmonie.md \u2014 legacy jekyll harmony source annex",
+      "id": "annexes_harmonie_legacy"
     },
     {
       "label": "annexes/apocryphes.md \u2014 legacy Jekyll annex on apocryphal gospels",
@@ -789,9 +790,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "annexes_apocryphes_legacy",
-      "community": 3,
-      "norm_label": "annexes/apocryphes.md \u2014 legacy jekyll annex on apocryphal gospels"
+      "community": 4,
+      "norm_label": "annexes/apocryphes.md \u2014 legacy jekyll annex on apocryphal gospels",
+      "id": "annexes_apocryphes_legacy"
     },
     {
       "label": "src/pages/annexes/marc.md \u2014 Astro annexe on the Gospel of Mark",
@@ -802,9 +803,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "pages_annexes_marc",
-      "community": 3,
-      "norm_label": "src/pages/annexes/marc.md \u2014 astro annexe on the gospel of mark"
+      "community": 4,
+      "norm_label": "src/pages/annexes/marc.md \u2014 astro annexe on the gospel of mark",
+      "id": "pages_annexes_marc"
     },
     {
       "label": "src/pages/annexes/bibliographie.md \u2014 Astro bibliography annexe",
@@ -815,9 +816,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "pages_annexes_bibliographie",
-      "community": 3,
-      "norm_label": "src/pages/annexes/bibliographie.md \u2014 astro bibliography annexe"
+      "community": 4,
+      "norm_label": "src/pages/annexes/bibliographie.md \u2014 astro bibliography annexe",
+      "id": "pages_annexes_bibliographie"
     },
     {
       "label": "src/pages/annexes/apocryphes.md \u2014 Astro annexe on apocryphal gospels",
@@ -828,34 +829,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "pages_annexes_apocryphes",
-      "community": 3,
-      "norm_label": "src/pages/annexes/apocryphes.md \u2014 astro annexe on apocryphal gospels"
-    },
-    {
-      "label": "GetBible API \u2014 external Bible verse API",
-      "file_type": "document",
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "API_BASE = 'https://api.getbible.net/v2'",
-      "source_url": "https://api.getbible.net/v2",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "getbible_api",
-      "community": 1,
-      "norm_label": "getbible api \u2014 external bible verse api"
-    },
-    {
-      "label": "versets \u2014 SQLite table with multi-translation Bible verses",
-      "file_type": "document",
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "CREATE TABLE versets",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "versets_table",
-      "community": 1,
-      "norm_label": "versets \u2014 sqlite table with multi-translation bible verses"
+      "community": 4,
+      "norm_label": "src/pages/annexes/apocryphes.md \u2014 astro annexe on apocryphal gospels",
+      "id": "pages_annexes_apocryphes"
     },
     {
       "label": "Rationale: harmony.json as single editable source of truth",
@@ -865,9 +841,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rationale_harmony_json_source_of_truth",
       "community": 1,
-      "norm_label": "rationale: harmony.json as single editable source of truth"
+      "norm_label": "rationale: harmony.json as single editable source of truth",
+      "id": "rationale_harmony_json_source_of_truth"
     },
     {
       "label": "Rationale: generated files must not be edited directly",
@@ -877,9 +853,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rationale_generated_files_no_edit",
       "community": 1,
-      "norm_label": "rationale: generated files must not be edited directly"
+      "norm_label": "rationale: generated files must not be edited directly",
+      "id": "rationale_generated_files_no_edit"
     },
     {
       "label": "Rationale: use numbered markers by default, arrows only for explicit movement",
@@ -889,9 +865,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rationale_map_numbered_markers",
-      "community": 4,
-      "norm_label": "rationale: use numbered markers by default, arrows only for explicit movement"
+      "community": 17,
+      "norm_label": "rationale: use numbered markers by default, arrows only for explicit movement",
+      "id": "rationale_map_numbered_markers"
     },
     {
       "label": "Rationale: only CC0 map sources allowed",
@@ -901,33 +877,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rationale_map_cc0_only",
-      "community": 4,
-      "norm_label": "rationale: only cc0 map sources allowed"
-    },
-    {
-      "label": "Rationale: fetch_tob.py is legacy single-translation scraper superseded by fetch_bible.py",
-      "file_type": "document",
-      "source_file": "extractor/fetch_tob.py",
-      "source_location": "old schema without translation column",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "rationale_fetch_tob_legacy",
-      "community": 1,
-      "norm_label": "rationale: fetch_tob.py is legacy single-translation scraper superseded by fetch_bible.py"
-    },
-    {
-      "label": "Rationale: annexes/ are a Jekyll legacy migrated to Astro via build_annexes.py",
-      "file_type": "document",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "Generate Astro markdown pages from annexes/*.md",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "rationale_annexes_jekyll_migration",
-      "community": 10,
-      "norm_label": "rationale: annexes/ are a jekyll legacy migrated to astro via build_annexes.py"
+      "community": 6,
+      "norm_label": "rationale: only cc0 map sources allowed",
+      "id": "rationale_map_cc0_only"
     },
     {
       "label": "Rationale: Jerusalem JPG embedded in SVG to allow sharp overlays without degrading source labels",
@@ -937,9 +889,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rationale_jerusalem_raster_embed",
-      "community": 4,
-      "norm_label": "rationale: jerusalem jpg embedded in svg to allow sharp overlays without degrading source labels"
+      "community": 18,
+      "norm_label": "rationale: jerusalem jpg embedded in svg to allow sharp overlays without degrading source labels",
+      "id": "rationale_jerusalem_raster_embed"
     },
     {
       "label": "Carte Chapitre 2 : Naissance et jeunesse de J\u00e9sus",
@@ -950,9 +902,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "map_ch02_naissance_jeunesse",
-      "community": 2,
-      "norm_label": "carte chapitre 2 : naissance et jeunesse de jesus"
+      "community": 3,
+      "norm_label": "carte chapitre 2 : naissance et jeunesse de jesus",
+      "id": "map_ch02_naissance_jeunesse"
     },
     {
       "label": "Carte Chapitre 3 : D\u00e9but du minist\u00e8re en Jud\u00e9e",
@@ -963,9 +915,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "map_ch03_debut_ministere_judee",
       "community": 2,
-      "norm_label": "carte chapitre 3 : debut du ministere en judee"
+      "norm_label": "carte chapitre 3 : debut du ministere en judee",
+      "id": "map_ch03_debut_ministere_judee"
     },
     {
       "label": "Carte Chapitre 4 : Jean le Baptiste \u00e0 B\u00e9thanie",
@@ -976,9 +928,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "map_ch04_bethanie",
       "community": 2,
-      "norm_label": "carte chapitre 4 : jean le baptiste a bethanie"
+      "norm_label": "carte chapitre 4 : jean le baptiste a bethanie",
+      "id": "map_ch04_bethanie"
     },
     {
       "label": "Carte Chapitre 5 : J\u00e9sus en Galil\u00e9e",
@@ -989,9 +941,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "map_ch05_galilee",
       "community": 2,
-      "norm_label": "carte chapitre 5 : jesus en galilee"
+      "norm_label": "carte chapitre 5 : jesus en galilee",
+      "id": "map_ch05_galilee"
     },
     {
       "label": "Carte Chapitre 6 : J\u00e9sus et Jean en Jud\u00e9e",
@@ -1002,9 +954,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "map_ch06_judee_samarie",
-      "community": 6,
-      "norm_label": "carte chapitre 6 : jesus et jean en judee"
+      "community": 2,
+      "norm_label": "carte chapitre 6 : jesus et jean en judee",
+      "id": "map_ch06_judee_samarie"
     },
     {
       "label": "Carte Chapitre 7 : Minist\u00e8re en Galil\u00e9e",
@@ -1015,9 +967,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "map_ch07_galilee",
-      "community": 2,
-      "norm_label": "carte chapitre 7 : ministere en galilee"
+      "community": 5,
+      "norm_label": "carte chapitre 7 : ministere en galilee",
+      "id": "map_ch07_galilee"
     },
     {
       "label": "Carte Chapitre 7 : Travers\u00e9e du lac",
@@ -1028,9 +980,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "map_ch07_traversee_lac",
-      "community": 2,
-      "norm_label": "carte chapitre 7 : traversee du lac"
+      "community": 5,
+      "norm_label": "carte chapitre 7 : traversee du lac",
+      "id": "map_ch07_traversee_lac"
     },
     {
       "label": "Carte Chapitre 8 : J\u00e9rusalem au temps du Second Temple",
@@ -1041,9 +993,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "map_ch08_jerusalem",
-      "community": 5,
-      "norm_label": "carte chapitre 8 : jerusalem au temps du second temple"
+      "community": 3,
+      "norm_label": "carte chapitre 8 : jerusalem au temps du second temple",
+      "id": "map_ch08_jerusalem"
     },
     {
       "label": "Holy Sites of Jesus in Palestine (base cartographique CC0)",
@@ -1054,9 +1006,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "map_source_holy_sites",
       "community": 2,
-      "norm_label": "holy sites of jesus in palestine (base cartographique cc0)"
+      "norm_label": "holy sites of jesus in palestine (base cartographique cc0)",
+      "id": "map_source_holy_sites"
     },
     {
       "label": "J\u00e9rusalem",
@@ -1067,9 +1019,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_jerusalem",
-      "community": 5,
-      "norm_label": "jerusalem"
+      "community": 3,
+      "norm_label": "jerusalem",
+      "id": "place_jerusalem"
     },
     {
       "label": "Nazareth",
@@ -1080,9 +1032,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_nazareth",
-      "community": 2,
-      "norm_label": "nazareth"
+      "community": 3,
+      "norm_label": "nazareth",
+      "id": "place_nazareth"
     },
     {
       "label": "Bethl\u00e9em",
@@ -1093,9 +1045,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_bethleem",
-      "community": 2,
-      "norm_label": "bethleem"
+      "community": 3,
+      "norm_label": "bethleem",
+      "id": "place_bethleem"
     },
     {
       "label": "\u00c9gypte",
@@ -1106,9 +1058,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_egypte",
-      "community": 2,
-      "norm_label": "egypte"
+      "community": 3,
+      "norm_label": "egypte",
+      "id": "place_egypte"
     },
     {
       "label": "Jourdain (fleuve)",
@@ -1119,9 +1071,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_jourdain",
       "community": 2,
-      "norm_label": "jourdain (fleuve)"
+      "norm_label": "jourdain (fleuve)",
+      "id": "place_jourdain"
     },
     {
       "label": "D\u00e9sert de Jud\u00e9e",
@@ -1132,9 +1084,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_desert_judee",
       "community": 2,
-      "norm_label": "desert de judee"
+      "norm_label": "desert de judee",
+      "id": "place_desert_judee"
     },
     {
       "label": "B\u00e9thanie au-del\u00e0 du Jourdain",
@@ -1145,9 +1097,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_bethanie_jourdain",
       "community": 2,
-      "norm_label": "bethanie au-dela du jourdain"
+      "norm_label": "bethanie au-dela du jourdain",
+      "id": "place_bethanie_jourdain"
     },
     {
       "label": "Cana",
@@ -1158,9 +1110,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_cana",
-      "community": 2,
-      "norm_label": "cana"
+      "community": 5,
+      "norm_label": "cana",
+      "id": "place_cana"
     },
     {
       "label": "Capharna\u00fcm",
@@ -1171,9 +1123,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_capharnaum",
-      "community": 2,
-      "norm_label": "capharnaum"
+      "community": 5,
+      "norm_label": "capharnaum",
+      "id": "place_capharnaum"
     },
     {
       "label": "Jud\u00e9e",
@@ -1184,9 +1136,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_judee",
-      "community": 6,
-      "norm_label": "judee"
+      "community": 2,
+      "norm_label": "judee",
+      "id": "place_judee"
     },
     {
       "label": "A\u00efnon",
@@ -1197,9 +1149,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_ainon",
-      "community": 6,
-      "norm_label": "ainon"
+      "community": 2,
+      "norm_label": "ainon",
+      "id": "place_ainon"
     },
     {
       "label": "Sychar (Samarie)",
@@ -1210,9 +1162,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_sychar",
-      "community": 6,
-      "norm_label": "sychar (samarie)"
+      "community": 2,
+      "norm_label": "sychar (samarie)",
+      "id": "place_sychar"
     },
     {
       "label": "Samarie",
@@ -1223,9 +1175,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_samarie",
-      "community": 6,
-      "norm_label": "samarie"
+      "community": 2,
+      "norm_label": "samarie",
+      "id": "place_samarie"
     },
     {
       "label": "Galil\u00e9e",
@@ -1236,9 +1188,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_galilee",
-      "community": 2,
-      "norm_label": "galilee"
+      "community": 5,
+      "norm_label": "galilee",
+      "id": "place_galilee"
     },
     {
       "label": "Lac de Tib\u00e9riade",
@@ -1249,9 +1201,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_lac_tib\u00e9riade",
-      "community": 2,
-      "norm_label": "lac de tiberiade"
+      "community": 5,
+      "norm_label": "lac de tiberiade",
+      "id": "place_lac_tib\u00e9riade"
     },
     {
       "label": "Na\u00efn",
@@ -1262,9 +1214,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_nain",
-      "community": 2,
-      "norm_label": "nain"
+      "community": 5,
+      "norm_label": "nain",
+      "id": "place_nain"
     },
     {
       "label": "Gadara",
@@ -1275,9 +1227,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_gadara",
-      "community": 2,
-      "norm_label": "gadara"
+      "community": 5,
+      "norm_label": "gadara",
+      "id": "place_gadara"
     },
     {
       "label": "Rive ouest du lac (d\u00e9part en barque)",
@@ -1288,9 +1240,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_rive_ouest_lac",
-      "community": 2,
-      "norm_label": "rive ouest du lac (depart en barque)"
+      "community": 5,
+      "norm_label": "rive ouest du lac (depart en barque)",
+      "id": "place_rive_ouest_lac"
     },
     {
       "label": "Rive est du lac \u2013 pays des Gadar\u00e9niens",
@@ -1301,9 +1253,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_rive_est_lac",
-      "community": 2,
-      "norm_label": "rive est du lac \u2013 pays des gadareniens"
+      "community": 5,
+      "norm_label": "rive est du lac \u2013 pays des gadareniens",
+      "id": "place_rive_est_lac"
     },
     {
       "label": "Piscine de Bethesda",
@@ -1314,9 +1266,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_piscine_bethesda",
-      "community": 5,
-      "norm_label": "piscine de bethesda"
+      "community": 3,
+      "norm_label": "piscine de bethesda",
+      "id": "place_piscine_bethesda"
     },
     {
       "label": "Temple de J\u00e9rusalem",
@@ -1327,9 +1279,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_temple_jerusalem",
-      "community": 5,
-      "norm_label": "temple de jerusalem"
+      "community": 3,
+      "norm_label": "temple de jerusalem",
+      "id": "place_temple_jerusalem"
     },
     {
       "label": "Carte 4 \u2014 Itin\u00e9raires entre Galil\u00e9e et J\u00e9rusalem (minist\u00e8re tardif)",
@@ -1340,9 +1292,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "carte4_map",
       "community": 0,
-      "norm_label": "carte 4 \u2014 itineraires entre galilee et jerusalem (ministere tardif)"
+      "norm_label": "carte 4 \u2014 itineraires entre galilee et jerusalem (ministere tardif)",
+      "id": "carte4_map"
     },
     {
       "label": "Carte 5 \u2014 Derniers voyages vers J\u00e9rusalem via P\u00e9r\u00e9e et Samarie",
@@ -1353,9 +1305,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "carte5_map",
       "community": 0,
-      "norm_label": "carte 5 \u2014 derniers voyages vers jerusalem via peree et samarie"
+      "norm_label": "carte 5 \u2014 derniers voyages vers jerusalem via peree et samarie",
+      "id": "carte5_map"
     },
     {
       "label": "Carte 6 \u2014 Galil\u00e9e, Jud\u00e9e et vue a\u00e9rienne de J\u00e9rusalem (entr\u00e9e triomphale)",
@@ -1366,9 +1318,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "carte6_map",
       "community": 0,
-      "norm_label": "carte 6 \u2014 galilee, judee et vue aerienne de jerusalem (entree triomphale)"
+      "norm_label": "carte 6 \u2014 galilee, judee et vue aerienne de jerusalem (entree triomphale)",
+      "id": "carte6_map"
     },
     {
       "label": "Vue panoramique de G\u00e9n\u00e9zareth \u2014 Mer de Galil\u00e9e depuis les hauteurs",
@@ -1379,9 +1331,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "vue_genezareth_photo",
       "community": 0,
-      "norm_label": "vue panoramique de genezareth \u2014 mer de galilee depuis les hauteurs"
+      "norm_label": "vue panoramique de genezareth \u2014 mer de galilee depuis les hauteurs",
+      "id": "vue_genezareth_photo"
     },
     {
       "label": "Carte routi\u00e8re moderne de la r\u00e9gion de G\u00e9n\u00e9zareth / Mer de Galil\u00e9e",
@@ -1392,9 +1344,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "genezareth_roadmap",
       "community": 0,
-      "norm_label": "carte routiere moderne de la region de genezareth / mer de galilee"
+      "norm_label": "carte routiere moderne de la region de genezareth / mer de galilee",
+      "id": "genezareth_roadmap"
     },
     {
       "label": "La Terre Sainte \u00e0 l'\u00e9poque du Nouveau Testament \u2014 carte g\u00e9n\u00e9rale",
@@ -1405,9 +1357,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "map_holy_land",
       "community": 0,
-      "norm_label": "la terre sainte a l'epoque du nouveau testament \u2014 carte generale"
+      "norm_label": "la terre sainte a l'epoque du nouveau testament \u2014 carte generale",
+      "id": "map_holy_land"
     },
     {
       "label": "D\u00e9sert de Jud\u00e9e \u2014 paysage aride et rocheux",
@@ -1418,9 +1370,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "desert_judee_photo",
-      "community": 6,
-      "norm_label": "desert de judee \u2014 paysage aride et rocheux"
+      "community": 2,
+      "norm_label": "desert de judee \u2014 paysage aride et rocheux",
+      "id": "desert_judee_photo"
     },
     {
       "label": "Plan de J\u00e9rusalem au premier si\u00e8cle \u2014 Temple, Antonia, murs, citadelle",
@@ -1431,9 +1383,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "jerusalem_premier_siecle_plan",
-      "community": 5,
-      "norm_label": "plan de jerusalem au premier siecle \u2014 temple, antonia, murs, citadelle"
+      "community": 3,
+      "norm_label": "plan de jerusalem au premier siecle \u2014 temple, antonia, murs, citadelle",
+      "id": "jerusalem_premier_siecle_plan"
     },
     {
       "label": "P\u00e9r\u00e9e",
@@ -1444,9 +1396,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_peree",
       "community": 0,
-      "norm_label": "peree"
+      "norm_label": "peree",
+      "id": "place_peree"
     },
     {
       "label": "D\u00e9capole",
@@ -1457,9 +1409,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_decapole",
       "community": 0,
-      "norm_label": "decapole"
+      "norm_label": "decapole",
+      "id": "place_decapole"
     },
     {
       "label": "B\u00e9thanie",
@@ -1470,9 +1422,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_bethanie",
       "community": 0,
-      "norm_label": "bethanie"
+      "norm_label": "bethanie",
+      "id": "place_bethanie"
     },
     {
       "label": "Capharna\u00fcm",
@@ -1483,9 +1435,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_capernaum",
       "community": 0,
-      "norm_label": "capharnaum"
+      "norm_label": "capharnaum",
+      "id": "place_capernaum"
     },
     {
       "label": "C\u00e9sar\u00e9e de Philippe",
@@ -1496,9 +1448,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_cesaree_philippe",
       "community": 0,
-      "norm_label": "cesaree de philippe"
+      "norm_label": "cesaree de philippe",
+      "id": "place_cesaree_philippe"
     },
     {
       "label": "Mont Hermon",
@@ -1509,9 +1461,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_mt_hermon",
       "community": 0,
-      "norm_label": "mont hermon"
+      "norm_label": "mont hermon",
+      "id": "place_mt_hermon"
     },
     {
       "label": "Mer de Galil\u00e9e",
@@ -1522,9 +1474,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_mer_galilee",
       "community": 0,
-      "norm_label": "mer de galilee"
+      "norm_label": "mer de galilee",
+      "id": "place_mer_galilee"
     },
     {
       "label": "J\u00e9richo",
@@ -1535,9 +1487,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_jericho",
       "community": 0,
-      "norm_label": "jericho"
+      "norm_label": "jericho",
+      "id": "place_jericho"
     },
     {
       "label": "Mer Sal\u00e9e (Mer Morte)",
@@ -1548,9 +1500,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_mer_salee",
       "community": 0,
-      "norm_label": "mer salee (mer morte)"
+      "norm_label": "mer salee (mer morte)",
+      "id": "place_mer_salee"
     },
     {
       "label": "Bethsa\u00efde",
@@ -1561,9 +1513,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_bethsaide",
       "community": 0,
-      "norm_label": "bethsaide"
+      "norm_label": "bethsaide",
+      "id": "place_bethsaide"
     },
     {
       "label": "Korazin",
@@ -1574,9 +1526,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_korazin",
       "community": 0,
-      "norm_label": "korazin"
+      "norm_label": "korazin",
+      "id": "place_korazin"
     },
     {
       "label": "Magadan",
@@ -1587,9 +1539,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_magadan",
       "community": 0,
-      "norm_label": "magadan"
+      "norm_label": "magadan",
+      "id": "place_magadan"
     },
     {
       "label": "\u00c9phra\u00efm",
@@ -1600,9 +1552,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_ephraim",
       "community": 0,
-      "norm_label": "ephraim"
+      "norm_label": "ephraim",
+      "id": "place_ephraim"
     },
     {
       "label": "Mont des Oliviers",
@@ -1613,9 +1565,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_mont_oliviers",
-      "community": 0,
-      "norm_label": "mont des oliviers"
+      "community": 3,
+      "norm_label": "mont des oliviers",
+      "id": "place_mont_oliviers"
     },
     {
       "label": "Bethphag\u00e9",
@@ -1626,9 +1578,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_bethphage",
       "community": 0,
-      "norm_label": "bethphage"
+      "norm_label": "bethphage",
+      "id": "place_bethphage"
     },
     {
       "label": "Vall\u00e9e du C\u00e9dron",
@@ -1639,9 +1591,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_vallee_cedron",
-      "community": 5,
-      "norm_label": "vallee du cedron"
+      "community": 0,
+      "norm_label": "vallee du cedron",
+      "id": "place_vallee_cedron"
     },
     {
       "label": "Emma\u00fcs",
@@ -1652,9 +1604,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_emmaus",
       "community": 0,
-      "norm_label": "emmaus"
+      "norm_label": "emmaus",
+      "id": "place_emmaus"
     },
     {
       "label": "Forteresse Antonia (J\u00e9rusalem 1er si\u00e8cle)",
@@ -1665,9 +1617,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_antonia",
-      "community": 5,
-      "norm_label": "forteresse antonia (jerusalem 1er siecle)"
+      "community": 3,
+      "norm_label": "forteresse antonia (jerusalem 1er siecle)",
+      "id": "place_antonia"
     },
     {
       "label": "Temple de J\u00e9rusalem (1er si\u00e8cle)",
@@ -1678,9 +1630,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_temple",
-      "community": 5,
-      "norm_label": "temple de jerusalem (1er siecle)"
+      "community": 3,
+      "norm_label": "temple de jerusalem (1er siecle)",
+      "id": "place_temple"
     },
     {
       "label": "Tib\u00e9riade",
@@ -1691,9 +1643,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "place_tiberiade",
       "community": 0,
-      "norm_label": "tiberiade"
+      "norm_label": "tiberiade",
+      "id": "place_tiberiade"
     },
     {
       "label": "Th\u00e8me : itin\u00e9raires de J\u00e9sus dans les \u00c9vangiles",
@@ -1704,9 +1656,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "theme_gospel_journeys",
       "community": 0,
-      "norm_label": "theme : itineraires de jesus dans les evangiles"
+      "norm_label": "theme : itineraires de jesus dans les evangiles",
+      "id": "theme_gospel_journeys"
     },
     {
       "label": "Th\u00e8me : Terre Sainte au Nouveau Testament",
@@ -1717,9 +1669,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "theme_holy_land_nt",
       "community": 0,
-      "norm_label": "theme : terre sainte au nouveau testament"
+      "norm_label": "theme : terre sainte au nouveau testament",
+      "id": "theme_holy_land_nt"
     },
     {
       "label": "Th\u00e8me : d\u00e9sert et lieu de retraite spirituelle",
@@ -1730,9 +1682,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "theme_desert_wilderness",
-      "community": 6,
-      "norm_label": "theme : desert et lieu de retraite spirituelle"
+      "community": 2,
+      "norm_label": "theme : desert et lieu de retraite spirituelle",
+      "id": "theme_desert_wilderness"
     },
     {
       "label": "Th\u00e8me : J\u00e9rusalem au 1er si\u00e8cle",
@@ -1743,107 +1695,35 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "theme_jerusalem_first_century",
-      "community": 5,
-      "norm_label": "theme : jerusalem au 1er siecle"
+      "community": 3,
+      "norm_label": "theme : jerusalem au 1er siecle",
+      "id": "theme_jerusalem_first_century"
     }
   ],
   "links": [
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "L38",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": "astro.config.mjs",
+      "source_location": "site: 'https://amaury-d.github.io', base: '/evangiles'",
       "weight": 1.0,
-      "_src": "extractor_fetch_bible_py",
-      "_tgt": "fetch_bible_fetch_json",
-      "source": "extractor_fetch_bible_py",
-      "target": "fetch_bible_fetch_json",
-      "confidence_score": 1.0
+      "_src": "readme_project",
+      "_tgt": "astro_config",
+      "source": "astro_config",
+      "target": "readme_project"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "L44",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "extractor/fetch_tob.py",
+      "source_location": "both populate bible.db versets table",
       "weight": 1.0,
-      "_src": "extractor_fetch_bible_py",
-      "_tgt": "fetch_bible_configured_translations",
-      "source": "extractor_fetch_bible_py",
-      "target": "fetch_bible_configured_translations",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "L57",
-      "weight": 1.0,
-      "_src": "extractor_fetch_bible_py",
-      "_tgt": "fetch_bible_selected_translations",
-      "source": "extractor_fetch_bible_py",
-      "target": "fetch_bible_selected_translations",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "L80",
-      "weight": 1.0,
-      "_src": "extractor_fetch_bible_py",
-      "_tgt": "fetch_bible_main",
-      "source": "extractor_fetch_bible_py",
-      "target": "fetch_bible_main",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "L136",
-      "weight": 1.0,
-      "_src": "fetch_bible_main",
-      "_tgt": "fetch_bible_fetch_json",
-      "source": "fetch_bible_fetch_json",
-      "target": "fetch_bible_main",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "translations, default = configured_translations()",
-      "weight": 1.0,
-      "_src": "fetch_bible_selected_translations",
-      "_tgt": "fetch_bible_configured_translations",
-      "confidence_score": 1.0,
-      "source": "fetch_bible_configured_translations",
-      "target": "fetch_bible_selected_translations"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "TRANSLATIONS_CONFIG.read_text",
-      "weight": 1.0,
-      "_src": "fetch_bible_configured_translations",
-      "_tgt": "translations_json",
-      "source": "fetch_bible_configured_translations",
-      "target": "translations_json"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "extractor/fetch_bible.py",
-      "source_location": "translations, default_translation = selected_translations()",
-      "weight": 1.0,
-      "_src": "fetch_bible_main",
-      "_tgt": "fetch_bible_selected_translations",
-      "confidence_score": 1.0,
-      "source": "fetch_bible_selected_translations",
-      "target": "fetch_bible_main"
+      "_src": "fetch_bible_script",
+      "_tgt": "fetch_tob_script",
+      "source": "fetch_bible_script",
+      "target": "fetch_tob_script"
     },
     {
       "relation": "calls",
@@ -1854,8 +1734,8 @@
       "weight": 1.0,
       "_src": "fetch_bible_main",
       "_tgt": "getbible_api",
-      "source": "fetch_bible_main",
-      "target": "getbible_api"
+      "source": "getbible_api",
+      "target": "fetch_bible_main"
     },
     {
       "relation": "references",
@@ -1894,136 +1774,88 @@
       "target": "versets_table"
     },
     {
-      "relation": "contains",
+      "relation": "calls",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "extractor/fetch_bible.py",
+      "source_location": "translations, default_translation = selected_translations()",
+      "weight": 1.0,
+      "_src": "fetch_bible_main",
+      "_tgt": "fetch_bible_selected_translations",
+      "source": "fetch_bible_main",
+      "target": "fetch_bible_selected_translations"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "extractor/fetch_bible.py",
+      "source_location": "translations, default = configured_translations()",
+      "weight": 1.0,
+      "_src": "fetch_bible_selected_translations",
+      "_tgt": "fetch_bible_configured_translations",
+      "source": "fetch_bible_configured_translations",
+      "target": "fetch_bible_selected_translations"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "extractor/fetch_bible.py",
+      "source_location": "TRANSLATIONS_CONFIG.read_text",
+      "weight": 1.0,
+      "_src": "fetch_bible_configured_translations",
+      "_tgt": "translations_json",
+      "source": "fetch_bible_configured_translations",
+      "target": "translations_json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/build_site_data.py",
+      "source_location": "SELECT verset_id, titre, texte FROM versets",
+      "weight": 1.0,
+      "_src": "build_site_data_build_passages",
+      "_tgt": "versets_table",
+      "source": "versets_table",
+      "target": "build_site_data_build_passages"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "extractor/fetch_tob.py",
-      "source_location": "L42",
+      "source_location": "DB='bible.db'",
       "weight": 1.0,
-      "_src": "extractor_fetch_tob_py",
-      "_tgt": "fetch_tob_insert_verset",
-      "source": "extractor_fetch_tob_py",
-      "target": "fetch_tob_insert_verset",
-      "confidence_score": 1.0
+      "_src": "fetch_tob_script",
+      "_tgt": "bible_db",
+      "source": "fetch_tob_script",
+      "target": "bible_db"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "L18",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "extractor/fetch_tob.py",
+      "source_location": "old schema without translation column \u2014 superseded",
       "weight": 1.0,
-      "_src": "scripts_build_annexes_py",
-      "_tgt": "build_annexes_parse_frontmatter",
-      "source": "scripts_build_annexes_py",
-      "target": "build_annexes_parse_frontmatter",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "L31",
-      "weight": 1.0,
-      "_src": "scripts_build_annexes_py",
-      "_tgt": "build_annexes_parse_bib",
-      "source": "scripts_build_annexes_py",
-      "target": "build_annexes_parse_bib",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "L46",
-      "weight": 1.0,
-      "_src": "scripts_build_annexes_py",
-      "_tgt": "build_annexes_bib_to_markdown",
-      "source": "scripts_build_annexes_py",
-      "target": "build_annexes_bib_to_markdown",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "L76",
-      "weight": 1.0,
-      "_src": "scripts_build_annexes_py",
-      "_tgt": "build_annexes_main",
-      "source": "scripts_build_annexes_py",
-      "target": "build_annexes_main",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "fm, body = parse_frontmatter(text)",
-      "weight": 1.0,
-      "_src": "build_annexes_main",
-      "_tgt": "build_annexes_parse_frontmatter",
-      "confidence_score": 1.0,
-      "source": "build_annexes_parse_frontmatter",
-      "target": "build_annexes_main"
+      "_src": "fetch_tob_script",
+      "_tgt": "rationale_fetch_tob_legacy",
+      "source": "fetch_tob_script",
+      "target": "rationale_fetch_tob_legacy"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "L19",
-      "weight": 1.0,
-      "_src": "build_annexes_rationale_19",
-      "_tgt": "build_annexes_parse_frontmatter",
-      "source": "build_annexes_parse_frontmatter",
-      "target": "build_annexes_rationale_19",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "entries = parse_bib(text)",
-      "weight": 1.0,
-      "_src": "build_annexes_main",
-      "_tgt": "build_annexes_parse_bib",
       "confidence_score": 1.0,
-      "source": "build_annexes_parse_bib",
-      "target": "build_annexes_main"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
       "source_file": "scripts/build_annexes.py",
-      "source_location": "L32",
+      "source_location": "Generate Astro markdown pages from annexes/*.md",
       "weight": 1.0,
-      "_src": "build_annexes_rationale_32",
-      "_tgt": "build_annexes_parse_bib",
-      "source": "build_annexes_parse_bib",
-      "target": "build_annexes_rationale_32",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "body = bib_to_markdown(entries)",
-      "weight": 1.0,
-      "_src": "build_annexes_main",
-      "_tgt": "build_annexes_bib_to_markdown",
-      "confidence_score": 1.0,
-      "source": "build_annexes_bib_to_markdown",
-      "target": "build_annexes_main"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "L47",
-      "weight": 1.0,
-      "_src": "build_annexes_rationale_47",
-      "_tgt": "build_annexes_bib_to_markdown",
-      "source": "build_annexes_bib_to_markdown",
-      "target": "build_annexes_rationale_47",
-      "confidence_score": 1.0
+      "_src": "rationale_annexes_jekyll_migration",
+      "_tgt": "build_annexes_script",
+      "source": "build_annexes_script",
+      "target": "rationale_annexes_jekyll_migration"
     },
     {
       "relation": "references",
@@ -2098,124 +1930,40 @@
       "target": "annexes_generated_json"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "L21",
-      "weight": 1.0,
-      "_src": "scripts_build_site_data_py",
-      "_tgt": "build_site_data_main",
-      "source": "scripts_build_site_data_py",
-      "target": "build_site_data_main",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "L72",
-      "weight": 1.0,
-      "_src": "scripts_build_site_data_py",
-      "_tgt": "build_site_data_ensure_multi_translation_schema",
-      "source": "scripts_build_site_data_py",
-      "target": "build_site_data_ensure_multi_translation_schema",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "L84",
-      "weight": 1.0,
-      "_src": "scripts_build_site_data_py",
-      "_tgt": "build_site_data_build_passages",
-      "source": "scripts_build_site_data_py",
-      "target": "build_site_data_build_passages",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "L146",
-      "weight": 1.0,
-      "_src": "scripts_build_site_data_py",
-      "_tgt": "build_site_data_fetch_passage_rows",
-      "source": "scripts_build_site_data_py",
-      "target": "build_site_data_fetch_passage_rows",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "L169",
-      "weight": 1.0,
-      "_src": "scripts_build_site_data_py",
-      "_tgt": "build_site_data_validate_images",
-      "source": "scripts_build_site_data_py",
-      "target": "build_site_data_validate_images",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "L181",
-      "weight": 1.0,
-      "_src": "scripts_build_site_data_py",
-      "_tgt": "build_site_data_copy_assets",
-      "source": "scripts_build_site_data_py",
-      "target": "build_site_data_copy_assets",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "L38",
-      "weight": 1.0,
-      "_src": "build_site_data_main",
-      "_tgt": "build_site_data_ensure_multi_translation_schema",
-      "source": "build_site_data_main",
-      "target": "build_site_data_ensure_multi_translation_schema",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "generated_section['passages'] = build_passages(",
-      "weight": 1.0,
-      "_src": "build_site_data_main",
-      "_tgt": "build_site_data_build_passages",
       "confidence_score": 1.0,
-      "source": "build_site_data_main",
-      "target": "build_site_data_build_passages"
+      "source_file": "scripts/build_annexes.py",
+      "source_location": "fm, body = parse_frontmatter(text)",
+      "weight": 1.0,
+      "_src": "build_annexes_main",
+      "_tgt": "build_annexes_parse_frontmatter",
+      "source": "build_annexes_main",
+      "target": "build_annexes_parse_frontmatter"
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "validate_images(generated)",
-      "weight": 1.0,
-      "_src": "build_site_data_main",
-      "_tgt": "build_site_data_validate_images",
       "confidence_score": 1.0,
-      "source": "build_site_data_main",
-      "target": "build_site_data_validate_images"
+      "source_file": "scripts/build_annexes.py",
+      "source_location": "entries = parse_bib(text)",
+      "weight": 1.0,
+      "_src": "build_annexes_main",
+      "_tgt": "build_annexes_parse_bib",
+      "source": "build_annexes_main",
+      "target": "build_annexes_parse_bib"
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/build_site_data.py",
-      "source_location": "copy_assets()",
-      "weight": 1.0,
-      "_src": "build_site_data_main",
-      "_tgt": "build_site_data_copy_assets",
       "confidence_score": 1.0,
-      "source": "build_site_data_main",
-      "target": "build_site_data_copy_assets"
+      "source_file": "scripts/build_annexes.py",
+      "source_location": "body = bib_to_markdown(entries)",
+      "weight": 1.0,
+      "_src": "build_annexes_main",
+      "_tgt": "build_annexes_bib_to_markdown",
+      "source": "build_annexes_main",
+      "target": "build_annexes_bib_to_markdown"
     },
     {
       "relation": "references",
@@ -2268,26 +2016,38 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "scripts/build_site_data.py",
-      "source_location": "L93",
+      "source_location": "generated_section['passages'] = build_passages(",
       "weight": 1.0,
-      "_src": "build_site_data_build_passages",
-      "_tgt": "build_site_data_fetch_passage_rows",
-      "source": "build_site_data_build_passages",
-      "target": "build_site_data_fetch_passage_rows",
-      "confidence_score": 1.0
+      "_src": "build_site_data_main",
+      "_tgt": "build_site_data_build_passages",
+      "source": "build_site_data_main",
+      "target": "build_site_data_build_passages"
     },
     {
-      "relation": "references",
+      "relation": "calls",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/build_site_data.py",
-      "source_location": "SELECT verset_id, titre, texte FROM versets",
+      "source_location": "validate_images(generated)",
       "weight": 1.0,
-      "_src": "build_site_data_build_passages",
-      "_tgt": "versets_table",
-      "source": "build_site_data_build_passages",
-      "target": "versets_table"
+      "_src": "build_site_data_main",
+      "_tgt": "build_site_data_validate_images",
+      "source": "build_site_data_main",
+      "target": "build_site_data_validate_images"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/build_site_data.py",
+      "source_location": "copy_assets()",
+      "weight": 1.0,
+      "_src": "build_site_data_main",
+      "_tgt": "build_site_data_copy_assets",
+      "source": "build_site_data_main",
+      "target": "build_site_data_copy_assets"
     },
     {
       "relation": "references",
@@ -2314,90 +2074,6 @@
       "target": "public_assets_maps_readme"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/generate_maps.py",
-      "source_location": "L295",
-      "weight": 1.0,
-      "_src": "scripts_generate_maps_py",
-      "_tgt": "generate_maps_generate_map",
-      "source": "scripts_generate_maps_py",
-      "target": "generate_maps_generate_map",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/generate_maps.py",
-      "source_location": "L303",
-      "weight": 1.0,
-      "_src": "scripts_generate_maps_py",
-      "_tgt": "generate_maps_generate_raster_map",
-      "source": "scripts_generate_maps_py",
-      "target": "generate_maps_generate_raster_map",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/generate_maps.py",
-      "source_location": "L316",
-      "weight": 1.0,
-      "_src": "scripts_generate_maps_py",
-      "_tgt": "generate_maps_main",
-      "source": "scripts_generate_maps_py",
-      "target": "generate_maps_main",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/generate_maps.py",
-      "source_location": "generate_map(source, output=..., aria=..., overlay=...)",
-      "weight": 1.0,
-      "_src": "generate_maps_main",
-      "_tgt": "generate_maps_generate_map",
-      "confidence_score": 1.0,
-      "source": "generate_maps_generate_map",
-      "target": "generate_maps_main"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/generate_maps.py",
-      "source_location": "generate_raster_map(source_path, ...)",
-      "weight": 1.0,
-      "_src": "generate_maps_main",
-      "_tgt": "generate_maps_generate_raster_map",
-      "confidence_score": 1.0,
-      "source": "generate_maps_generate_raster_map",
-      "target": "generate_maps_main"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/generate_maps.py",
-      "source_location": "source_path.read_bytes()",
-      "weight": 1.0,
-      "_src": "generate_maps_generate_raster_map",
-      "_tgt": "map_source_jerusalem_jpg",
-      "source": "generate_maps_generate_raster_map",
-      "target": "map_source_jerusalem_jpg"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "assets/maps/README.md",
-      "source_location": "la carte d\u00e9riv\u00e9e l'encapsule dans un SVG g\u00e9n\u00e9r\u00e9",
-      "weight": 1.0,
-      "_src": "rationale_jerusalem_raster_embed",
-      "_tgt": "generate_maps_generate_raster_map",
-      "source": "generate_maps_generate_raster_map",
-      "target": "rationale_jerusalem_raster_embed"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -2422,16 +2098,40 @@
       "target": "map_source_jerusalem_jpg"
     },
     {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.6,
-      "source_file": "astro.config.mjs",
-      "source_location": "site: 'https://amaury-d.github.io', base: '/evangiles'",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/generate_maps.py",
+      "source_location": "generate_map(source, output=..., aria=..., overlay=...)",
       "weight": 1.0,
-      "_src": "astro_config",
-      "_tgt": "readme_project",
-      "source": "readme_project",
-      "target": "astro_config"
+      "_src": "generate_maps_main",
+      "_tgt": "generate_maps_generate_map",
+      "source": "generate_maps_main",
+      "target": "generate_maps_generate_map"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/generate_maps.py",
+      "source_location": "generate_raster_map(source_path, ...)",
+      "weight": 1.0,
+      "_src": "generate_maps_main",
+      "_tgt": "generate_maps_generate_raster_map",
+      "source": "generate_maps_main",
+      "target": "generate_maps_generate_raster_map"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/generate_maps.py",
+      "source_location": "source_path.read_bytes()",
+      "weight": 1.0,
+      "_src": "generate_maps_generate_raster_map",
+      "_tgt": "map_source_jerusalem_jpg",
+      "source": "generate_maps_generate_raster_map",
+      "target": "map_source_jerusalem_jpg"
     },
     {
       "relation": "semantically_similar_to",
@@ -2446,86 +2146,14 @@
       "target": "agents_md_project"
     },
     {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": "extractor/fetch_tob.py",
-      "source_location": "both populate bible.db versets table",
-      "weight": 1.0,
-      "_src": "fetch_tob_script",
-      "_tgt": "fetch_bible_script",
-      "source": "fetch_bible_script",
-      "target": "fetch_tob_script"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "extractor/fetch_tob.py",
-      "source_location": "DB='bible.db'",
-      "weight": 1.0,
-      "_src": "fetch_tob_script",
-      "_tgt": "bible_db",
-      "source": "fetch_tob_script",
-      "target": "bible_db"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "extractor/fetch_tob.py",
-      "source_location": "old schema without translation column \u2014 superseded",
-      "weight": 1.0,
-      "_src": "rationale_fetch_tob_legacy",
-      "_tgt": "fetch_tob_script",
-      "source": "fetch_tob_script",
-      "target": "rationale_fetch_tob_legacy"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "assets/maps/README.md",
-      "source_location": "python3 scripts/generate_maps.py",
-      "weight": 1.0,
-      "_src": "assets_maps_readme",
-      "_tgt": "generate_maps_script",
-      "source": "generate_maps_script",
-      "target": "assets_maps_readme"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "assets/maps/README.md",
-      "source_location": "Par d\u00e9faut, utiliser des rep\u00e8res num\u00e9rot\u00e9s",
-      "weight": 1.0,
-      "_src": "rationale_map_numbered_markers",
-      "_tgt": "generate_maps_script",
-      "source": "generate_maps_script",
-      "target": "rationale_map_numbered_markers"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/build_annexes.py",
-      "source_location": "Generate Astro markdown pages from annexes/*.md",
-      "weight": 1.0,
-      "_src": "rationale_annexes_jekyll_migration",
-      "_tgt": "build_annexes_script",
-      "source": "build_annexes_script",
-      "target": "rationale_annexes_jekyll_migration"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
       "source_location": "data/harmony.json is the single source of truth",
       "weight": 1.0,
-      "_src": "rationale_harmony_json_source_of_truth",
-      "_tgt": "harmony_json",
+      "_src": "harmony_json",
+      "_tgt": "rationale_harmony_json_source_of_truth",
       "source": "harmony_json",
       "target": "rationale_harmony_json_source_of_truth"
     },
@@ -2536,8 +2164,8 @@
       "source_file": "CLAUDE.md",
       "source_location": "Generated files (do not edit directly)",
       "weight": 1.0,
-      "_src": "rationale_generated_files_no_edit",
-      "_tgt": "harmony_generated_json",
+      "_src": "harmony_generated_json",
+      "_tgt": "rationale_generated_files_no_edit",
       "source": "harmony_generated_json",
       "target": "rationale_generated_files_no_edit"
     },
@@ -2548,8 +2176,8 @@
       "source_file": "assets/maps/README.md",
       "source_location": "sources/Holy_sites_of_Jesus_in_Palestine.svg",
       "weight": 1.0,
-      "_src": "assets_maps_readme",
-      "_tgt": "map_source_palestine_svg",
+      "_src": "map_source_palestine_svg",
+      "_tgt": "assets_maps_readme",
       "source": "map_source_palestine_svg",
       "target": "assets_maps_readme"
     },
@@ -2560,8 +2188,8 @@
       "source_file": "AGENTS.md",
       "source_location": "ne r\u00e9utilisez pas de fonds non libres",
       "weight": 1.0,
-      "_src": "rationale_map_cc0_only",
-      "_tgt": "map_source_palestine_svg",
+      "_src": "map_source_palestine_svg",
+      "_tgt": "rationale_map_cc0_only",
       "source": "map_source_palestine_svg",
       "target": "rationale_map_cc0_only"
     },
@@ -2572,8 +2200,8 @@
       "source_file": "assets/maps/README.md",
       "source_location": "sources/Jerusalem_premier_siecle.JPG",
       "weight": 1.0,
-      "_src": "assets_maps_readme",
-      "_tgt": "map_source_jerusalem_jpg",
+      "_src": "map_source_jerusalem_jpg",
+      "_tgt": "assets_maps_readme",
       "source": "map_source_jerusalem_jpg",
       "target": "assets_maps_readme"
     },
@@ -2584,8 +2212,8 @@
       "source_file": "public/assets/maps/README.md",
       "source_location": "identical content \u2014 copied by build_site_data.copy_assets",
       "weight": 1.0,
-      "_src": "public_assets_maps_readme",
-      "_tgt": "assets_maps_readme",
+      "_src": "assets_maps_readme",
+      "_tgt": "public_assets_maps_readme",
       "source": "assets_maps_readme",
       "target": "public_assets_maps_readme"
     },
@@ -2596,8 +2224,8 @@
       "source_file": "src/pages/annexes/marc.md",
       "source_location": "content identical, only frontmatter differs",
       "weight": 1.0,
-      "_src": "pages_annexes_marc",
-      "_tgt": "annexes_marc_legacy",
+      "_src": "annexes_marc_legacy",
+      "_tgt": "pages_annexes_marc",
       "source": "annexes_marc_legacy",
       "target": "pages_annexes_marc"
     },
@@ -2620,8 +2248,8 @@
       "source_file": "annexes/harmonie.md",
       "source_location": "parent: Annexes",
       "weight": 1.0,
-      "_src": "annexes_harmonie_legacy",
-      "_tgt": "annexes_index_legacy",
+      "_src": "annexes_index_legacy",
+      "_tgt": "annexes_harmonie_legacy",
       "source": "annexes_index_legacy",
       "target": "annexes_harmonie_legacy"
     },
@@ -2632,8 +2260,8 @@
       "source_file": "annexes/apocryphes.md",
       "source_location": "parent: Annexes",
       "weight": 1.0,
-      "_src": "annexes_apocryphes_legacy",
-      "_tgt": "annexes_index_legacy",
+      "_src": "annexes_index_legacy",
+      "_tgt": "annexes_apocryphes_legacy",
       "source": "annexes_index_legacy",
       "target": "annexes_apocryphes_legacy"
     },
@@ -2644,8 +2272,8 @@
       "source_file": "src/pages/annexes/apocryphes.md",
       "source_location": "content identical, only frontmatter differs",
       "weight": 1.0,
-      "_src": "pages_annexes_apocryphes",
-      "_tgt": "annexes_apocryphes_legacy",
+      "_src": "annexes_apocryphes_legacy",
+      "_tgt": "pages_annexes_apocryphes",
       "source": "annexes_apocryphes_legacy",
       "target": "pages_annexes_apocryphes"
     },
@@ -2656,8 +2284,8 @@
       "source_file": "src/pages/annexes/bibliographie.md",
       "source_location": "both are Astro annexe pages under the same layout",
       "weight": 1.0,
-      "_src": "pages_annexes_bibliographie",
-      "_tgt": "pages_annexes_marc",
+      "_src": "pages_annexes_marc",
+      "_tgt": "pages_annexes_bibliographie",
       "source": "pages_annexes_marc",
       "target": "pages_annexes_bibliographie"
     },
@@ -3064,8 +2692,8 @@
       "source_file": "assets/maps/generated/chapitre-07-traversee-lac.svg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "map_ch07_traversee_lac",
-      "_tgt": "map_ch07_galilee",
+      "_src": "map_ch07_galilee",
+      "_tgt": "map_ch07_traversee_lac",
       "source": "map_ch07_galilee",
       "target": "map_ch07_traversee_lac"
     },
@@ -3184,8 +2812,8 @@
       "source_file": "assets/maps/generated/chapitre-02-naissance-jeunesse.svg",
       "source_location": null,
       "weight": 0.9,
-      "_src": "place_nazareth",
-      "_tgt": "place_jerusalem",
+      "_src": "place_jerusalem",
+      "_tgt": "place_nazareth",
       "source": "place_jerusalem",
       "target": "place_nazareth"
     },
@@ -3196,8 +2824,8 @@
       "source_file": "assets/maps/generated/chapitre-08-jerusalem.svg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "place_temple_jerusalem",
-      "_tgt": "place_jerusalem",
+      "_src": "place_jerusalem",
+      "_tgt": "place_temple_jerusalem",
       "source": "place_jerusalem",
       "target": "place_temple_jerusalem"
     },
@@ -3208,8 +2836,8 @@
       "source_file": "assets/maps/generated/chapitre-08-jerusalem.svg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "place_piscine_bethesda",
-      "_tgt": "place_jerusalem",
+      "_src": "place_jerusalem",
+      "_tgt": "place_piscine_bethesda",
       "source": "place_jerusalem",
       "target": "place_piscine_bethesda"
     },
@@ -3232,8 +2860,8 @@
       "source_file": "assets/carte4.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "carte4_map",
-      "_tgt": "place_jerusalem",
+      "_src": "place_jerusalem",
+      "_tgt": "carte4_map",
       "source": "place_jerusalem",
       "target": "carte4_map"
     },
@@ -3244,8 +2872,8 @@
       "source_file": "assets/carte5.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "carte5_map",
-      "_tgt": "place_jerusalem",
+      "_src": "place_jerusalem",
+      "_tgt": "carte5_map",
       "source": "place_jerusalem",
       "target": "carte5_map"
     },
@@ -3256,8 +2884,8 @@
       "source_file": "assets/carte6.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "carte6_map",
-      "_tgt": "place_jerusalem",
+      "_src": "place_jerusalem",
+      "_tgt": "carte6_map",
       "source": "place_jerusalem",
       "target": "carte6_map"
     },
@@ -3268,8 +2896,8 @@
       "source_file": "assets/map_bible_holy_land.png",
       "source_location": null,
       "weight": 0.9,
-      "_src": "map_holy_land",
-      "_tgt": "place_jerusalem",
+      "_src": "place_jerusalem",
+      "_tgt": "map_holy_land",
       "source": "place_jerusalem",
       "target": "map_holy_land"
     },
@@ -3280,8 +2908,8 @@
       "source_file": "assets/maps/sources/Jerusalem_premier_siecle.JPG",
       "source_location": null,
       "weight": 1.0,
-      "_src": "jerusalem_premier_siecle_plan",
-      "_tgt": "place_jerusalem",
+      "_src": "place_jerusalem",
+      "_tgt": "jerusalem_premier_siecle_plan",
       "source": "place_jerusalem",
       "target": "jerusalem_premier_siecle_plan"
     },
@@ -3292,8 +2920,8 @@
       "source_file": "assets/carte6.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "place_mont_oliviers",
-      "_tgt": "place_jerusalem",
+      "_src": "place_jerusalem",
+      "_tgt": "place_mont_oliviers",
       "source": "place_jerusalem",
       "target": "place_mont_oliviers"
     },
@@ -3304,8 +2932,8 @@
       "source_file": "assets/carte6.jpg",
       "source_location": null,
       "weight": 0.85,
-      "_src": "place_bethphage",
-      "_tgt": "place_jerusalem",
+      "_src": "place_jerusalem",
+      "_tgt": "place_bethphage",
       "source": "place_jerusalem",
       "target": "place_bethphage"
     },
@@ -3316,8 +2944,8 @@
       "source_file": "assets/carte6.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "place_vallee_cedron",
-      "_tgt": "place_jerusalem",
+      "_src": "place_jerusalem",
+      "_tgt": "place_vallee_cedron",
       "source": "place_jerusalem",
       "target": "place_vallee_cedron"
     },
@@ -3328,8 +2956,8 @@
       "source_file": "assets/maps/generated/chapitre-02-naissance-jeunesse.svg",
       "source_location": null,
       "weight": 0.9,
-      "_src": "place_egypte",
-      "_tgt": "place_nazareth",
+      "_src": "place_nazareth",
+      "_tgt": "place_egypte",
       "source": "place_nazareth",
       "target": "place_egypte"
     },
@@ -3376,8 +3004,8 @@
       "source_file": "assets/maps/generated/chapitre-04-bethanie.svg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "place_bethanie_jourdain",
-      "_tgt": "place_jourdain",
+      "_src": "place_jourdain",
+      "_tgt": "place_bethanie_jourdain",
       "source": "place_jourdain",
       "target": "place_bethanie_jourdain"
     },
@@ -3388,8 +3016,8 @@
       "source_file": "assets/maps/generated/chapitre-06-judee-samarie.svg",
       "source_location": null,
       "weight": 0.75,
-      "_src": "place_ainon",
-      "_tgt": "place_jourdain",
+      "_src": "place_jourdain",
+      "_tgt": "place_ainon",
       "source": "place_jourdain",
       "target": "place_ainon"
     },
@@ -3400,8 +3028,8 @@
       "source_file": "assets/carte4.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "carte4_map",
-      "_tgt": "place_jourdain",
+      "_src": "place_jourdain",
+      "_tgt": "carte4_map",
       "source": "place_jourdain",
       "target": "carte4_map"
     },
@@ -3412,8 +3040,8 @@
       "source_file": "assets/carte5.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "carte5_map",
-      "_tgt": "place_jourdain",
+      "_src": "place_jourdain",
+      "_tgt": "carte5_map",
       "source": "place_jourdain",
       "target": "carte5_map"
     },
@@ -3484,8 +3112,8 @@
       "source_file": "assets/maps/generated/chapitre-07-traversee-lac.svg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "place_rive_est_lac",
-      "_tgt": "place_capharnaum",
+      "_src": "place_capharnaum",
+      "_tgt": "place_rive_est_lac",
       "source": "place_capharnaum",
       "target": "place_rive_est_lac"
     },
@@ -3520,8 +3148,8 @@
       "source_file": "assets/carte4.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "carte4_map",
-      "_tgt": "place_judee",
+      "_src": "place_judee",
+      "_tgt": "carte4_map",
       "source": "place_judee",
       "target": "carte4_map"
     },
@@ -3532,8 +3160,8 @@
       "source_file": "assets/carte5.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "carte5_map",
-      "_tgt": "place_judee",
+      "_src": "place_judee",
+      "_tgt": "carte5_map",
       "source": "place_judee",
       "target": "carte5_map"
     },
@@ -3544,8 +3172,8 @@
       "source_file": "assets/carte6.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "carte6_map",
-      "_tgt": "place_judee",
+      "_src": "place_judee",
+      "_tgt": "carte6_map",
       "source": "place_judee",
       "target": "carte6_map"
     },
@@ -3556,8 +3184,8 @@
       "source_file": "assets/map_bible_holy_land.png",
       "source_location": null,
       "weight": 0.9,
-      "_src": "map_holy_land",
-      "_tgt": "place_judee",
+      "_src": "place_judee",
+      "_tgt": "map_holy_land",
       "source": "place_judee",
       "target": "map_holy_land"
     },
@@ -3568,8 +3196,8 @@
       "source_file": "assets/desert_de_judee.webp",
       "source_location": null,
       "weight": 1.0,
-      "_src": "desert_judee_photo",
-      "_tgt": "place_judee",
+      "_src": "place_judee",
+      "_tgt": "desert_judee_photo",
       "source": "place_judee",
       "target": "desert_judee_photo"
     },
@@ -3604,8 +3232,8 @@
       "source_file": "assets/carte4.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "carte4_map",
-      "_tgt": "place_samarie",
+      "_src": "place_samarie",
+      "_tgt": "carte4_map",
       "source": "place_samarie",
       "target": "carte4_map"
     },
@@ -3616,8 +3244,8 @@
       "source_file": "assets/carte5.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "carte5_map",
-      "_tgt": "place_samarie",
+      "_src": "place_samarie",
+      "_tgt": "carte5_map",
       "source": "place_samarie",
       "target": "carte5_map"
     },
@@ -3628,8 +3256,8 @@
       "source_file": "assets/maps/generated/chapitre-07-galilee.svg",
       "source_location": null,
       "weight": 0.9,
-      "_src": "place_nain",
-      "_tgt": "place_galilee",
+      "_src": "place_galilee",
+      "_tgt": "place_nain",
       "source": "place_galilee",
       "target": "place_nain"
     },
@@ -3640,8 +3268,8 @@
       "source_file": "assets/carte4.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "carte4_map",
-      "_tgt": "place_galilee",
+      "_src": "place_galilee",
+      "_tgt": "carte4_map",
       "source": "place_galilee",
       "target": "carte4_map"
     },
@@ -3652,8 +3280,8 @@
       "source_file": "assets/carte5.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "carte5_map",
-      "_tgt": "place_galilee",
+      "_src": "place_galilee",
+      "_tgt": "carte5_map",
       "source": "place_galilee",
       "target": "carte5_map"
     },
@@ -3664,8 +3292,8 @@
       "source_file": "assets/carte6.jpg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "carte6_map",
-      "_tgt": "place_galilee",
+      "_src": "place_galilee",
+      "_tgt": "carte6_map",
       "source": "place_galilee",
       "target": "carte6_map"
     },
@@ -3676,8 +3304,8 @@
       "source_file": "assets/vue_de_genezareth.jpg",
       "source_location": null,
       "weight": 0.9,
-      "_src": "vue_genezareth_photo",
-      "_tgt": "place_galilee",
+      "_src": "place_galilee",
+      "_tgt": "vue_genezareth_photo",
       "source": "place_galilee",
       "target": "vue_genezareth_photo"
     },
@@ -3688,8 +3316,8 @@
       "source_file": "assets/Genezareth.png",
       "source_location": null,
       "weight": 0.9,
-      "_src": "genezareth_roadmap",
-      "_tgt": "place_galilee",
+      "_src": "place_galilee",
+      "_tgt": "genezareth_roadmap",
       "source": "place_galilee",
       "target": "genezareth_roadmap"
     },
@@ -3700,8 +3328,8 @@
       "source_file": "assets/map_bible_holy_land.png",
       "source_location": null,
       "weight": 0.9,
-      "_src": "map_holy_land",
-      "_tgt": "place_galilee",
+      "_src": "place_galilee",
+      "_tgt": "map_holy_land",
       "source": "place_galilee",
       "target": "map_holy_land"
     },
@@ -3724,8 +3352,8 @@
       "source_file": "assets/maps/generated/chapitre-07-traversee-lac.svg",
       "source_location": null,
       "weight": 1.0,
-      "_src": "place_rive_est_lac",
-      "_tgt": "place_gadara",
+      "_src": "place_gadara",
+      "_tgt": "place_rive_est_lac",
       "source": "place_gadara",
       "target": "place_rive_est_lac"
     },
@@ -3916,8 +3544,8 @@
       "source_file": "assets/carte5.jpg",
       "source_location": null,
       "weight": 0.9,
-      "_src": "carte5_map",
-      "_tgt": "carte4_map",
+      "_src": "carte4_map",
+      "_tgt": "carte5_map",
       "source": "carte4_map",
       "target": "carte5_map"
     },
@@ -3928,8 +3556,8 @@
       "source_file": "assets/carte6.jpg",
       "source_location": null,
       "weight": 0.85,
-      "_src": "carte6_map",
-      "_tgt": "carte4_map",
+      "_src": "carte4_map",
+      "_tgt": "carte6_map",
       "source": "carte4_map",
       "target": "carte6_map"
     },
@@ -3940,8 +3568,8 @@
       "source_file": "assets/Genezareth.png",
       "source_location": null,
       "weight": 0.75,
-      "_src": "genezareth_roadmap",
-      "_tgt": "carte4_map",
+      "_src": "carte4_map",
+      "_tgt": "genezareth_roadmap",
       "source": "carte4_map",
       "target": "genezareth_roadmap"
     },
@@ -3952,8 +3580,8 @@
       "source_file": "assets/map_bible_holy_land.png",
       "source_location": null,
       "weight": 0.8,
-      "_src": "map_holy_land",
-      "_tgt": "carte4_map",
+      "_src": "carte4_map",
+      "_tgt": "map_holy_land",
       "source": "carte4_map",
       "target": "map_holy_land"
     },
@@ -4060,8 +3688,8 @@
       "source_file": "assets/carte6.jpg",
       "source_location": null,
       "weight": 0.85,
-      "_src": "carte6_map",
-      "_tgt": "carte5_map",
+      "_src": "carte5_map",
+      "_tgt": "carte6_map",
       "source": "carte5_map",
       "target": "carte6_map"
     },
@@ -4072,8 +3700,8 @@
       "source_file": "assets/desert_de_judee.webp",
       "source_location": null,
       "weight": 0.7,
-      "_src": "desert_judee_photo",
-      "_tgt": "carte5_map",
+      "_src": "carte5_map",
+      "_tgt": "desert_judee_photo",
       "source": "carte5_map",
       "target": "desert_judee_photo"
     },
@@ -4204,8 +3832,8 @@
       "source_file": "assets/maps/sources/Jerusalem_premier_siecle.JPG",
       "source_location": null,
       "weight": 0.85,
-      "_src": "jerusalem_premier_siecle_plan",
-      "_tgt": "carte6_map",
+      "_src": "carte6_map",
+      "_tgt": "jerusalem_premier_siecle_plan",
       "source": "carte6_map",
       "target": "jerusalem_premier_siecle_plan"
     },
@@ -4384,8 +4012,8 @@
       "source_file": "assets/carte4.jpg",
       "source_location": null,
       "weight": 0.9,
-      "_src": "place_bethsaide",
-      "_tgt": "place_mer_galilee",
+      "_src": "place_mer_galilee",
+      "_tgt": "place_bethsaide",
       "source": "place_mer_galilee",
       "target": "place_bethsaide"
     },
@@ -4396,8 +4024,8 @@
       "source_file": "assets/Genezareth.png",
       "source_location": null,
       "weight": 1.0,
-      "_src": "place_tiberiade",
-      "_tgt": "place_mer_galilee",
+      "_src": "place_mer_galilee",
+      "_tgt": "place_tiberiade",
       "source": "place_mer_galilee",
       "target": "place_tiberiade"
     }

@@ -1716,7 +1716,6 @@
           "date": "+32, Avril/Mai, vers la Pâque",
           "lieu": "Génézareth, Galilée",
           "images": {
-            "Genezareth.png": "Emplacement de Génézareth",
             "vue_de_genezareth.jpg": "Vue du lac depuis Génézareth"
           }
         },
@@ -1870,10 +1869,7 @@
             ]
           },
           "date": "+32, après la Pâque",
-          "lieu": "Bethsaïde, Galilée",
-          "images": {
-            "carte4.jpg": "Carte 4"
-          }
+          "lieu": "Bethsaïde, Galilée"
         },
         {
           "id": "galilee3-13",
@@ -2147,7 +2143,10 @@
             ]
           },
           "date": "+32, après la Pâque",
-          "lieu": "Galilée -> Samarie"
+          "lieu": "Galilée -> Samarie",
+          "images": {
+            "maps/generated/chapitre-09-galilee-jerusalem.svg": "Carte du voyage de Galilée vers Jérusalem par la Samarie"
+          }
         },
         {
           "id": "galilee3-25",
@@ -2614,7 +2613,10 @@
           "date": "+32, après la fête de l’Inauguration",
           "lieu": "Pérée"
         }
-      ]
+      ],
+      "images": {
+        "maps/generated/chapitre-09-galilee-phenicie.svg": "Carte du ministère en Galilée, Phénicie et Décapole"
+      }
     },
     {
       "id": "samarie2",

@@ -244,6 +244,86 @@ CHAPTER_08_OVERLAY = """
 """
 
 
+CHAPTER_09_GALILEE_NORD_OVERLAY = """
+  <g id="evangiles-chapitre-09-galilee-nord-overlay">
+    <rect x="36" y="1008" width="740" height="412" rx="8" class="ev-map-legend-box"/>
+    <text x="64" y="1062" class="ev-map-title">Chapitre 9 (1/2)</text>
+    <text x="64" y="1102" class="ev-map-subtitle">Galilée, Phénicie et Décapole</text>
+    <text x="64" y="1154" class="ev-map-note">1. Capharnaüm : base du ministère, discours synagogue</text>
+    <text x="64" y="1186" class="ev-map-note">2. Bethsaïde : envoi des disciples, multiplication pour 5000</text>
+    <text x="64" y="1218" class="ev-map-note">3. Génézareth : guérisons dans la plaine</text>
+    <text x="64" y="1250" class="ev-map-note">4. Tyr (Sidon hors carte) : fille de la Cananéenne guérie</text>
+    <text x="64" y="1282" class="ev-map-note">5. Décapole : retour, multiplication pour 4000</text>
+    <text x="64" y="1314" class="ev-map-note">6. Dalmanutha : pharisiens cherchent un signe</text>
+    <text x="64" y="1346" class="ev-map-note">7. Césarée de Philippe : confession de Pierre</text>
+    <text x="64" y="1386" class="ev-map-note">Flèches : Jésus vers Tyr et Sidon, retour par la Décapole.</text>
+
+    <!-- Route: Capharnaüm → Tyr (northwest) -->
+    <path class="ev-map-route" d="M 880 422 C 840 370 760 278 656 162"/>
+    <!-- Route: Tyr → Décapole (return, southeast) -->
+    <path class="ev-map-route" d="M 656 162 C 720 282 840 400 970 552"/>
+
+    <!-- 1. Capharnaüm -->
+    <circle cx="884" cy="426" r="11" class="ev-map-place"/>
+    <text x="884" y="426" class="ev-map-pin-number">1</text>
+
+    <!-- 2. Bethsaïde -->
+    <circle cx="928" cy="400" r="11" class="ev-map-place"/>
+    <text x="928" y="400" class="ev-map-pin-number">2</text>
+
+    <!-- 3. Génézareth -->
+    <circle cx="840" cy="462" r="11" class="ev-map-place"/>
+    <text x="840" y="462" class="ev-map-pin-number">3</text>
+
+    <!-- 4. Tyr -->
+    <circle cx="650" cy="158" r="11" class="ev-map-place"/>
+    <text x="650" y="158" class="ev-map-pin-number">4</text>
+
+    <!-- 5. Décapole -->
+    <circle cx="974" cy="556" r="11" class="ev-map-place-probable"/>
+    <text x="974" y="556" class="ev-map-pin-number-dark">5</text>
+
+    <!-- 6. Dalmanutha -->
+    <circle cx="820" cy="508" r="11" class="ev-map-place-probable"/>
+    <text x="820" y="508" class="ev-map-pin-number-dark">6</text>
+
+    <!-- 7. Césarée de Philippe -->
+    <circle cx="958" cy="163" r="11" class="ev-map-place"/>
+    <text x="958" y="163" class="ev-map-pin-number">7</text>
+  </g>
+"""
+
+
+CHAPTER_09_SAMARIE_JUDEE_OVERLAY = """
+  <g id="evangiles-chapitre-09-samarie-judee-overlay">
+    <rect x="36" y="1360" width="650" height="280" rx="8" class="ev-map-legend-box"/>
+    <text x="64" y="1414" class="ev-map-title">Chapitre 9 (2/2)</text>
+    <text x="64" y="1454" class="ev-map-subtitle">De la Galilée vers Jérusalem</text>
+    <text x="64" y="1506" class="ev-map-note">1. Galilée : départ, face mise vers Jérusalem</text>
+    <text x="64" y="1540" class="ev-map-note">2. Samarie : village refuse de recevoir Jésus</text>
+    <text x="64" y="1574" class="ev-map-note">3. Béthanie : Jésus chez Marthe et Marie</text>
+    <text x="64" y="1614" class="ev-map-note">Flèche : route de Galilée vers Jérusalem par la Samarie.</text>
+
+    <!-- Route: Galilée → Samarie → Béthanie -->
+    <path class="ev-map-route" d="M 800 488 C 780 640 752 760 722 868"/>
+    <path class="ev-map-route" d="M 722 868 C 728 988 734 1082 740 1156"/>
+
+    <!-- 1. Galilée (départ) -->
+    <circle cx="802" cy="486" r="11" class="ev-map-place"/>
+    <text x="802" y="486" class="ev-map-pin-number">1</text>
+    <text x="830" y="476" class="ev-map-small-label">Galilée</text>
+
+    <!-- 2. Samarie -->
+    <circle cx="720" cy="870" r="11" class="ev-map-place"/>
+    <text x="720" y="870" class="ev-map-pin-number">2</text>
+
+    <!-- 3. Béthanie -->
+    <circle cx="740" cy="1158" r="11" class="ev-map-place"/>
+    <text x="740" y="1158" class="ev-map-pin-number">3</text>
+  </g>
+"""
+
+
 MAPS = [
     {
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-02-naissance-jeunesse.svg",
@@ -288,6 +368,16 @@ MAPS = [
         "raster": True,
         "width": 464,
         "height": 598,
+    },
+    {
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-09-galilee-phenicie.svg",
+        "aria": "Galilée, Phénicie et Décapole — ministère de Jésus",
+        "overlay": CHAPTER_09_GALILEE_NORD_OVERLAY,
+    },
+    {
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-09-galilee-jerusalem.svg",
+        "aria": "De la Galilée vers Jérusalem par la Samarie",
+        "overlay": CHAPTER_09_SAMARIE_JUDEE_OVERLAY,
     },
 ]
 
