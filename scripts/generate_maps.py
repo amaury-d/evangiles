@@ -7,6 +7,9 @@ SOURCE = ROOT / "assets" / "maps" / "sources" / "Holy_sites_of_Jesus_in_Palestin
 
 COMMON_DEFS = """
   <defs>
+    <marker id="ev-map-arrow" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b6382d"/>
+    </marker>
     <filter id="ev-map-label-shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feFlood flood-color="#fffdf2" flood-opacity="0.9"/>
       <feComposite in2="SourceGraphic" operator="out"/>
@@ -16,6 +19,7 @@ COMMON_DEFS = """
     <style>
       .ev-map-title { font: 700 42px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; }
       .ev-map-subtitle { font: 400 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4d4a41; }
+      .ev-map-route { fill: none; stroke: #b6382d; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#ev-map-arrow); }
       .ev-map-place { fill: #2b2a25; stroke: #fffdf2; stroke-width: 6; }
       .ev-map-place-probable { fill: #fffdf2; stroke: #2b2a25; stroke-width: 4; }
       .ev-map-pin-number { font: 700 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #fffdf2; text-anchor: middle; dominant-baseline: central; }
@@ -96,6 +100,32 @@ CHAPTER_04_OVERLAY = """
 """
 
 
+CHAPTER_05_OVERLAY = """
+  <g id="evangiles-chapitre-05-overlay">
+    <rect x="36" y="1298" width="610" height="304" rx="8" class="ev-map-legend-box"/>
+    <text x="64" y="1352" class="ev-map-title">Chapitre 5</text>
+    <text x="64" y="1392" class="ev-map-subtitle">Jésus en Galilée</text>
+    <text x="64" y="1444" class="ev-map-note">1. Béthanie : appel de Philippe</text>
+    <text x="64" y="1478" class="ev-map-note">2. Cana : noces et premier signe</text>
+    <text x="64" y="1512" class="ev-map-note">3. Capharnaüm : court séjour</text>
+    <text x="64" y="1556" class="ev-map-note">Les flèches suivent les déplacements indiqués</text>
+    <text x="64" y="1588" class="ev-map-note">par Jean, sans reconstruire la route exacte.</text>
+
+    <path class="ev-map-route" d="M 846 1122 C 840 930 812 748 772 612 C 746 526 722 482 704 456"/>
+    <path class="ev-map-route" d="M 718 462 C 782 496 846 464 876 430"/>
+
+    <circle cx="860" cy="1138" r="18" class="ev-map-place"/>
+    <text x="860" y="1138" class="ev-map-pin-number">1</text>
+
+    <circle cx="704" cy="456" r="18" class="ev-map-place"/>
+    <text x="704" y="456" class="ev-map-pin-number">2</text>
+
+    <circle cx="884" cy="426" r="18" class="ev-map-place"/>
+    <text x="884" y="426" class="ev-map-pin-number">3</text>
+  </g>
+"""
+
+
 MAPS = [
     {
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-02-naissance-jeunesse.svg",
@@ -111,6 +141,11 @@ MAPS = [
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-04-bethanie.svg",
         "aria": "Jean le Baptiste à Béthanie",
         "overlay": CHAPTER_04_OVERLAY,
+    },
+    {
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-05-galilee.svg",
+        "aria": "Jésus en Galilée",
+        "overlay": CHAPTER_05_OVERLAY,
     },
 ]
 

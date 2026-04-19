@@ -3,9 +3,9 @@ all: build
 node_modules: package-lock.json
 	npm install
 
-maps: assets/maps/generated/chapitre-02-naissance-jeunesse.svg assets/maps/generated/chapitre-03-debut-ministere-judee.svg assets/maps/generated/chapitre-04-bethanie.svg
+maps: assets/maps/generated/chapitre-02-naissance-jeunesse.svg assets/maps/generated/chapitre-03-debut-ministere-judee.svg assets/maps/generated/chapitre-04-bethanie.svg assets/maps/generated/chapitre-05-galilee.svg
 
-assets/maps/generated/chapitre-02-naissance-jeunesse.svg assets/maps/generated/chapitre-03-debut-ministere-judee.svg assets/maps/generated/chapitre-04-bethanie.svg: assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg scripts/generate_maps.py
+assets/maps/generated/chapitre-02-naissance-jeunesse.svg assets/maps/generated/chapitre-03-debut-ministere-judee.svg assets/maps/generated/chapitre-04-bethanie.svg assets/maps/generated/chapitre-05-galilee.svg: assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg scripts/generate_maps.py
 	python3 scripts/generate_maps.py
 
 data: maps src/data/harmony.generated.json src/pages/annexes

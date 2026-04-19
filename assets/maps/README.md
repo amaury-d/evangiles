@@ -34,3 +34,5 @@ La carte `generated/chapitre-02-naissance-jeunesse.svg` reprend le fond CC0 et a
 La carte `generated/chapitre-03-debut-ministere-judee.svg` reprend la même convention pour le début du ministère : repères numérotés, sans trajet reconstruit.
 
 La carte `generated/chapitre-04-bethanie.svg` situe Béthanie au-delà du Jourdain, avec un repère unique puisque les épisodes localisés du chapitre se concentrent au même endroit.
+
+La carte `generated/chapitre-05-galilee.svg` situe Béthanie, Cana et Capharnaüm. Elle utilise des flèches fines parce que Jean indique explicitement le départ vers la Galilée puis la descente à Capharnaüm.

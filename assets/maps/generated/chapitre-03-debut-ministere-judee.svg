@@ -1745,6 +1745,9 @@
            style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            d="m 386.072,1277.657 h 1.984 v -11.672 h -1.984 z m 0,4.438 h 1.984 v -2.281 h -1.984 z m -18.757,-16.11 v 11.672 h 1.781 v -1.64 c 0.366,0.573 0.853,1.034 1.461,1.383 0.608,0.349 1.299,0.523 2.076,0.523 0.864,0 1.573,-0.18 2.125,-0.54 0.553,-0.36 0.943,-0.862 1.17,-1.508 0.924,1.365 2.126,2.048 3.608,2.048 1.158,0 2.048,-0.321 2.672,-0.962 0.623,-0.641 0.935,-1.628 0.935,-2.962 v -8.014 h -1.984 v 7.351 c 0,0.791 -0.065,1.361 -0.193,1.709 -0.128,0.348 -0.359,0.628 -0.695,0.84 -0.337,0.213 -0.731,0.319 -1.185,0.319 -0.818,0 -1.498,-0.273 -2.039,-0.819 -0.54,-0.546 -0.81,-1.419 -0.81,-2.62 v -6.78 h -1.985 v 7.582 c 0,0.879 -0.161,1.538 -0.483,1.977 -0.322,0.44 -0.85,0.66 -1.581,0.66 -0.557,0 -1.071,-0.147 -1.544,-0.44 -0.472,-0.293 -0.814,-0.722 -1.026,-1.285 -0.213,-0.564 -0.319,-1.377 -0.319,-2.439 v -6.055 z" /></g></g></g>
   <defs>
+    <marker id="ev-map-arrow" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b6382d"/>
+    </marker>
     <filter id="ev-map-label-shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feFlood flood-color="#fffdf2" flood-opacity="0.9"/>
       <feComposite in2="SourceGraphic" operator="out"/>
@@ -1754,6 +1757,7 @@
     <style>
       .ev-map-title { font: 700 42px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; }
       .ev-map-subtitle { font: 400 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4d4a41; }
+      .ev-map-route { fill: none; stroke: #b6382d; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#ev-map-arrow); }
       .ev-map-place { fill: #2b2a25; stroke: #fffdf2; stroke-width: 6; }
       .ev-map-place-probable { fill: #fffdf2; stroke: #2b2a25; stroke-width: 4; }
       .ev-map-pin-number { font: 700 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #fffdf2; text-anchor: middle; dominant-baseline: central; }
