@@ -12,6 +12,24 @@ Ce dossier contient les sources et futures cartes générées du projet.
 
 Cette source est utilisable, modifiable et redistribuable sans demander d'autorisation. Elle sert de base vectorielle libre pour produire les cartes épurées du site.
 
+## Source Jérusalem
+
+- Fichier : `sources/Jerusalem_premier_siecle.JPG`
+- Source : Wikimedia Commons, `File:Jerusalem premier siècle.JPG`
+- URL : https://commons.wikimedia.org/wiki/File:Jerusalem_premier_si%C3%A8cle.JPG
+- Licence : Creative Commons Attribution-ShareAlike 3.0 ; GNU Free Documentation License 1.2+
+- Auteur : Olevy
+
+Cette source représente Jérusalem au premier siècle. Elle sert de fond pour le chapitre 8. Comme le fichier source est un JPG lisible mais peu détaillé, la carte dérivée l'encapsule dans un SVG généré afin d'ajouter des repères nets sans dégrader les libellés d'origine.
+
+- Fichier : `sources/Jerusalem_in_70_map.svg`
+- Source : Wikimedia Commons, `File:Jerusalem in 70 - map.svg`
+- URL : https://commons.wikimedia.org/wiki/File:Jerusalem_in_70_-_map.svg
+- Licence : Creative Commons Attribution-ShareAlike 3.0, 2.5, 2.0 et 1.0 ; GNU Free Documentation License 1.2+
+- Auteur : TcfkaPanairjdde
+
+Cette source représente Jérusalem en 70. Elle reste disponible comme source alternative pour les épisodes à Jérusalem du Ier siècle, en gardant les emplacements comme indicatifs et en conservant l'attribution dans les légendes ou la documentation.
+
 ## Organisation
 
 - `sources/` : fichiers sources externes conservés avec leur provenance.
@@ -42,3 +60,5 @@ La carte `generated/chapitre-06-judee-samarie.svg` situe Jérusalem, la Judée, 
 La carte `generated/chapitre-07-galilee.svg` donne une vue d’ensemble du ministère en Galilée : Capharnaüm, lac de Tibériade, Cana, Naïn, Nazareth et Gadara.
 
 La carte `generated/chapitre-07-traversee-lac.svg` est attachée à la section de la traversée du lac. Elle utilise des flèches parce que l’aller-retour sur le lac est explicitement raconté.
+
+La carte `generated/chapitre-08-jerusalem.svg` utilise la source de Jérusalem au premier siècle pour situer Bethesda et le Temple. Les repères sont indicatifs.

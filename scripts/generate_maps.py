@@ -1,8 +1,10 @@
+import base64
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "assets" / "maps" / "sources" / "Holy_sites_of_Jesus_in_Palestine.svg"
+JERUSALEM_RASTER_SOURCE = ROOT / "assets" / "maps" / "sources" / "Jerusalem_premier_siecle.JPG"
 
 
 COMMON_DEFS = """
@@ -10,24 +12,27 @@ COMMON_DEFS = """
     <marker id="ev-map-arrow" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#b6382d"/>
     </marker>
-    <filter id="ev-map-label-shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feFlood flood-color="#fffdf2" flood-opacity="0.9"/>
-      <feComposite in2="SourceGraphic" operator="out"/>
-      <feGaussianBlur stdDeviation="3"/>
-      <feComposite in2="SourceGraphic" operator="over"/>
-    </filter>
+    <marker id="ev-map-callout-arrow" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="3" markerHeight="3" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4d4a41" fill-opacity="0.58"/>
+    </marker>
     <style>
       .ev-map-title { font: 700 42px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; }
       .ev-map-subtitle { font: 400 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4d4a41; }
       .ev-map-route { fill: none; stroke: #b6382d; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#ev-map-arrow); }
-      .ev-map-place { fill: #2b2a25; stroke: #fffdf2; stroke-width: 6; }
-      .ev-map-place-probable { fill: #fffdf2; stroke: #2b2a25; stroke-width: 4; }
-      .ev-map-pin-number { font: 700 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #fffdf2; text-anchor: middle; dominant-baseline: central; }
-      .ev-map-pin-number-dark { font: 700 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; text-anchor: middle; dominant-baseline: central; }
-      .ev-map-label { font: 700 28px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; filter: url(#ev-map-label-shadow); }
-      .ev-map-small-label { font: 500 22px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; filter: url(#ev-map-label-shadow); }
+      .ev-map-place { fill: #2b2a25; fill-opacity: 0.58; stroke: #fffdf2; stroke-opacity: 0.8; stroke-width: 2.2; }
+      .ev-map-place-probable { fill: #fffdf2; fill-opacity: 0.64; stroke: #2b2a25; stroke-opacity: 0.62; stroke-width: 1.5; }
+      .ev-map-pin-number { font: 700 17px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #fffdf2; fill-opacity: 0.84; text-anchor: middle; dominant-baseline: central; }
+      .ev-map-pin-number-dark { font: 700 17px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; fill-opacity: 0.78; text-anchor: middle; dominant-baseline: central; }
+      .ev-map-label { font: 700 28px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; stroke: #fffdf2; stroke-width: 5; stroke-linejoin: round; paint-order: stroke; }
+      .ev-map-small-label { font: 500 22px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; stroke: #fffdf2; stroke-width: 4; stroke-linejoin: round; paint-order: stroke; }
       .ev-map-note { font: 400 19px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4d4a41; }
       .ev-map-legend-box { fill: #fffdf2; fill-opacity: 0.88; stroke: #d6c9a7; stroke-width: 2; }
+      .ev-map-title-compact { font: 700 22px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; }
+      .ev-map-subtitle-compact { font: 400 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4d4a41; }
+      .ev-map-note-compact { font: 400 12px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4d4a41; }
+      .ev-map-pin-number-compact { font: 700 10px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #fffdf2; fill-opacity: 0.78; text-anchor: middle; dominant-baseline: central; }
+      .ev-map-pin-number-dark-compact { font: 700 10px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; fill-opacity: 0.72; text-anchor: middle; dominant-baseline: central; }
+      .ev-map-callout { fill: none; stroke: #4d4a41; stroke-opacity: 0.5; stroke-width: 1.2; stroke-linecap: round; marker-end: url(#ev-map-callout-arrow); }
     </style>
   </defs>
 """
@@ -44,21 +49,21 @@ CHAPTER_02_OVERLAY = """
     <text x="770" y="1656" class="ev-map-note">4. Égypte : fuite et séjour</text>
     <text x="770" y="1690" class="ev-map-note">5. Jérusalem : Jésus au Temple à douze ans</text>
 
-    <circle cx="700" cy="552" r="18" class="ev-map-place"/>
+    <circle cx="700" cy="552" r="11" class="ev-map-place"/>
     <text x="700" y="552" class="ev-map-pin-number">2</text>
 
-    <circle cx="652" cy="1264" r="18" class="ev-map-place"/>
+    <circle cx="652" cy="1264" r="11" class="ev-map-place"/>
     <text x="652" y="1264" class="ev-map-pin-number">3</text>
 
-    <circle cx="664" cy="1144" r="18" class="ev-map-place"/>
+    <circle cx="664" cy="1144" r="11" class="ev-map-place"/>
     <text x="664" y="1144" class="ev-map-pin-number">1</text>
 
-    <circle cx="696" cy="1144" r="18" class="ev-map-place"/>
+    <circle cx="696" cy="1144" r="11" class="ev-map-place"/>
     <text x="696" y="1144" class="ev-map-pin-number">5</text>
 
-    <circle cx="656" cy="1060" r="11" class="ev-map-place-probable"/>
+    <circle cx="656" cy="1060" r="9" class="ev-map-place-probable"/>
 
-    <circle cx="156" cy="1694" r="18" class="ev-map-place"/>
+    <circle cx="156" cy="1694" r="11" class="ev-map-place"/>
     <text x="156" y="1694" class="ev-map-pin-number">4</text>
     <text x="184" y="1684" class="ev-map-label">Vers l'Égypte</text>
   </g>
@@ -74,13 +79,13 @@ CHAPTER_03_OVERLAY = """
     <text x="64" y="1508" class="ev-map-note">2. Jourdain : baptême de Jésus</text>
     <text x="64" y="1542" class="ev-map-note">3. Désert de Judée : quarante jours</text>
 
-    <circle cx="840" cy="1138" r="18" class="ev-map-place"/>
+    <circle cx="840" cy="1138" r="11" class="ev-map-place"/>
     <text x="840" y="1138" class="ev-map-pin-number">1</text>
 
-    <circle cx="876" cy="1138" r="18" class="ev-map-place"/>
+    <circle cx="876" cy="1138" r="11" class="ev-map-place"/>
     <text x="876" y="1138" class="ev-map-pin-number">2</text>
 
-    <circle cx="736" cy="1304" r="18" class="ev-map-place"/>
+    <circle cx="736" cy="1304" r="11" class="ev-map-place"/>
     <text x="736" y="1304" class="ev-map-pin-number">3</text>
   </g>
 """
@@ -95,7 +100,7 @@ CHAPTER_04_OVERLAY = """
     <text x="64" y="1508" class="ev-map-note">Témoignage de Jean, agneau de Dieu,</text>
     <text x="64" y="1542" class="ev-map-note">André, Simon-Pierre et les premiers disciples.</text>
 
-    <circle cx="860" cy="1138" r="18" class="ev-map-place"/>
+    <circle cx="860" cy="1138" r="11" class="ev-map-place"/>
     <text x="860" y="1138" class="ev-map-pin-number">1</text>
   </g>
 """
@@ -115,13 +120,13 @@ CHAPTER_05_OVERLAY = """
     <path class="ev-map-route" d="M 846 1122 C 840 930 812 748 772 612 C 746 526 722 482 704 456"/>
     <path class="ev-map-route" d="M 718 462 C 782 496 846 464 876 430"/>
 
-    <circle cx="860" cy="1138" r="18" class="ev-map-place"/>
+    <circle cx="860" cy="1138" r="11" class="ev-map-place"/>
     <text x="860" y="1138" class="ev-map-pin-number">1</text>
 
-    <circle cx="704" cy="456" r="18" class="ev-map-place"/>
+    <circle cx="704" cy="456" r="11" class="ev-map-place"/>
     <text x="704" y="456" class="ev-map-pin-number">2</text>
 
-    <circle cx="884" cy="426" r="18" class="ev-map-place"/>
+    <circle cx="884" cy="426" r="11" class="ev-map-place"/>
     <text x="884" y="426" class="ev-map-pin-number">3</text>
   </g>
 """
@@ -142,16 +147,16 @@ CHAPTER_06_OVERLAY = """
     <path class="ev-map-route" d="M 690 1112 C 700 1014 696 940 684 884"/>
     <path class="ev-map-route" d="M 684 884 C 740 760 784 640 812 520"/>
 
-    <circle cx="664" cy="1144" r="18" class="ev-map-place"/>
+    <circle cx="664" cy="1144" r="11" class="ev-map-place"/>
     <text x="664" y="1144" class="ev-map-pin-number">1</text>
 
-    <circle cx="722" cy="1110" r="18" class="ev-map-place"/>
+    <circle cx="722" cy="1110" r="11" class="ev-map-place"/>
     <text x="722" y="1110" class="ev-map-pin-number">2</text>
 
-    <circle cx="752" cy="940" r="18" class="ev-map-place-probable"/>
+    <circle cx="752" cy="940" r="11" class="ev-map-place-probable"/>
     <text x="752" y="940" class="ev-map-pin-number-dark">3</text>
 
-    <circle cx="684" cy="884" r="18" class="ev-map-place"/>
+    <circle cx="684" cy="884" r="11" class="ev-map-place"/>
     <text x="684" y="884" class="ev-map-pin-number">4</text>
   </g>
 """
@@ -170,25 +175,25 @@ CHAPTER_07_OVERLAY = """
     <text x="64" y="1594" class="ev-map-note">6. Nazareth : rejet des habitants</text>
     <text x="64" y="1628" class="ev-map-note">7. Gadara : démoniaques</text>
 
-    <circle cx="760" cy="420" r="18" class="ev-map-place"/>
+    <circle cx="760" cy="420" r="11" class="ev-map-place"/>
     <text x="760" y="420" class="ev-map-pin-number">1</text>
 
-    <circle cx="884" cy="426" r="18" class="ev-map-place"/>
+    <circle cx="884" cy="426" r="11" class="ev-map-place"/>
     <text x="884" y="426" class="ev-map-pin-number">2</text>
 
-    <circle cx="898" cy="500" r="18" class="ev-map-place"/>
+    <circle cx="898" cy="500" r="11" class="ev-map-place"/>
     <text x="898" y="500" class="ev-map-pin-number">3</text>
 
-    <circle cx="704" cy="456" r="18" class="ev-map-place"/>
+    <circle cx="704" cy="456" r="11" class="ev-map-place"/>
     <text x="704" y="456" class="ev-map-pin-number">4</text>
 
-    <circle cx="764" cy="666" r="18" class="ev-map-place"/>
+    <circle cx="764" cy="666" r="11" class="ev-map-place"/>
     <text x="764" y="666" class="ev-map-pin-number">5</text>
 
-    <circle cx="700" cy="552" r="18" class="ev-map-place"/>
+    <circle cx="700" cy="552" r="11" class="ev-map-place"/>
     <text x="700" y="552" class="ev-map-pin-number">6</text>
 
-    <circle cx="960" cy="610" r="18" class="ev-map-place-probable"/>
+    <circle cx="960" cy="610" r="11" class="ev-map-place-probable"/>
     <text x="960" y="610" class="ev-map-pin-number-dark">7</text>
     <text x="990" y="618" class="ev-map-small-label">Gadara ?</text>
   </g>
@@ -208,14 +213,33 @@ CHAPTER_07_LAKE_OVERLAY = """
     <path class="ev-map-route" d="M 864 498 C 916 520 948 558 960 610"/>
     <path class="ev-map-route" d="M 946 596 C 922 534 904 472 884 426"/>
 
-    <circle cx="850" cy="500" r="18" class="ev-map-place"/>
+    <circle cx="850" cy="500" r="11" class="ev-map-place"/>
     <text x="850" y="500" class="ev-map-pin-number">1</text>
 
-    <circle cx="960" cy="610" r="18" class="ev-map-place-probable"/>
+    <circle cx="960" cy="610" r="11" class="ev-map-place-probable"/>
     <text x="960" y="610" class="ev-map-pin-number-dark">2</text>
 
-    <circle cx="884" cy="426" r="18" class="ev-map-place"/>
+    <circle cx="884" cy="426" r="11" class="ev-map-place"/>
     <text x="884" y="426" class="ev-map-pin-number">3</text>
+  </g>
+"""
+
+
+CHAPTER_08_OVERLAY = """
+  <g id="evangiles-chapitre-08-overlay">
+    <rect x="12" y="444" width="318" height="120" rx="8" class="ev-map-legend-box"/>
+    <text x="28" y="476" class="ev-map-title-compact">Chapitre 8</text>
+    <text x="28" y="498" class="ev-map-subtitle-compact">Jérusalem</text>
+    <text x="28" y="526" class="ev-map-note-compact">1. Piscine de Bethesda : paralytique guéri</text>
+    <text x="28" y="546" class="ev-map-note-compact">2. Temple : sabbat et controverse</text>
+
+    <path class="ev-map-callout" d="M 354 108 L 342 98"/>
+    <circle cx="354" cy="108" r="5" class="ev-map-place-probable"/>
+    <text x="354" y="108" class="ev-map-pin-number-dark-compact">1</text>
+
+    <path class="ev-map-callout" d="M 303 218 L 320 222"/>
+    <circle cx="303" cy="218" r="5" class="ev-map-place"/>
+    <text x="303" y="218" class="ev-map-pin-number-compact">2</text>
   </g>
 """
 
@@ -256,6 +280,15 @@ MAPS = [
         "aria": "Traversée du lac de Tibériade",
         "overlay": CHAPTER_07_LAKE_OVERLAY,
     },
+    {
+        "source": JERUSALEM_RASTER_SOURCE,
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-08-jerusalem.svg",
+        "aria": "Jérusalem au temps du Second Temple",
+        "overlay": CHAPTER_08_OVERLAY,
+        "raster": True,
+        "width": 464,
+        "height": 598,
+    },
 ]
 
 
@@ -267,12 +300,37 @@ def generate_map(source: str, output: Path, aria: str, overlay: str) -> None:
     print(f"Generated {output.relative_to(ROOT)}")
 
 
-def main() -> None:
-    source = SOURCE.read_text(encoding="utf-8")
-    if "</svg>" not in source:
-        raise SystemExit(f"Invalid SVG source: {SOURCE}")
+def generate_raster_map(source_path: Path, output: Path, aria: str, overlay: str, width: int, height: int) -> None:
+    output.parent.mkdir(parents=True, exist_ok=True)
+    image_data = base64.b64encode(source_path.read_bytes()).decode("ascii")
+    generated = f"""<svg role="img" aria-label="{aria}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">
+  <title>{aria}</title>
+  <image href="data:image/jpeg;base64,{image_data}" x="0" y="0" width="{width}" height="{height}" preserveAspectRatio="xMidYMid meet"/>
+{COMMON_DEFS}{overlay}
+</svg>
+"""
+    output.write_text(generated, encoding="utf-8")
+    print(f"Generated {output.relative_to(ROOT)}")
 
+
+def main() -> None:
     for map_config in MAPS:
+        source_path = map_config.get("source", SOURCE)
+        if map_config.get("raster"):
+            generate_raster_map(
+                source_path,
+                output=map_config["output"],
+                aria=map_config["aria"],
+                overlay=map_config["overlay"],
+                width=map_config["width"],
+                height=map_config["height"],
+            )
+            continue
+
+        source = source_path.read_text(encoding="utf-8")
+        if "</svg>" not in source:
+            raise SystemExit(f"Invalid SVG source: {source_path}")
+
         generate_map(
             source,
             output=map_config["output"],

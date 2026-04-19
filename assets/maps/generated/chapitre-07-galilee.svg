@@ -1748,24 +1748,27 @@
     <marker id="ev-map-arrow" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#b6382d"/>
     </marker>
-    <filter id="ev-map-label-shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feFlood flood-color="#fffdf2" flood-opacity="0.9"/>
-      <feComposite in2="SourceGraphic" operator="out"/>
-      <feGaussianBlur stdDeviation="3"/>
-      <feComposite in2="SourceGraphic" operator="over"/>
-    </filter>
+    <marker id="ev-map-callout-arrow" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="3" markerHeight="3" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4d4a41" fill-opacity="0.58"/>
+    </marker>
     <style>
       .ev-map-title { font: 700 42px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; }
       .ev-map-subtitle { font: 400 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4d4a41; }
       .ev-map-route { fill: none; stroke: #b6382d; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#ev-map-arrow); }
-      .ev-map-place { fill: #2b2a25; stroke: #fffdf2; stroke-width: 6; }
-      .ev-map-place-probable { fill: #fffdf2; stroke: #2b2a25; stroke-width: 4; }
-      .ev-map-pin-number { font: 700 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #fffdf2; text-anchor: middle; dominant-baseline: central; }
-      .ev-map-pin-number-dark { font: 700 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; text-anchor: middle; dominant-baseline: central; }
-      .ev-map-label { font: 700 28px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; filter: url(#ev-map-label-shadow); }
-      .ev-map-small-label { font: 500 22px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; filter: url(#ev-map-label-shadow); }
+      .ev-map-place { fill: #2b2a25; fill-opacity: 0.58; stroke: #fffdf2; stroke-opacity: 0.8; stroke-width: 2.2; }
+      .ev-map-place-probable { fill: #fffdf2; fill-opacity: 0.64; stroke: #2b2a25; stroke-opacity: 0.62; stroke-width: 1.5; }
+      .ev-map-pin-number { font: 700 17px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #fffdf2; fill-opacity: 0.84; text-anchor: middle; dominant-baseline: central; }
+      .ev-map-pin-number-dark { font: 700 17px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; fill-opacity: 0.78; text-anchor: middle; dominant-baseline: central; }
+      .ev-map-label { font: 700 28px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; stroke: #fffdf2; stroke-width: 5; stroke-linejoin: round; paint-order: stroke; }
+      .ev-map-small-label { font: 500 22px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; stroke: #fffdf2; stroke-width: 4; stroke-linejoin: round; paint-order: stroke; }
       .ev-map-note { font: 400 19px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4d4a41; }
       .ev-map-legend-box { fill: #fffdf2; fill-opacity: 0.88; stroke: #d6c9a7; stroke-width: 2; }
+      .ev-map-title-compact { font: 700 22px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; }
+      .ev-map-subtitle-compact { font: 400 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4d4a41; }
+      .ev-map-note-compact { font: 400 12px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4d4a41; }
+      .ev-map-pin-number-compact { font: 700 10px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #fffdf2; fill-opacity: 0.78; text-anchor: middle; dominant-baseline: central; }
+      .ev-map-pin-number-dark-compact { font: 700 10px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; fill-opacity: 0.72; text-anchor: middle; dominant-baseline: central; }
+      .ev-map-callout { fill: none; stroke: #4d4a41; stroke-opacity: 0.5; stroke-width: 1.2; stroke-linecap: round; marker-end: url(#ev-map-callout-arrow); }
     </style>
   </defs>
 
@@ -1781,25 +1784,25 @@
     <text x="64" y="1594" class="ev-map-note">6. Nazareth : rejet des habitants</text>
     <text x="64" y="1628" class="ev-map-note">7. Gadara : démoniaques</text>
 
-    <circle cx="760" cy="420" r="18" class="ev-map-place"/>
+    <circle cx="760" cy="420" r="11" class="ev-map-place"/>
     <text x="760" y="420" class="ev-map-pin-number">1</text>
 
-    <circle cx="884" cy="426" r="18" class="ev-map-place"/>
+    <circle cx="884" cy="426" r="11" class="ev-map-place"/>
     <text x="884" y="426" class="ev-map-pin-number">2</text>
 
-    <circle cx="898" cy="500" r="18" class="ev-map-place"/>
+    <circle cx="898" cy="500" r="11" class="ev-map-place"/>
     <text x="898" y="500" class="ev-map-pin-number">3</text>
 
-    <circle cx="704" cy="456" r="18" class="ev-map-place"/>
+    <circle cx="704" cy="456" r="11" class="ev-map-place"/>
     <text x="704" y="456" class="ev-map-pin-number">4</text>
 
-    <circle cx="764" cy="666" r="18" class="ev-map-place"/>
+    <circle cx="764" cy="666" r="11" class="ev-map-place"/>
     <text x="764" y="666" class="ev-map-pin-number">5</text>
 
-    <circle cx="700" cy="552" r="18" class="ev-map-place"/>
+    <circle cx="700" cy="552" r="11" class="ev-map-place"/>
     <text x="700" y="552" class="ev-map-pin-number">6</text>
 
-    <circle cx="960" cy="610" r="18" class="ev-map-place-probable"/>
+    <circle cx="960" cy="610" r="11" class="ev-map-place-probable"/>
     <text x="960" y="610" class="ev-map-pin-number-dark">7</text>
     <text x="990" y="618" class="ev-map-small-label">Gadara ?</text>
   </g>

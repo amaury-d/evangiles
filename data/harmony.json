@@ -1570,7 +1570,10 @@
             "La fête des tabernacles est célébrée chaque année après le Grand Pardon, pendant laquelle les Juifs habitent des cabanes de branchages qui commémorent la traversée du désert sous la protection de Dieu."
           ]
         }
-      ]
+      ],
+      "images": {
+        "maps/generated/chapitre-08-jerusalem.svg": "Carte de Jérusalem au premier siècle (fond Olevy, CC BY-SA)"
+      }
     },
     {
       "id": "galilee3",
