@@ -157,6 +157,69 @@ CHAPTER_06_OVERLAY = """
 """
 
 
+CHAPTER_07_OVERLAY = """
+  <g id="evangiles-chapitre-07-overlay">
+    <rect x="36" y="1278" width="650" height="362" rx="8" class="ev-map-legend-box"/>
+    <text x="64" y="1332" class="ev-map-title">Chapitre 7</text>
+    <text x="64" y="1372" class="ev-map-subtitle">Ministère en Galilée</text>
+    <text x="64" y="1424" class="ev-map-note">1. Galilée : proclamation et parcours</text>
+    <text x="64" y="1458" class="ev-map-note">2. Capharnaüm : enseignements et guérisons</text>
+    <text x="64" y="1492" class="ev-map-note">3. Lac de Tibériade : appels, foule, paraboles</text>
+    <text x="64" y="1526" class="ev-map-note">4. Cana : guérison à distance</text>
+    <text x="64" y="1560" class="ev-map-note">5. Naïn : fils de la veuve</text>
+    <text x="64" y="1594" class="ev-map-note">6. Nazareth : rejet des habitants</text>
+    <text x="64" y="1628" class="ev-map-note">7. Gadara : démoniaques</text>
+
+    <circle cx="760" cy="420" r="18" class="ev-map-place"/>
+    <text x="760" y="420" class="ev-map-pin-number">1</text>
+
+    <circle cx="884" cy="426" r="18" class="ev-map-place"/>
+    <text x="884" y="426" class="ev-map-pin-number">2</text>
+
+    <circle cx="898" cy="500" r="18" class="ev-map-place"/>
+    <text x="898" y="500" class="ev-map-pin-number">3</text>
+
+    <circle cx="704" cy="456" r="18" class="ev-map-place"/>
+    <text x="704" y="456" class="ev-map-pin-number">4</text>
+
+    <circle cx="764" cy="666" r="18" class="ev-map-place"/>
+    <text x="764" y="666" class="ev-map-pin-number">5</text>
+
+    <circle cx="700" cy="552" r="18" class="ev-map-place"/>
+    <text x="700" y="552" class="ev-map-pin-number">6</text>
+
+    <circle cx="960" cy="610" r="18" class="ev-map-place-probable"/>
+    <text x="960" y="610" class="ev-map-pin-number-dark">7</text>
+    <text x="990" y="618" class="ev-map-small-label">Gadara ?</text>
+  </g>
+"""
+
+
+CHAPTER_07_LAKE_OVERLAY = """
+  <g id="evangiles-chapitre-07-lake-overlay">
+    <rect x="36" y="1328" width="622" height="278" rx="8" class="ev-map-legend-box"/>
+    <text x="64" y="1382" class="ev-map-title">Chapitre 7</text>
+    <text x="64" y="1422" class="ev-map-subtitle">Traversée du lac</text>
+    <text x="64" y="1474" class="ev-map-note">1. Rive ouest : départ en barque</text>
+    <text x="64" y="1508" class="ev-map-note">2. Rive est : pays des Gadaréniens</text>
+    <text x="64" y="1542" class="ev-map-note">3. Retour vers Capharnaüm</text>
+    <text x="64" y="1584" class="ev-map-note">Les flèches suivent seulement l’aller-retour</text>
+
+    <path class="ev-map-route" d="M 864 498 C 916 520 948 558 960 610"/>
+    <path class="ev-map-route" d="M 946 596 C 922 534 904 472 884 426"/>
+
+    <circle cx="850" cy="500" r="18" class="ev-map-place"/>
+    <text x="850" y="500" class="ev-map-pin-number">1</text>
+
+    <circle cx="960" cy="610" r="18" class="ev-map-place-probable"/>
+    <text x="960" y="610" class="ev-map-pin-number-dark">2</text>
+
+    <circle cx="884" cy="426" r="18" class="ev-map-place"/>
+    <text x="884" y="426" class="ev-map-pin-number">3</text>
+  </g>
+"""
+
+
 MAPS = [
     {
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-02-naissance-jeunesse.svg",
@@ -182,6 +245,16 @@ MAPS = [
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-06-judee-samarie.svg",
         "aria": "Jésus et Jean le Baptiste en Judée",
         "overlay": CHAPTER_06_OVERLAY,
+    },
+    {
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-07-galilee.svg",
+        "aria": "Jésus en Galilée",
+        "overlay": CHAPTER_07_OVERLAY,
+    },
+    {
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-07-traversee-lac.svg",
+        "aria": "Traversée du lac de Tibériade",
+        "overlay": CHAPTER_07_LAKE_OVERLAY,
     },
 ]
 

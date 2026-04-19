@@ -38,3 +38,7 @@ La carte `generated/chapitre-04-bethanie.svg` situe Béthanie au-delà du Jourda
 La carte `generated/chapitre-05-galilee.svg` situe Béthanie, Cana et Capharnaüm. Elle utilise des flèches fines parce que Jean indique explicitement le départ vers la Galilée puis la descente à Capharnaüm.
 
 La carte `generated/chapitre-06-judee-samarie.svg` situe Jérusalem, la Judée, Aïnon et Sychar. Elle utilise une flèche fine pour le départ de Judée vers la Galilée en passant par la Samarie, explicitement indiqué en Jean 4.
+
+La carte `generated/chapitre-07-galilee.svg` donne une vue d’ensemble du ministère en Galilée : Capharnaüm, lac de Tibériade, Cana, Naïn, Nazareth et Gadara.
+
+La carte `generated/chapitre-07-traversee-lac.svg` est attachée à la section de la traversée du lac. Elle utilise des flèches parce que l’aller-retour sur le lac est explicitement raconté.

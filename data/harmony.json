@@ -1162,10 +1162,7 @@
             ]
           },
           "date": "+31",
-          "lieu": "Naïn, Galilée",
-          "images": {
-            "nain.jpg": "Nain"
-          }
+          "lieu": "Naïn, Galilée"
         },
         {
           "id": "gallilee2-19",
@@ -1384,7 +1381,10 @@
             ]
           },
           "date": "+31",
-          "lieu": "Lac de Tibériade, Galilée"
+          "lieu": "Lac de Tibériade, Galilée",
+          "images": {
+            "maps/generated/chapitre-07-traversee-lac.svg": "Carte de la traversée du lac"
+          }
         },
         {
           "id": "gallilee2-28",
@@ -1544,7 +1544,7 @@
         }
       ],
       "images": {
-        "carte3.jpg": "Carte 3"
+        "maps/generated/chapitre-07-galilee.svg": "Carte du ministère en Galilée"
       }
     },
     {

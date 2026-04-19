@@ -106,7 +106,7 @@ Les cartes dérivées doivent être placées dans `assets/maps/generated/`, idé
 
 Convention de lecture : utilisez par défaut des repères numérotés plutôt que des trajets. Une carte de chapitre suffit quand tous les épisodes se comprennent à la même échelle. Créez plusieurs cartes, par section ou par groupe de sections, quand le récit change nettement de lieu, d’échelle ou d’enjeu géographique. Ajoutez des flèches uniquement quand le texte biblique indique clairement un déplacement ou un chemin parcouru ; sinon, ne reconstruisez pas d’itinéraire.
 
-Les cartes scriptées des chapitres 2 à 6 sont générées par :
+Les cartes scriptées des chapitres 2 à 7 sont générées par :
 
 ```sh
 python3 scripts/generate_maps.py

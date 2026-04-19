@@ -179,6 +179,8 @@ def validate_images(generated: dict[str, Any]) -> None:
 
 
 def copy_assets() -> None:
+    if ASSETS_DEST.exists():
+        shutil.rmtree(ASSETS_DEST)
     ASSETS_DEST.mkdir(parents=True, exist_ok=True)
     for path in ASSETS_SOURCE.rglob("*"):
         if path.is_file() and path.name != "main.scss":
