@@ -104,7 +104,9 @@ Les anciennes cartes `assets/carte*.jpg` sont appelées à être remplacées. La
 
 Les cartes dérivées doivent être placées dans `assets/maps/generated/`, idéalement en SVG. Elles peuvent ensuite être référencées depuis `data/harmony.json`, par exemple `maps/generated/chapitre-06-judee.svg`. Le build copie récursivement `assets/` vers `public/assets/`.
 
-Les cartes scriptées des chapitres 2 et 3 sont générées par :
+Convention de lecture : utilisez par défaut des repères numérotés plutôt que des trajets. Une carte de chapitre suffit quand tous les épisodes se comprennent à la même échelle. Créez plusieurs cartes, par section ou par groupe de sections, quand le récit change nettement de lieu, d’échelle ou d’enjeu géographique. Ajoutez des flèches uniquement quand le texte biblique indique clairement un déplacement ou un chemin parcouru ; sinon, ne reconstruisez pas d’itinéraire.
+
+Les cartes scriptées des chapitres 2 à 4 sont générées par :
 
 ```sh
 python3 scripts/generate_maps.py

@@ -57,6 +57,8 @@ Use `assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg` as the free carto
 
 Generate scripted maps with `python3 scripts/generate_maps.py`. When a generated SVG needs changes, update the script rather than editing the generated SVG by hand.
 
+Use one chapter map when the narrative stays at the same geographic scale. Create multiple maps, by section or by section group, when the story clearly changes place, scale, or geographic focus. Use numbered markers by default; add arrows only when the biblical text explicitly describes a movement or route.
+
 ## Deployment
 
 GitHub Actions workflow `.github/workflows/deploy-pages.yml` builds and publishes `dist/` to GitHub Pages.

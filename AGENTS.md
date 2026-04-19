@@ -21,7 +21,7 @@ Gardez `data/harmony.json` comme source éditable de l'ordre harmonisé, des not
 
 Les composants Astro vivent dans `src/components/`, les pages dans `src/pages/`, et le CSS global dans `src/styles/main.css`. Préférez des composants simples et lisibles : l'objectif est une expérience de lecture quotidienne, pas une application lourde.
 
-Pour les cartes, ne réutilisez pas de fonds non libres. La source autorisée du dépôt est `assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg` sous CC0 1.0. Conservez les crédits et la provenance dans `assets/maps/README.md`. Quand une carte dérivée est scriptée, modifiez le script plutôt que de retoucher manuellement le SVG généré.
+Pour les cartes, ne réutilisez pas de fonds non libres. La source autorisée du dépôt est `assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg` sous CC0 1.0. Conservez les crédits et la provenance dans `assets/maps/README.md`. Une carte de chapitre suffit quand le récit reste à la même échelle ; créez plusieurs cartes quand l’histoire change nettement de lieu, d’échelle ou d’enjeu géographique. Ajoutez des flèches seulement pour les déplacements explicitement décrits par le texte biblique. Quand une carte dérivée est scriptée, modifiez le script plutôt que de retoucher manuellement le SVG généré.
 
 ## Validation
 

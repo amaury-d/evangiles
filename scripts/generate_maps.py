@@ -81,6 +81,21 @@ CHAPTER_03_OVERLAY = """
 """
 
 
+CHAPTER_04_OVERLAY = """
+  <g id="evangiles-chapitre-04-overlay">
+    <rect x="36" y="1328" width="610" height="250" rx="8" class="ev-map-legend-box"/>
+    <text x="64" y="1382" class="ev-map-title">Chapitre 4</text>
+    <text x="64" y="1422" class="ev-map-subtitle">Jean le Baptiste à Béthanie</text>
+    <text x="64" y="1474" class="ev-map-note">1. Béthanie au-delà du Jourdain</text>
+    <text x="64" y="1508" class="ev-map-note">Témoignage de Jean, agneau de Dieu,</text>
+    <text x="64" y="1542" class="ev-map-note">André, Simon-Pierre et les premiers disciples.</text>
+
+    <circle cx="860" cy="1138" r="18" class="ev-map-place"/>
+    <text x="860" y="1138" class="ev-map-pin-number">1</text>
+  </g>
+"""
+
+
 MAPS = [
     {
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-02-naissance-jeunesse.svg",
@@ -91,6 +106,11 @@ MAPS = [
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-03-debut-ministere-judee.svg",
         "aria": "Début du ministère avec Jean le Baptiste en Judée",
         "overlay": CHAPTER_03_OVERLAY,
+    },
+    {
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-04-bethanie.svg",
+        "aria": "Jean le Baptiste à Béthanie",
+        "overlay": CHAPTER_04_OVERLAY,
     },
 ]
 

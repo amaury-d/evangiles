@@ -19,6 +19,8 @@ Cette source est utilisable, modifiable et redistribuable sans demander d'autori
 
 Les cartes dérivées doivent rester sobres : fond clair, régions et lieux nécessaires au récit, peu de détails secondaires. Privilégier le SVG pour faciliter les variantes et les mises en évidence.
 
+Par défaut, utiliser des repères numérotés. Une carte de chapitre suffit quand tous les épisodes se lisent à la même échelle. Créer plusieurs cartes, par section ou par groupe de sections, quand l’histoire change nettement de lieu, d’échelle ou d’enjeu géographique. Ajouter des flèches seulement quand le texte biblique décrit explicitement un déplacement ; éviter les trajets reconstruits à partir d’hypothèses géographiques.
+
 ## Génération
 
 Les cartes scriptées sont régénérées avec :
@@ -30,3 +32,5 @@ python3 scripts/generate_maps.py
 La carte `generated/chapitre-02-naissance-jeunesse.svg` reprend le fond CC0 et ajoute les lieux numérotés du chapitre 2. Elle est référencée depuis `data/harmony.json` avec le chemin `maps/generated/chapitre-02-naissance-jeunesse.svg`.
 
 La carte `generated/chapitre-03-debut-ministere-judee.svg` reprend la même convention pour le début du ministère : repères numérotés, sans trajet reconstruit.
+
+La carte `generated/chapitre-04-bethanie.svg` situe Béthanie au-delà du Jourdain, avec un repère unique puisque les épisodes localisés du chapitre se concentrent au même endroit.
