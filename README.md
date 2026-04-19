@@ -104,7 +104,7 @@ Les anciennes cartes `assets/carte*.jpg` sont appelées à être remplacées. La
 
 Les cartes dérivées doivent être placées dans `assets/maps/generated/`, idéalement en SVG. Elles peuvent ensuite être référencées depuis `data/harmony.json`, par exemple `maps/generated/chapitre-06-judee.svg`. Le build copie récursivement `assets/` vers `public/assets/`.
 
-La carte du chapitre 2 est générée par :
+Les cartes scriptées des chapitres 2 et 3 sont générées par :
 
 ```sh
 python3 scripts/generate_maps.py
