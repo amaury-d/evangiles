@@ -25,6 +25,7 @@ Le projet garde la base de données locale `bible.db`, alimentée par `extractor
 - `scripts/build_site_data.py` : génération des données enrichies pour Astro.
 - `src/` : pages, composants et styles du nouveau site.
 - `assets/` : images sources.
+- `assets/maps/` : source cartographique libre et futures cartes dérivées.
 - `public/assets/` : copie générée des images pour Astro.
 - `dist/` : site statique généré.
 
@@ -94,6 +95,12 @@ Le sélecteur de traduction est rendu côté Astro et bascule les passages avec 
 Pour ajouter un mot-clé grec, ajoutez une entrée dans `data/greek_terms.json`. Les champs importants sont `id`, `lemma`, `transliteration`, `labels`, `short_definition`, `long_definition` et `notes`. Les `labels` sont les mots ou expressions complets détectés dans les traductions, par exemple `royaume de Dieu`, `foi` ou `truth`.
 
 Le surlignage est heuristique : il ne prétend pas faire un alignement grec mot-à-mot. Il sert de repère de lecture et pourra être remplacé plus tard par un alignement lexical plus précis.
+
+## Cartes
+
+Les anciennes cartes `assets/carte*.jpg` sont appelées à être remplacées. La nouvelle base cartographique libre est `assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg`, téléchargée depuis Wikimedia Commons et publiée sous licence CC0 1.0.
+
+Les cartes dérivées doivent être placées dans `assets/maps/generated/`, idéalement en SVG. Elles peuvent ensuite être référencées depuis `data/harmony.json`, par exemple `maps/generated/chapitre-06-judee.svg`. Le build copie récursivement `assets/` vers `public/assets/`.
 
 ## Publication
 

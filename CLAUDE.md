@@ -51,6 +51,10 @@ In `data/harmony.json`, biblical references are keyed by book slug (`matthieu`, 
 - `src/pages/evangiles/[chapter].astro` — dynamic route generating one page per chapter via `getStaticPaths`
 - `src/styles/main.css` — global styles
 
+## Maps
+
+Use `assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg` as the free cartographic base. It comes from Wikimedia Commons under CC0 1.0. Put project-specific derived maps in `assets/maps/generated/`, preferably as SVG, and reference them from `data/harmony.json` with paths relative to `assets/`, for example `maps/generated/chapitre-06-judee.svg`.
+
 ## Deployment
 
 GitHub Actions workflow `.github/workflows/deploy-pages.yml` builds and publishes `dist/` to GitHub Pages.

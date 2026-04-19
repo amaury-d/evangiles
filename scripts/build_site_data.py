@@ -180,9 +180,11 @@ def validate_images(generated: dict[str, Any]) -> None:
 
 def copy_assets() -> None:
     ASSETS_DEST.mkdir(parents=True, exist_ok=True)
-    for path in ASSETS_SOURCE.iterdir():
+    for path in ASSETS_SOURCE.rglob("*"):
         if path.is_file() and path.name != "main.scss":
-            shutil.copy2(path, ASSETS_DEST / path.name)
+            target = ASSETS_DEST / path.relative_to(ASSETS_SOURCE)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(path, target)
 
 
 if __name__ == "__main__":
