@@ -3,9 +3,14 @@ all: build
 node_modules: package-lock.json
 	npm install
 
-data: src/data/harmony.generated.json src/pages/annexes
+maps: assets/maps/generated/chapitre-02-naissance-jeunesse.svg
 
-src/data/harmony.generated.json: data/harmony.json data/translations.json bible.db scripts/build_site_data.py assets
+assets/maps/generated/chapitre-02-naissance-jeunesse.svg: assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg scripts/generate_maps.py
+	python3 scripts/generate_maps.py
+
+data: maps src/data/harmony.generated.json src/pages/annexes
+
+src/data/harmony.generated.json: data/harmony.json data/translations.json bible.db scripts/build_site_data.py assets maps
 	python3 scripts/build_site_data.py
 
 src/pages/annexes: annexes scripts/build_annexes.py

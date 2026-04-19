@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "predev": "python3 scripts/build_site_data.py && python3 scripts/build_annexes.py",
+    "predev": "python3 scripts/generate_maps.py && python3 scripts/build_site_data.py && python3 scripts/build_annexes.py",
     "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev --host 127.0.0.1",
-    "prebuild": "python3 scripts/build_site_data.py && python3 scripts/build_annexes.py",
+    "prebuild": "python3 scripts/generate_maps.py && python3 scripts/build_site_data.py && python3 scripts/build_annexes.py",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview --host 127.0.0.1"
   },

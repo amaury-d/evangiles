@@ -55,6 +55,8 @@ In `data/harmony.json`, biblical references are keyed by book slug (`matthieu`, 
 
 Use `assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg` as the free cartographic base. It comes from Wikimedia Commons under CC0 1.0. Put project-specific derived maps in `assets/maps/generated/`, preferably as SVG, and reference them from `data/harmony.json` with paths relative to `assets/`, for example `maps/generated/chapitre-06-judee.svg`.
 
+Generate scripted maps with `python3 scripts/generate_maps.py`. When a generated SVG needs changes, update the script rather than editing the generated SVG by hand.
+
 ## Deployment
 
 GitHub Actions workflow `.github/workflows/deploy-pages.yml` builds and publishes `dist/` to GitHub Pages.

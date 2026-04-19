@@ -10,8 +10,9 @@ Le projet garde la base de données locale `bible.db`, alimentée par `extractor
 2. `extractor/fetch_bible.py` récupère ces traductions depuis l'API GetBible et reconstruit `bible.db`.
 3. `data/harmony.json` décrit l'harmonie : chapitres, sections, dates, lieux, images, notes et références bibliques.
 4. `data/greek_terms.json` décrit les mots-clés grecs et les variantes textuelles à surligner.
-5. `scripts/build_site_data.py` lit `data/harmony.json`, `data/translations.json` et `bible.db`, puis génère `src/data/harmony.generated.json`.
-6. Astro lit ces données et produit le site statique dans `dist/`.
+5. `scripts/generate_maps.py` génère les cartes dérivées depuis les sources libres dans `assets/maps/sources/`.
+6. `scripts/build_site_data.py` lit `data/harmony.json`, `data/translations.json` et `bible.db`, puis génère `src/data/harmony.generated.json`.
+7. Astro lit ces données et produit le site statique dans `dist/`.
 
 `src/data/harmony.generated.json`, `public/assets/` et `dist/` sont générés. La source éditable principale est `data/harmony.json`.
 
@@ -22,6 +23,7 @@ Le projet garde la base de données locale `bible.db`, alimentée par `extractor
 - `data/greek_terms.json` : dictionnaire local des notions grecques à surligner.
 - `bible.db` : base SQLite locale des versets bibliques, avec une colonne `translation`.
 - `extractor/fetch_bible.py` : script de régénération multi-traduction de `bible.db` depuis GetBible.
+- `scripts/generate_maps.py` : génération des cartes SVG dérivées.
 - `scripts/build_site_data.py` : génération des données enrichies pour Astro.
 - `src/` : pages, composants et styles du nouveau site.
 - `assets/` : images sources.
@@ -101,6 +103,14 @@ Le surlignage est heuristique : il ne prétend pas faire un alignement grec mot-
 Les anciennes cartes `assets/carte*.jpg` sont appelées à être remplacées. La nouvelle base cartographique libre est `assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg`, téléchargée depuis Wikimedia Commons et publiée sous licence CC0 1.0.
 
 Les cartes dérivées doivent être placées dans `assets/maps/generated/`, idéalement en SVG. Elles peuvent ensuite être référencées depuis `data/harmony.json`, par exemple `maps/generated/chapitre-06-judee.svg`. Le build copie récursivement `assets/` vers `public/assets/`.
+
+La carte du chapitre 2 est générée par :
+
+```sh
+python3 scripts/generate_maps.py
+```
+
+Cette commande est aussi lancée automatiquement par `npm run build`, `npm run dev` et `make`.
 
 ## Publication
 

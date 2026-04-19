@@ -18,3 +18,13 @@ Cette source est utilisable, modifiable et redistribuable sans demander d'autori
 - `generated/` : cartes dérivées créées pour ce site, par chapitre ou par section.
 
 Les cartes dérivées doivent rester sobres : fond clair, régions et lieux nécessaires au récit, peu de détails secondaires. Privilégier le SVG pour faciliter les variantes et les mises en évidence.
+
+## Génération
+
+Les cartes scriptées sont régénérées avec :
+
+```sh
+python3 scripts/generate_maps.py
+```
+
+La carte `generated/chapitre-02-naissance-jeunesse.svg` reprend le fond CC0 et ajoute les lieux numérotés du chapitre 2. Elle est référencée depuis `data/harmony.json` avec le chemin `maps/generated/chapitre-02-naissance-jeunesse.svg`.

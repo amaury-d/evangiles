@@ -4,13 +4,14 @@
 
 Ce dépôt contient une refonte Astro du site "Mon harmonie des Évangiles". La source de l'harmonie est `data/harmony.json`. Les traductions bibliques supportées sont dans `data/translations.json`, les mots grecs à surligner dans `data/greek_terms.json`, et les versets viennent de la base SQLite multi-traduction `bible.db`, régénérable avec `extractor/fetch_bible.py`. Les scripts de transformation sont dans `scripts/`, et le site Astro est dans `src/`.
 
-Les images sources sont dans `assets/`. Les nouvelles cartes doivent utiliser la base libre `assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg` et placer les dérivés dans `assets/maps/generated/`. `public/assets/`, `src/data/harmony.generated.json`, `dist/` et `.astro/` sont générés et ne doivent pas être modifiés directement.
+Les images sources sont dans `assets/`. Les nouvelles cartes doivent utiliser la base libre `assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg` et placer les dérivés dans `assets/maps/generated/`. Les cartes reproductibles doivent être générées par `scripts/generate_maps.py`. `public/assets/`, `src/data/harmony.generated.json`, `dist/` et `.astro/` sont générés et ne doivent pas être modifiés directement.
 
 ## Commandes de développement
 
 - `npm install` : installe les dépendances Node.
 - `make` ou `npm run build` : génère les données enrichies puis construit le site dans `dist/`.
 - `make serve` ou `npm run dev` : lance le serveur local Astro.
+- `python3 scripts/generate_maps.py` : régénère les cartes SVG dérivées depuis les sources libres.
 - `make clean` : supprime les sorties générées.
 - `make refresh-bible` : reconstruit `bible.db` via `extractor/fetch_bible.py`; sans argument, récupère toutes les traductions activées, ou seulement `TRANSLATION=darby`.
 
@@ -20,7 +21,7 @@ Gardez `data/harmony.json` comme source éditable de l'ordre harmonisé, des not
 
 Les composants Astro vivent dans `src/components/`, les pages dans `src/pages/`, et le CSS global dans `src/styles/main.css`. Préférez des composants simples et lisibles : l'objectif est une expérience de lecture quotidienne, pas une application lourde.
 
-Pour les cartes, ne réutilisez pas de fonds non libres. La source autorisée du dépôt est `assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg` sous CC0 1.0. Conservez les crédits et la provenance dans `assets/maps/README.md`.
+Pour les cartes, ne réutilisez pas de fonds non libres. La source autorisée du dépôt est `assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg` sous CC0 1.0. Conservez les crédits et la provenance dans `assets/maps/README.md`. Quand une carte dérivée est scriptée, modifiez le script plutôt que de retoucher manuellement le SVG généré.
 
 ## Validation
 
