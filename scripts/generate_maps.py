@@ -294,6 +294,97 @@ CHAPTER_09_GALILEE_NORD_OVERLAY = """
 """
 
 
+CHAPTER_12_OVERLAY = """
+  <g id="evangiles-chapitre-12-overlay">
+    <rect x="36" y="1378" width="660" height="268" rx="8" class="ev-map-legend-box"/>
+    <text x="64" y="1432" class="ev-map-title">Chapitre 12</text>
+    <text x="64" y="1472" class="ev-map-subtitle">Béthanie et Éphraïm</text>
+    <text x="64" y="1524" class="ev-map-note">1. Béthanie : Lazare malade puis ressuscité</text>
+    <text x="64" y="1558" class="ev-map-note">2. Jérusalem : le sanhédrin décide de faire mourir Jésus</text>
+    <text x="64" y="1592" class="ev-map-note">3. Éphraïm : Jésus se retire à l'écart</text>
+
+    <!-- 1. Béthanie -->
+    <circle cx="740" cy="1150" r="11" class="ev-map-place"/>
+    <text x="740" y="1150" class="ev-map-pin-number">1</text>
+
+    <!-- 2. Jérusalem (Sanhédrin) -->
+    <circle cx="664" cy="1144" r="11" class="ev-map-place"/>
+    <text x="664" y="1144" class="ev-map-pin-number">2</text>
+
+    <!-- 3. Éphraïm -->
+    <circle cx="715" cy="1015" r="11" class="ev-map-place"/>
+    <text x="715" y="1015" class="ev-map-pin-number">3</text>
+  </g>
+"""
+
+
+CHAPTER_11_JERUSALEM_OVERLAY = """
+  <g id="evangiles-chapitre-11-jerusalem-overlay">
+    <rect x="12" y="390" width="336" height="172" rx="8" class="ev-map-legend-box"/>
+    <text x="28" y="422" class="ev-map-title-compact">Chapitre 11</text>
+    <text x="28" y="444" class="ev-map-subtitle-compact">Jérusalem</text>
+    <text x="28" y="470" class="ev-map-note-compact">1. Temple : Tabernacles, lumière du monde,</text>
+    <text x="28" y="490" class="ev-map-note-compact">   femme adultère, fête de la Dédicace</text>
+    <text x="28" y="514" class="ev-map-note-compact">2. Siloé : guérison de l'aveugle-né</text>
+
+    <path class="ev-map-callout" d="M 303 218 L 320 222"/>
+    <circle cx="303" cy="218" r="5" class="ev-map-place"/>
+    <text x="303" y="218" class="ev-map-pin-number-compact">1</text>
+
+    <path class="ev-map-callout" d="M 338 488 L 325 472"/>
+    <circle cx="338" cy="488" r="5" class="ev-map-place"/>
+    <text x="338" y="488" class="ev-map-pin-number-compact">2</text>
+  </g>
+"""
+
+
+CHAPTER_11_PEREE_JERICHO_OVERLAY = """
+  <g id="evangiles-chapitre-11-peree-jericho-overlay">
+    <rect x="36" y="1318" width="650" height="258" rx="8" class="ev-map-legend-box"/>
+    <text x="64" y="1372" class="ev-map-title">Chapitre 11</text>
+    <text x="64" y="1412" class="ev-map-subtitle">Pérée et Jéricho</text>
+    <text x="64" y="1464" class="ev-map-note">1. Pérée : divorce, richesses, annonce mort et résurrection</text>
+    <text x="64" y="1498" class="ev-map-note">2. Jéricho : guérison d'aveugles, Zachée</text>
+    <text x="64" y="1532" class="ev-map-note">3. Jéricho : parabole des 10 mines</text>
+    <text x="64" y="1572" class="ev-map-note">Flèche : route de Pérée vers Jéricho.</text>
+
+    <path class="ev-map-route" d="M 1016 1000 C 980 1030 920 1058 824 1086"/>
+
+    <!-- 1. Pérée -->
+    <circle cx="1018" cy="998" r="11" class="ev-map-place"/>
+    <text x="1018" y="998" class="ev-map-pin-number">1</text>
+
+    <!-- 2. Jéricho -->
+    <circle cx="822" cy="1088" r="11" class="ev-map-place"/>
+    <text x="822" y="1088" class="ev-map-pin-number">2</text>
+
+    <!-- 3. Jéricho (parabole mines — adjacent) -->
+    <circle cx="858" cy="1088" r="11" class="ev-map-place"/>
+    <text x="858" y="1088" class="ev-map-pin-number">3</text>
+  </g>
+"""
+
+
+CHAPTER_10_OVERLAY = """
+  <g id="evangiles-chapitre-10-overlay">
+    <rect x="36" y="1378" width="640" height="248" rx="8" class="ev-map-legend-box"/>
+    <text x="64" y="1432" class="ev-map-title">Chapitre 10</text>
+    <text x="64" y="1472" class="ev-map-subtitle">Samarie</text>
+    <text x="64" y="1524" class="ev-map-note">1. Frontière samaritaine : guérison de dix lépreux</text>
+    <text x="64" y="1558" class="ev-map-note">Un seul, Samaritain, revient rendre grâce.</text>
+    <text x="64" y="1602" class="ev-map-note">Parabolus du juge inique et du pharisien</text>
+    <text x="64" y="1636" class="ev-map-note">enseignées en route vers Jérusalem.</text>
+
+    <!-- 1. Frontière Galilée / Samarie -->
+    <circle cx="700" cy="720" r="11" class="ev-map-place"/>
+    <text x="700" y="720" class="ev-map-pin-number">1</text>
+
+    <text x="728" y="710" class="ev-map-small-label">Galilée ↑</text>
+    <text x="728" y="738" class="ev-map-small-label">Samarie ↓</text>
+  </g>
+"""
+
+
 CHAPTER_09_SAMARIE_JUDEE_OVERLAY = """
   <g id="evangiles-chapitre-09-samarie-judee-overlay">
     <rect x="36" y="1360" width="650" height="280" rx="8" class="ev-map-legend-box"/>
@@ -378,6 +469,30 @@ MAPS = [
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-09-galilee-jerusalem.svg",
         "aria": "De la Galilée vers Jérusalem par la Samarie",
         "overlay": CHAPTER_09_SAMARIE_JUDEE_OVERLAY,
+    },
+    {
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-12-bethanie-ephraim.svg",
+        "aria": "Béthanie et Éphraïm — résurrection de Lazare",
+        "overlay": CHAPTER_12_OVERLAY,
+    },
+    {
+        "source": JERUSALEM_RASTER_SOURCE,
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-11-jerusalem.svg",
+        "aria": "Jérusalem — Tabernacles, aveugle-né, Dédicace",
+        "overlay": CHAPTER_11_JERUSALEM_OVERLAY,
+        "raster": True,
+        "width": 464,
+        "height": 598,
+    },
+    {
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-11-peree-jericho.svg",
+        "aria": "Pérée et Jéricho — enseignements et guérisons",
+        "overlay": CHAPTER_11_PEREE_JERICHO_OVERLAY,
+    },
+    {
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-10-samarie.svg",
+        "aria": "Frontière samaritaine — guérison des dix lépreux",
+        "overlay": CHAPTER_10_OVERLAY,
     },
 ]
 

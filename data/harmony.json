@@ -2674,7 +2674,10 @@
           "lieu": "Samarie"
         }
       ],
-      "date": "+32 Août/Septembre"
+      "date": "+32 Août/Septembre",
+      "images": {
+        "maps/generated/chapitre-10-samarie.svg": "Carte de la frontière samaritaine"
+      }
     },
     {
       "id": "judee",
@@ -2791,7 +2794,10 @@
             ]
           },
           "date": "+32",
-          "lieu": "Pérée"
+          "lieu": "Pérée",
+          "images": {
+            "maps/generated/chapitre-11-peree-jericho.svg": "Carte de Pérée et Jéricho"
+          }
         },
         {
           "id": "judee-8",
@@ -3012,7 +3018,7 @@
         }
       ],
       "images": {
-        "carte5.jpg": "Carte 5"
+        "maps/generated/chapitre-11-jerusalem.svg": "Carte de Jérusalem — Tabernacles, aveugle-né, Dédicace"
       }
     },
     {
@@ -3078,7 +3084,10 @@
             "Éphraïm correspond peut-être à Taïyibé en Samarie"
           ]
         }
-      ]
+      ],
+      "images": {
+        "maps/generated/chapitre-12-bethanie-ephraim.svg": "Carte de Béthanie et Éphraïm — résurrection de Lazare"
+      }
     },
     {
       "id": "jerusalem2",
