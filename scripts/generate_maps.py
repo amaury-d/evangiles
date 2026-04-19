@@ -23,6 +23,7 @@ COMMON_DEFS = """
       .ev-map-place { fill: #2b2a25; stroke: #fffdf2; stroke-width: 6; }
       .ev-map-place-probable { fill: #fffdf2; stroke: #2b2a25; stroke-width: 4; }
       .ev-map-pin-number { font: 700 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #fffdf2; text-anchor: middle; dominant-baseline: central; }
+      .ev-map-pin-number-dark { font: 700 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; text-anchor: middle; dominant-baseline: central; }
       .ev-map-label { font: 700 28px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; filter: url(#ev-map-label-shadow); }
       .ev-map-small-label { font: 500 22px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; filter: url(#ev-map-label-shadow); }
       .ev-map-note { font: 400 19px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4d4a41; }
@@ -126,6 +127,36 @@ CHAPTER_05_OVERLAY = """
 """
 
 
+CHAPTER_06_OVERLAY = """
+  <g id="evangiles-chapitre-06-overlay">
+    <rect x="36" y="1298" width="632" height="338" rx="8" class="ev-map-legend-box"/>
+    <text x="64" y="1352" class="ev-map-title">Chapitre 6</text>
+    <text x="64" y="1392" class="ev-map-subtitle">Jésus et Jean en Judée</text>
+    <text x="64" y="1444" class="ev-map-note">1. Jérusalem : Pâque, Temple, Nicodème</text>
+    <text x="64" y="1478" class="ev-map-note">2. Judée : Jésus demeure et baptise</text>
+    <text x="64" y="1512" class="ev-map-note">3. Aïnon : Jean baptise encore</text>
+    <text x="64" y="1546" class="ev-map-note">4. Sychar : rencontre en Samarie</text>
+    <text x="64" y="1590" class="ev-map-note">Flèche : Jésus quitte la Judée pour la Galilée</text>
+    <text x="64" y="1622" class="ev-map-note">en passant par la Samarie.</text>
+
+    <path class="ev-map-route" d="M 690 1112 C 700 1014 696 940 684 884"/>
+    <path class="ev-map-route" d="M 684 884 C 740 760 784 640 812 520"/>
+
+    <circle cx="664" cy="1144" r="18" class="ev-map-place"/>
+    <text x="664" y="1144" class="ev-map-pin-number">1</text>
+
+    <circle cx="722" cy="1110" r="18" class="ev-map-place"/>
+    <text x="722" y="1110" class="ev-map-pin-number">2</text>
+
+    <circle cx="752" cy="940" r="18" class="ev-map-place-probable"/>
+    <text x="752" y="940" class="ev-map-pin-number-dark">3</text>
+
+    <circle cx="684" cy="884" r="18" class="ev-map-place"/>
+    <text x="684" y="884" class="ev-map-pin-number">4</text>
+  </g>
+"""
+
+
 MAPS = [
     {
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-02-naissance-jeunesse.svg",
@@ -146,6 +177,11 @@ MAPS = [
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-05-galilee.svg",
         "aria": "Jésus en Galilée",
         "overlay": CHAPTER_05_OVERLAY,
+    },
+    {
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-06-judee-samarie.svg",
+        "aria": "Jésus et Jean le Baptiste en Judée",
+        "overlay": CHAPTER_06_OVERLAY,
     },
 ]
 

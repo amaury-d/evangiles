@@ -36,3 +36,5 @@ La carte `generated/chapitre-03-debut-ministere-judee.svg` reprend la même conv
 La carte `generated/chapitre-04-bethanie.svg` situe Béthanie au-delà du Jourdain, avec un repère unique puisque les épisodes localisés du chapitre se concentrent au même endroit.
 
 La carte `generated/chapitre-05-galilee.svg` situe Béthanie, Cana et Capharnaüm. Elle utilise des flèches fines parce que Jean indique explicitement le départ vers la Galilée puis la descente à Capharnaüm.
+
+La carte `generated/chapitre-06-judee-samarie.svg` situe Jérusalem, la Judée, Aïnon et Sychar. Elle utilise une flèche fine pour le départ de Judée vers la Galilée en passant par la Samarie, explicitement indiqué en Jean 4.

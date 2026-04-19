@@ -1761,6 +1761,7 @@
       .ev-map-place { fill: #2b2a25; stroke: #fffdf2; stroke-width: 6; }
       .ev-map-place-probable { fill: #fffdf2; stroke: #2b2a25; stroke-width: 4; }
       .ev-map-pin-number { font: 700 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #fffdf2; text-anchor: middle; dominant-baseline: central; }
+      .ev-map-pin-number-dark { font: 700 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; text-anchor: middle; dominant-baseline: central; }
       .ev-map-label { font: 700 28px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; filter: url(#ev-map-label-shadow); }
       .ev-map-small-label { font: 500 22px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2b2a25; filter: url(#ev-map-label-shadow); }
       .ev-map-note { font: 400 19px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4d4a41; }
