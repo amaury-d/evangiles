@@ -1,7 +1,7 @@
 # Graph Report - /Users/amaury/git/evangiles  (2026-04-20)
 
 ## Corpus Check
-- 6 files · ~894,143 words
+- 6 files · ~829,281 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary

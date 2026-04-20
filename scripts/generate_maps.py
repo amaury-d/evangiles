@@ -1,7 +1,6 @@
 import base64
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "assets" / "maps" / "sources" / "Holy_sites_of_Jesus_in_Palestine.svg"
 JERUSALEM_RASTER_SOURCE = ROOT / "assets" / "maps" / "sources" / "Jerusalem_premier_siecle.JPG"
@@ -294,6 +293,48 @@ CHAPTER_09_GALILEE_NORD_OVERLAY = """
 """
 
 
+CHAPTER_14_JERUSALEM_OVERLAY = """
+  <g id="evangiles-chapitre-14-jerusalem-overlay">
+    <rect x="36" y="1358" width="660" height="302" rx="8" class="ev-map-legend-box"/>
+    <text x="64" y="1412" class="ev-map-title">Chapitre 14 (1/2)</text>
+    <text x="64" y="1452" class="ev-map-subtitle">Jérusalem et Emmaüs</text>
+    <text x="64" y="1504" class="ev-map-note">1. Jérusalem : sépulcre vide, Marie de Magdala,</text>
+    <text x="64" y="1536" class="ev-map-note">   Pierre et Jean, apparitions aux dix puis aux onze</text>
+    <text x="64" y="1570" class="ev-map-note">2. Emmaüs : Jésus marche et se révèle aux deux disciples</text>
+    <text x="64" y="1614" class="ev-map-note">Jésus apparaît sur la route</text>
+
+    <!-- 1. Jérusalem -->
+    <circle cx="664" cy="1144" r="11" class="ev-map-place"/>
+    <text x="664" y="1144" class="ev-map-pin-number">1</text>
+
+    <!-- 2. Emmaüs -->
+    <circle cx="548" cy="1100" r="11" class="ev-map-place-probable"/>
+    <text x="548" y="1100" class="ev-map-pin-number-dark">2</text>
+  </g>
+"""
+
+
+CHAPTER_14_GALILEE_OVERLAY = """
+  <g id="evangiles-chapitre-14-galilee-overlay">
+    <rect x="36" y="1318" width="660" height="258" rx="8" class="ev-map-legend-box"/>
+    <text x="64" y="1372" class="ev-map-title">Chapitre 14 (2/2)</text>
+    <text x="64" y="1412" class="ev-map-subtitle">Galilée</text>
+    <text x="64" y="1464" class="ev-map-note">1. Montagne de Galilée : apparition aux onze,</text>
+    <text x="64" y="1496" class="ev-map-note">   grande commission</text>
+    <text x="64" y="1530" class="ev-map-note">2. Lac de Tibériade : pêche miraculeuse,</text>
+    <text x="64" y="1562" class="ev-map-note">   Jésus confie les brebis à Pierre</text>
+
+    <!-- 1. Montagne de Galilée (lieu incertain) -->
+    <circle cx="740" cy="524" r="11" class="ev-map-place-probable"/>
+    <text x="740" y="524" class="ev-map-pin-number-dark">1</text>
+
+    <!-- 2. Lac de Tibériade -->
+    <circle cx="898" cy="500" r="11" class="ev-map-place"/>
+    <text x="898" y="500" class="ev-map-pin-number">2</text>
+  </g>
+"""
+
+
 CHAPTER_13_BETHANIE_OVERLAY = """
   <g id="evangiles-chapitre-13-bethanie-overlay">
     <rect x="36" y="1418" width="660" height="224" rx="8" class="ev-map-legend-box"/>
@@ -521,6 +562,16 @@ MAPS = [
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-09-galilee-jerusalem.svg",
         "aria": "De la Galilée vers Jérusalem par la Samarie",
         "overlay": CHAPTER_09_SAMARIE_JUDEE_OVERLAY,
+    },
+    {
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-14-jerusalem-emmaus.svg",
+        "aria": "Jérusalem et Emmaüs — résurrection et apparitions",
+        "overlay": CHAPTER_14_JERUSALEM_OVERLAY,
+    },
+    {
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-14-galilee.svg",
+        "aria": "Galilée — apparitions du Ressuscité",
+        "overlay": CHAPTER_14_GALILEE_OVERLAY,
     },
     {
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-13-bethanie-jerusalem.svg",

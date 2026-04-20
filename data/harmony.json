@@ -4760,7 +4760,10 @@
               ]
             ]
           },
-          "lieu": "Galilée"
+          "lieu": "Galilée",
+          "images": {
+            "maps/generated/chapitre-14-galilee.svg": "Carte des apparitions en Galilée"
+          }
         },
         {
           "id": "resurrection-12",
@@ -4790,7 +4793,10 @@
           },
           "lieu": "Galilée"
         }
-      ]
+      ],
+      "images": {
+        "maps/generated/chapitre-14-jerusalem-emmaus.svg": "Carte de Jérusalem et Emmaüs — résurrection et apparitions"
+      }
     },
     {
       "id": "ascension",
