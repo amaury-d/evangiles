@@ -3,9 +3,29 @@ all: build
 node_modules: package-lock.json
 	npm install
 
-maps: assets/maps/generated/chapitre-02-naissance-jeunesse.svg assets/maps/generated/chapitre-03-debut-ministere-judee.svg assets/maps/generated/chapitre-04-bethanie.svg assets/maps/generated/chapitre-05-galilee.svg assets/maps/generated/chapitre-06-judee-samarie.svg assets/maps/generated/chapitre-07-galilee.svg assets/maps/generated/chapitre-07-traversee-lac.svg assets/maps/generated/chapitre-08-jerusalem.svg
+GENERATED_MAPS = \
+	assets/maps/generated/chapitre-02-naissance-jeunesse.svg \
+	assets/maps/generated/chapitre-03-debut-ministere-judee.svg \
+	assets/maps/generated/chapitre-04-bethanie.svg \
+	assets/maps/generated/chapitre-05-galilee.svg \
+	assets/maps/generated/chapitre-06-judee-samarie.svg \
+	assets/maps/generated/chapitre-07-galilee.svg \
+	assets/maps/generated/chapitre-07-traversee-lac.svg \
+	assets/maps/generated/chapitre-08-jerusalem.svg \
+	assets/maps/generated/chapitre-09-galilee-phenicie.svg \
+	assets/maps/generated/chapitre-09-galilee-jerusalem.svg \
+	assets/maps/generated/chapitre-10-samarie.svg \
+	assets/maps/generated/chapitre-11-jerusalem.svg \
+	assets/maps/generated/chapitre-11-peree-jericho.svg \
+	assets/maps/generated/chapitre-12-bethanie-ephraim.svg \
+	assets/maps/generated/chapitre-13-bethanie-jerusalem.svg \
+	assets/maps/generated/chapitre-13-passion.svg \
+	assets/maps/generated/chapitre-14-jerusalem-emmaus.svg \
+	assets/maps/generated/chapitre-14-galilee.svg
 
-assets/maps/generated/chapitre-02-naissance-jeunesse.svg assets/maps/generated/chapitre-03-debut-ministere-judee.svg assets/maps/generated/chapitre-04-bethanie.svg assets/maps/generated/chapitre-05-galilee.svg assets/maps/generated/chapitre-06-judee-samarie.svg assets/maps/generated/chapitre-07-galilee.svg assets/maps/generated/chapitre-07-traversee-lac.svg assets/maps/generated/chapitre-08-jerusalem.svg: assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg assets/maps/sources/Jerusalem_in_70_map.svg scripts/generate_maps.py
+maps: $(GENERATED_MAPS)
+
+$(GENERATED_MAPS): assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg assets/maps/sources/Jerusalem_premier_siecle.JPG scripts/generate_maps.py
 	python3 scripts/generate_maps.py
 
 data: maps src/data/harmony.generated.json src/pages/annexes
