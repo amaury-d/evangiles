@@ -21,7 +21,8 @@ GENERATED_MAPS = \
 	assets/maps/generated/chapitre-13-bethanie-jerusalem.svg \
 	assets/maps/generated/chapitre-13-passion.svg \
 	assets/maps/generated/chapitre-14-jerusalem-emmaus.svg \
-	assets/maps/generated/chapitre-14-galilee.svg
+	assets/maps/generated/chapitre-14-galilee.svg \
+	assets/maps/generated/chapitre-15-ascension.svg
 
 maps: $(GENERATED_MAPS)
 

@@ -293,6 +293,25 @@ CHAPTER_09_GALILEE_NORD_OVERLAY = """
 """
 
 
+CHAPTER_15_OVERLAY = """
+  <g id="evangiles-chapitre-15-overlay">
+    <rect x="36" y="1448" width="640" height="224" rx="8" class="ev-map-legend-box"/>
+    <text x="64" y="1502" class="ev-map-title">Chapitre 15</text>
+    <text x="64" y="1542" class="ev-map-subtitle">Ascension et Pentecôte</text>
+    <text x="64" y="1594" class="ev-map-note">1. Mont des Oliviers : promesse du Saint Esprit, ascension</text>
+    <text x="64" y="1628" class="ev-map-note">2. Jérusalem : rassemblement des disciples, Pentecôte</text>
+
+    <!-- 1. Mont des Oliviers -->
+    <circle cx="704" cy="1128" r="11" class="ev-map-place"/>
+    <text x="704" y="1128" class="ev-map-pin-number">1</text>
+
+    <!-- 2. Jérusalem -->
+    <circle cx="664" cy="1144" r="11" class="ev-map-place"/>
+    <text x="664" y="1144" class="ev-map-pin-number">2</text>
+  </g>
+"""
+
+
 CHAPTER_14_JERUSALEM_OVERLAY = """
   <g id="evangiles-chapitre-14-jerusalem-overlay">
     <rect x="36" y="1358" width="660" height="302" rx="8" class="ev-map-legend-box"/>
@@ -562,6 +581,11 @@ MAPS = [
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-09-galilee-jerusalem.svg",
         "aria": "De la Galilée vers Jérusalem par la Samarie",
         "overlay": CHAPTER_09_SAMARIE_JUDEE_OVERLAY,
+    },
+    {
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-15-ascension.svg",
+        "aria": "Mont des Oliviers et Jérusalem — Ascension et Pentecôte",
+        "overlay": CHAPTER_15_OVERLAY,
     },
     {
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-14-jerusalem-emmaus.svg",

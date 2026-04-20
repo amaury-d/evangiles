@@ -4880,7 +4880,10 @@
             "La pentecôte vient du grec pentêkostê qui signifie \"cinquantième\". La Pentecôte est en effet célébrée cinquante jour après Pâques"
           ]
         }
-      ]
+      ],
+      "images": {
+        "maps/generated/chapitre-15-ascension.svg": "Carte du Mont des Oliviers et Jérusalem — Ascension et Pentecôte"
+      }
     },
     {
       "id": "apotres1",
