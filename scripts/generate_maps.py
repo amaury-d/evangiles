@@ -294,6 +294,58 @@ CHAPTER_09_GALILEE_NORD_OVERLAY = """
 """
 
 
+CHAPTER_13_BETHANIE_OVERLAY = """
+  <g id="evangiles-chapitre-13-bethanie-overlay">
+    <rect x="36" y="1418" width="660" height="224" rx="8" class="ev-map-legend-box"/>
+    <text x="64" y="1472" class="ev-map-title">Chapitre 13 (1/2)</text>
+    <text x="64" y="1512" class="ev-map-subtitle">Béthanie et Jérusalem</text>
+    <text x="64" y="1564" class="ev-map-note">1. Béthanie : Simon le lépreux, Lazare, onction de Jésus</text>
+    <text x="64" y="1598" class="ev-map-note">2. Jérusalem : entrée triomphale, Temple, passion</text>
+    <text x="64" y="1638" class="ev-map-note">Flèche : entrée triomphale depuis Béthanie.</text>
+
+    <path class="ev-map-route" d="M 736 1148 C 718 1146 696 1145 668 1144"/>
+
+    <!-- 1. Béthanie -->
+    <circle cx="740" cy="1150" r="11" class="ev-map-place"/>
+    <text x="740" y="1150" class="ev-map-pin-number">1</text>
+
+    <!-- 2. Jérusalem -->
+    <circle cx="664" cy="1144" r="11" class="ev-map-place"/>
+    <text x="664" y="1144" class="ev-map-pin-number">2</text>
+  </g>
+"""
+
+
+CHAPTER_13_PASSION_OVERLAY = """
+  <g id="evangiles-chapitre-13-passion-overlay">
+    <rect x="12" y="370" width="348" height="186" rx="8" class="ev-map-legend-box"/>
+    <text x="28" y="402" class="ev-map-title-compact">Chapitre 13 (2/2)</text>
+    <text x="28" y="424" class="ev-map-subtitle-compact">Jérusalem — Passion</text>
+    <text x="28" y="450" class="ev-map-note-compact">1. Temple : enseignements, chasse des marchands</text>
+    <text x="28" y="470" class="ev-map-note-compact">2. Gethsémani : prière, arrestation</text>
+    <text x="28" y="490" class="ev-map-note-compact">3. Prétoire : Pilate et Hérode</text>
+    <text x="28" y="510" class="ev-map-note-compact">4. Golgotha : crucifixion, mise au tombeau</text>
+
+    <!-- 1. Temple -->
+    <path class="ev-map-callout" d="M 303 218 L 320 222"/>
+    <circle cx="303" cy="218" r="5" class="ev-map-place"/>
+    <text x="303" y="218" class="ev-map-pin-number-compact">1</text>
+
+    <!-- 2. Gethsémani (pied du Mont des Oliviers, est de la ville) -->
+    <circle cx="432" cy="262" r="5" class="ev-map-place"/>
+    <text x="432" y="262" class="ev-map-pin-number-compact">2</text>
+
+    <!-- 3. Prétoire (palais d'Hérode, ouest) -->
+    <circle cx="178" cy="248" r="5" class="ev-map-place-probable"/>
+    <text x="178" y="248" class="ev-map-pin-number-dark-compact">3</text>
+
+    <!-- 4. Golgotha (hors murs nord-ouest) -->
+    <circle cx="148" cy="192" r="5" class="ev-map-place-probable"/>
+    <text x="148" y="192" class="ev-map-pin-number-dark-compact">4</text>
+  </g>
+"""
+
+
 CHAPTER_12_OVERLAY = """
   <g id="evangiles-chapitre-12-overlay">
     <rect x="36" y="1378" width="660" height="268" rx="8" class="ev-map-legend-box"/>
@@ -469,6 +521,20 @@ MAPS = [
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-09-galilee-jerusalem.svg",
         "aria": "De la Galilée vers Jérusalem par la Samarie",
         "overlay": CHAPTER_09_SAMARIE_JUDEE_OVERLAY,
+    },
+    {
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-13-bethanie-jerusalem.svg",
+        "aria": "Béthanie et entrée triomphale à Jérusalem",
+        "overlay": CHAPTER_13_BETHANIE_OVERLAY,
+    },
+    {
+        "source": JERUSALEM_RASTER_SOURCE,
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-13-passion.svg",
+        "aria": "Jérusalem — Temple, Gethsémani, Prétoire, Golgotha",
+        "overlay": CHAPTER_13_PASSION_OVERLAY,
+        "raster": True,
+        "width": 464,
+        "height": 598,
     },
     {
         "output": ROOT / "assets" / "maps" / "generated" / "chapitre-12-bethanie-ephraim.svg",

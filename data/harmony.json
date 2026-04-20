@@ -404,7 +404,7 @@
             "Ce séjour fait écho aux quarante ans du peuple hébreu dans le désert pendant l’Exode, qui a connu dans sa longue traversée du désert la faim, la soif, l’épreuve et le doute. "
           ],
           "images": {
-            "desert_de_judee.webp": "Vue du désert de Judée du mont Yair"
+            "desert_de_judee.webp": "Désert de Judée"
           }
         }
       ],
@@ -1716,7 +1716,7 @@
           "date": "+32, Avril/Mai, vers la Pâque",
           "lieu": "Génézareth, Galilée",
           "images": {
-            "vue_de_genezareth.jpg": "Vue du lac depuis Génézareth"
+            "vue_de_genezareth.jpg": "Vue de Génézareth"
           }
         },
         {
@@ -3239,7 +3239,10 @@
             ]
           },
           "date": "Lundi 30 mars 33, 10 Nisan",
-          "lieu": "Béthanie -> Jérusalem, Judée"
+          "lieu": "Béthanie -> Jérusalem, Judée",
+          "images": {
+            "maps/generated/chapitre-13-passion.svg": "Carte de Jérusalem — Passion"
+          }
         },
         {
           "id": "jerusalem2-8",
@@ -4496,7 +4499,7 @@
         }
       ],
       "images": {
-        "carte6.jpg": "Carte 6"
+        "maps/generated/chapitre-13-bethanie-jerusalem.svg": "Carte de Béthanie et entrée triomphale à Jérusalem"
       }
     },
     {
