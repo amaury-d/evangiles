@@ -4,6 +4,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "assets" / "maps" / "sources" / "Holy_sites_of_Jesus_in_Palestine.svg"
 JERUSALEM_RASTER_SOURCE = ROOT / "assets" / "maps" / "sources" / "Jerusalem_premier_siecle.JPG"
+PAUL_JOURNEY_1_SOURCE = ROOT / "assets" / "maps" / "sources" / "Paul_the_Apostle,_first_missionary_journey.svg"
+PAUL_JOURNEY_2_SOURCE = ROOT / "assets" / "maps" / "sources" / "Paul_the_Apostle,_second_missionary_journey.svg"
+PAUL_JOURNEY_3_SOURCE = ROOT / "assets" / "maps" / "sources" / "Paul_the_Apostle,_third_missionary_journey.svg"
+PAUL_JOURNEY_ROME_SOURCE = ROOT / "assets" / "maps" / "sources" / "Paul_the_Apostle,_fourth_missionary_journey_(Rome).svg"
 
 
 COMMON_DEFS = """
@@ -635,7 +639,40 @@ MAPS = [
         "aria": "Frontière samaritaine — guérison des dix lépreux",
         "overlay": CHAPTER_10_OVERLAY,
     },
+    {
+        "source": PAUL_JOURNEY_1_SOURCE,
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-16-paul-1er-voyage.svg",
+        "aria": "Premier voyage missionnaire de Paul — Chypre et Galatie",
+        "passthrough": True,
+    },
+    {
+        "source": PAUL_JOURNEY_2_SOURCE,
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-17-paul-2eme-voyage.svg",
+        "aria": "Deuxième voyage missionnaire de Paul — Grèce et Asie Mineure",
+        "passthrough": True,
+    },
+    {
+        "source": PAUL_JOURNEY_3_SOURCE,
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-18-paul-3eme-voyage.svg",
+        "aria": "Troisième voyage missionnaire de Paul — Grèce et Asie Mineure",
+        "passthrough": True,
+    },
+    {
+        "source": PAUL_JOURNEY_ROME_SOURCE,
+        "output": ROOT / "assets" / "maps" / "generated" / "chapitre-18-paul-rome.svg",
+        "aria": "Voyage de Paul en prisonnier vers Rome",
+        "passthrough": True,
+    },
 ]
+
+
+def copy_source_map(source_path: Path, output: Path, aria: str) -> None:
+    import re
+    output.parent.mkdir(parents=True, exist_ok=True)
+    source = source_path.read_text(encoding="utf-8")
+    generated = re.sub(r'<svg\b', f'<svg role="img" aria-label="{aria}"', source, count=1)
+    output.write_text(generated, encoding="utf-8")
+    print(f"Copied {output.relative_to(ROOT)}")
 
 
 def generate_map(source: str, output: Path, aria: str, overlay: str) -> None:
@@ -662,6 +699,13 @@ def generate_raster_map(source_path: Path, output: Path, aria: str, overlay: str
 def main() -> None:
     for map_config in MAPS:
         source_path = map_config.get("source", SOURCE)
+        if map_config.get("passthrough"):
+            copy_source_map(
+                source_path,
+                output=map_config["output"],
+                aria=map_config["aria"],
+            )
+            continue
         if map_config.get("raster"):
             generate_raster_map(
                 source_path,

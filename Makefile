@@ -22,11 +22,15 @@ GENERATED_MAPS = \
 	assets/maps/generated/chapitre-13-passion.svg \
 	assets/maps/generated/chapitre-14-jerusalem-emmaus.svg \
 	assets/maps/generated/chapitre-14-galilee.svg \
-	assets/maps/generated/chapitre-15-ascension.svg
+	assets/maps/generated/chapitre-15-ascension.svg \
+	assets/maps/generated/chapitre-16-paul-1er-voyage.svg \
+	assets/maps/generated/chapitre-17-paul-2eme-voyage.svg \
+	assets/maps/generated/chapitre-18-paul-3eme-voyage.svg \
+	assets/maps/generated/chapitre-18-paul-rome.svg
 
 maps: $(GENERATED_MAPS)
 
-$(GENERATED_MAPS): assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg assets/maps/sources/Jerusalem_premier_siecle.JPG scripts/generate_maps.py
+$(GENERATED_MAPS): assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg assets/maps/sources/Jerusalem_premier_siecle.JPG assets/maps/sources/Paul_the_Apostle,_first_missionary_journey.svg assets/maps/sources/Paul_the_Apostle,_second_missionary_journey.svg assets/maps/sources/Paul_the_Apostle,_third_missionary_journey.svg assets/maps/sources/Paul_the_Apostle,_fourth_missionary_journey_(Rome).svg scripts/generate_maps.py
 	python3 scripts/generate_maps.py
 
 data: maps src/data/harmony.generated.json src/pages/annexes
