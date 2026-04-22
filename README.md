@@ -117,3 +117,17 @@ Cette commande est aussi lancée automatiquement par `npm run build`, `npm run d
 ## Publication
 
 Le site généré est statique. Il peut être auto-hébergé en servant `dist/`, ou publié via GitHub Pages. Le workflow `.github/workflows/deploy-pages.yml` construit le site avec GitHub Actions et publie `dist/` sur GitHub Pages lorsque la fonctionnalité Pages est configurée pour utiliser les Actions.
+
+## Licence
+
+Ce projet (code, données d'harmonie, cartes dérivées, notes) est publié sous [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/). Voir `LICENSE`.
+
+### Sources tierces
+
+- Fond cartographique `assets/maps/sources/Holy_sites_of_Jesus_in_Palestine.svg` : Wikimedia Commons, [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+- Cartes des voyages de Paul (`assets/maps/sources/Paul_the_Apostle,_*.svg`) : Wikimedia Commons, domaine public.
+- Plan `assets/maps/sources/Jerusalem_premier_siecle.JPG` : voir mention sur Wikimedia Commons.
+- Traductions bibliques récupérées via [GetBible API](https://getbible.net/) :
+  - **Louis Segond 1910** (`ls1910`) — copyright expiré, distribution autorisée à CrossWire.
+  - **Darby** (`darby`) — domaine public.
+  - **World English Bible** (`web`) — domaine public.
